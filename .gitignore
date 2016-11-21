@@ -1,3 +1,6 @@
+*.scr
+*.job
+*.pro
 *.epf
 *.s#*
 *.b#*
