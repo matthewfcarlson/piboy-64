@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.05" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -83,7 +83,10 @@
 <layer number="114" name="Badge_Outline" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="115" name="ReferenceISLANDS" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
+<layer number="117" name="mPads" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="118" name="Rect_Pads" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="119" name="mUnrouted" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="120" name="mDimension" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="123" name="tTestmark" color="7" fill="1" visible="yes" active="yes"/>
@@ -93,15 +96,38 @@
 <layer number="127" name="_tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="128" name="_bValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="129" name="Mask" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="130" name="mbStop" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="131" name="tAdjust" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="132" name="bAdjust" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="133" name="mtFinish" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="134" name="mbFinish" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="135" name="mtGlue" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="136" name="mbGlue" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="137" name="mtTest" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="138" name="mbTest" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="139" name="mtKeepout" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="140" name="mbKeepout" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="141" name="mtRestrict" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="142" name="mbRestrict" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="143" name="mvRestrict" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="145" name="mHoles" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="146" name="mMilling" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="147" name="mMeasures" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="148" name="mDocument" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="149" name="mReference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="150" name="Notes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="152" name="_bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="153" name="FabDoc1" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="154" name="FabDoc2" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="155" name="FabDoc3" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="191" name="mNets" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="192" name="mBusses" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="193" name="mPins" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="194" name="mSymbols" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="195" name="mNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="196" name="mValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="199" name="Contour" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="200" name="200bmp" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="201" name="201bmp" color="2" fill="10" visible="yes" active="yes"/>
@@ -135,6 +161,8 @@
 <layer number="229" name="229bmp" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="230" name="230bmp" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="231" name="231bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="232" name="Eagle3D_PG2" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="233" name="Eagle3D_PG3" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="248" name="Housing" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="249" name="Edge" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
@@ -144,95 +172,6 @@
 </layers>
 <schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
 <libraries>
-<library name="custom">
-<packages>
-<package name="FFC-18-0.8MM">
-<smd name="P$1" x="0" y="0" dx="3.6" dy="0.4" layer="1"/>
-<smd name="P$2" x="0" y="0.8" dx="3.6" dy="0.4" layer="1"/>
-<smd name="P$3" x="0" y="1.6" dx="3.6" dy="0.4" layer="1"/>
-<smd name="P$4" x="0" y="2.4" dx="3.6" dy="0.4" layer="1"/>
-<smd name="P$5" x="0" y="3.2" dx="3.6" dy="0.4" layer="1"/>
-<smd name="P$6" x="0" y="4" dx="3.6" dy="0.4" layer="1"/>
-<smd name="P$7" x="0" y="4.8" dx="3.6" dy="0.4" layer="1"/>
-<smd name="P$8" x="0" y="5.6" dx="3.6" dy="0.4" layer="1"/>
-<smd name="P$9" x="0" y="6.4" dx="3.6" dy="0.4" layer="1"/>
-<smd name="P$10" x="0" y="7.2" dx="3.6" dy="0.4" layer="1"/>
-<smd name="P$11" x="0" y="8" dx="3.6" dy="0.4" layer="1"/>
-<smd name="P$12" x="0" y="8.8" dx="3.6" dy="0.4" layer="1"/>
-<smd name="P$13" x="0" y="9.6" dx="3.6" dy="0.4" layer="1"/>
-<smd name="P$14" x="0" y="10.4" dx="3.6" dy="0.4" layer="1"/>
-<smd name="P$15" x="0" y="11.2" dx="3.6" dy="0.4" layer="1"/>
-<smd name="P$16" x="0" y="12" dx="3.6" dy="0.4" layer="1"/>
-<smd name="P$17" x="0" y="12.8" dx="3.6" dy="0.4" layer="1"/>
-<smd name="P$18" x="0" y="13.6" dx="3.6" dy="0.4" layer="1"/>
-<wire x1="1.6" y1="14.4" x2="-2.4" y2="14.4" width="0.2" layer="21"/>
-<wire x1="-2.4" y1="14.4" x2="-2.4" y2="-0.8" width="0.2" layer="21"/>
-<wire x1="-2.4" y1="-0.8" x2="1.6" y2="-0.8" width="0.2" layer="21"/>
-<text x="-3.4" y="-0.4" size="1" layer="21" font="vector">1</text>
-<text x="-4.4" y="13.2" size="1" layer="21" font="vector">18</text>
-</package>
-</packages>
-<symbols>
-<symbol name="FFC-18">
-<wire x1="0" y1="7.62" x2="10.16" y2="7.62" width="0.254" layer="94"/>
-<wire x1="10.16" y1="7.62" x2="10.16" y2="-40.64" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-40.64" x2="0" y2="-40.64" width="0.254" layer="94"/>
-<wire x1="0" y1="-40.64" x2="0" y2="7.62" width="0.254" layer="94"/>
-<pin name="P$1" x="-5.08" y="5.08" length="middle"/>
-<pin name="P$2" x="-5.08" y="2.54" length="middle"/>
-<pin name="P$3" x="-5.08" y="0" length="middle"/>
-<pin name="P$4" x="-5.08" y="-2.54" length="middle"/>
-<pin name="P$5" x="-5.08" y="-5.08" length="middle"/>
-<pin name="P$6" x="-5.08" y="-7.62" length="middle"/>
-<pin name="P$7" x="-5.08" y="-10.16" length="middle"/>
-<pin name="P$8" x="-5.08" y="-12.7" length="middle"/>
-<pin name="P$9" x="-5.08" y="-15.24" length="middle"/>
-<pin name="P$10" x="-5.08" y="-17.78" length="middle"/>
-<pin name="P$11" x="-5.08" y="-20.32" length="middle"/>
-<pin name="P$12" x="-5.08" y="-22.86" length="middle"/>
-<pin name="P$13" x="-5.08" y="-25.4" length="middle"/>
-<pin name="P$14" x="-5.08" y="-27.94" length="middle"/>
-<pin name="P$15" x="-5.08" y="-30.48" length="middle"/>
-<pin name="P$16" x="-5.08" y="-33.02" length="middle"/>
-<pin name="P$17" x="-5.08" y="-35.56" length="middle"/>
-<pin name="P$18" x="-5.08" y="-38.1" length="middle"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="FCC-18-0.8MM">
-<gates>
-<gate name="G$1" symbol="FFC-18" x="-5.08" y="15.24"/>
-</gates>
-<devices>
-<device name="" package="FFC-18-0.8MM">
-<connects>
-<connect gate="G$1" pin="P$1" pad="P$1"/>
-<connect gate="G$1" pin="P$10" pad="P$10"/>
-<connect gate="G$1" pin="P$11" pad="P$11"/>
-<connect gate="G$1" pin="P$12" pad="P$12"/>
-<connect gate="G$1" pin="P$13" pad="P$13"/>
-<connect gate="G$1" pin="P$14" pad="P$14"/>
-<connect gate="G$1" pin="P$15" pad="P$15"/>
-<connect gate="G$1" pin="P$16" pad="P$16"/>
-<connect gate="G$1" pin="P$17" pad="P$17"/>
-<connect gate="G$1" pin="P$18" pad="P$18"/>
-<connect gate="G$1" pin="P$2" pad="P$2"/>
-<connect gate="G$1" pin="P$3" pad="P$3"/>
-<connect gate="G$1" pin="P$4" pad="P$4"/>
-<connect gate="G$1" pin="P$5" pad="P$5"/>
-<connect gate="G$1" pin="P$6" pad="P$6"/>
-<connect gate="G$1" pin="P$7" pad="P$7"/>
-<connect gate="G$1" pin="P$8" pad="P$8"/>
-<connect gate="G$1" pin="P$9" pad="P$9"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="SparkFun-Connectors">
 <description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
 In this library you'll find connectors and sockets- basically anything that can be plugged into or onto.&lt;br&gt;&lt;br&gt;
@@ -605,6 +544,138 @@ Standard 9-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </deviceset>
 </devicesets>
 </library>
+<library name="custom">
+<packages>
+<package name="TFT-CONN-18">
+<wire x1="-11" y1="1.5" x2="10" y2="1.5" width="0.127" layer="51"/>
+<wire x1="-11" y1="1" x2="-11.41213125" y2="1.41213125" width="0.127" layer="21"/>
+<wire x1="-11.41213125" y1="1.41213125" x2="-11.624265625" y2="1.5" width="0.127" layer="21" curve="45.000597"/>
+<wire x1="-11.624265625" y1="1.5" x2="-12" y2="1.5" width="0.127" layer="21"/>
+<wire x1="-12" y1="1.5" x2="-12" y2="-3" width="0.127" layer="21"/>
+<wire x1="11" y1="-3" x2="11" y2="1.5" width="0.127" layer="21"/>
+<wire x1="10" y1="1" x2="10.41213125" y2="1.41213125" width="0.127" layer="21"/>
+<wire x1="10.41213125" y1="1.41213125" x2="10.624265625" y2="1.5" width="0.127" layer="21" curve="-45.000597"/>
+<wire x1="10.624265625" y1="1.5" x2="11" y2="1.5" width="0.127" layer="21"/>
+<wire x1="-12.4" y1="-4" x2="11.4" y2="-4" width="0.127" layer="21"/>
+<wire x1="11.4" y1="-4" x2="11.4" y2="-3" width="0.127" layer="21"/>
+<wire x1="11.4" y1="-3" x2="11" y2="-3" width="0.127" layer="21"/>
+<wire x1="-12.4" y1="-4" x2="-12.4" y2="-3" width="0.127" layer="21"/>
+<wire x1="-12.4" y1="-3" x2="-12" y2="-3" width="0.127" layer="21"/>
+<wire x1="-11" y1="1" x2="-11" y2="1.5" width="0.127" layer="21"/>
+<wire x1="10" y1="1.5" x2="10" y2="1" width="0.127" layer="21"/>
+<rectangle x1="-10.35" y1="-2.4" x2="-9.65" y2="2" layer="1"/>
+<rectangle x1="-10.45" y1="-2.5" x2="-9.55" y2="2.1" layer="29"/>
+<rectangle x1="8.65" y1="-2.4" x2="9.35" y2="2" layer="1"/>
+<rectangle x1="-10.45" y1="-2.5" x2="-9.55" y2="2.1" layer="29"/>
+<rectangle x1="8.55" y1="-2.5" x2="9.45" y2="2.1" layer="29"/>
+<smd name="1" x="-9" y="2" dx="0.6" dy="2" layer="1"/>
+<smd name="2" x="-8" y="2" dx="0.6" dy="2" layer="1"/>
+<smd name="3" x="-7" y="2" dx="0.6" dy="2" layer="1"/>
+<smd name="4" x="-6" y="2" dx="0.6" dy="2" layer="1"/>
+<smd name="5" x="-5" y="2" dx="0.6" dy="2" layer="1"/>
+<smd name="6" x="-4" y="2" dx="0.6" dy="2" layer="1"/>
+<smd name="7" x="-3" y="2" dx="0.6" dy="2" layer="1"/>
+<smd name="8" x="-2" y="2" dx="0.6" dy="2" layer="1"/>
+<smd name="9" x="-1" y="2" dx="0.6" dy="2" layer="1"/>
+<smd name="10" x="0" y="2" dx="0.6" dy="2" layer="1"/>
+<smd name="11" x="1" y="2" dx="0.6" dy="2" layer="1"/>
+<smd name="12" x="2" y="2" dx="0.6" dy="2" layer="1"/>
+<smd name="13" x="3" y="2" dx="0.6" dy="2" layer="1"/>
+<smd name="14" x="4" y="2" dx="0.6" dy="2" layer="1"/>
+<smd name="15" x="5" y="2" dx="0.6" dy="2" layer="1"/>
+<smd name="16" x="6" y="2" dx="0.6" dy="2" layer="1"/>
+<smd name="17" x="7" y="2" dx="0.6" dy="2" layer="1"/>
+<smd name="18" x="8" y="2" dx="0.6" dy="2" layer="1"/>
+<text x="-10" y="3.5" size="1.016" layer="21">1</text>
+<text x="8" y="3.5" size="1.016" layer="21">18</text>
+<text x="-13" y="-2" size="1.27" layer="25" rot="R90">&gt;Name</text>
+</package>
+</packages>
+<symbols>
+<symbol name="GBA_TFT">
+<wire x1="0" y1="2.54" x2="43.18" y2="2.54" width="0.254" layer="94"/>
+<wire x1="43.18" y1="2.54" x2="43.18" y2="-24.13" width="0.254" layer="94"/>
+<wire x1="43.18" y1="-24.13" x2="0" y2="-24.13" width="0.254" layer="94"/>
+<wire x1="6.35" y1="1.27" x2="41.91" y2="1.27" width="0.254" layer="94"/>
+<wire x1="41.91" y1="1.27" x2="41.91" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="41.91" y1="-22.86" x2="6.35" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="6.35" y1="-22.86" x2="6.35" y2="1.27" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="-24.13" width="0.254" layer="94"/>
+<pin name="!CS" x="-5.08" y="-5.08" visible="off" length="middle" direction="in"/>
+<pin name="!RESET" x="-5.08" y="-1.27" visible="off" length="middle" direction="in"/>
+<pin name="GND@1" x="-5.08" y="0" visible="off" length="middle" direction="pwr"/>
+<pin name="GND@2" x="-5.08" y="-8.89" visible="off" length="middle" direction="pwr"/>
+<pin name="K1" x="-5.08" y="-12.7" visible="off" length="middle"/>
+<pin name="K2" x="-5.08" y="-13.97" visible="off" length="middle"/>
+<pin name="K3" x="-5.08" y="-15.24" visible="off" length="middle"/>
+<pin name="K4" x="-5.08" y="-16.51" visible="off" length="middle"/>
+<pin name="LEDA" x="-5.08" y="-11.43" visible="off" length="middle"/>
+<pin name="RS" x="-5.08" y="-3.81" visible="off" length="middle" direction="in"/>
+<pin name="SCL" x="-5.08" y="-2.54" visible="off" length="middle" direction="in"/>
+<pin name="SDA" x="-5.08" y="-6.35" visible="off" length="middle" direction="in"/>
+<pin name="SDO" x="-5.08" y="-7.62" visible="off" length="middle" direction="out"/>
+<pin name="VDD" x="-5.08" y="-10.16" visible="off" length="middle" direction="pwr"/>
+<pin name="XL" x="-5.08" y="-17.78" visible="off" length="middle" direction="in"/>
+<pin name="XR" x="-5.08" y="-20.32" visible="off" length="middle" direction="in"/>
+<pin name="YD" x="-5.08" y="-21.59" visible="off" length="middle" direction="in"/>
+<pin name="YU" x="-5.08" y="-19.05" visible="off" length="middle" direction="in"/>
+<text x="20.32" y="-12.7" size="5.08" layer="94">TFT</text>
+<text x="1.27" y="-0.508" size="1.016" layer="97">GND</text>
+<text x="1.27" y="-1.778" size="1.016" layer="97">!RESET</text>
+<text x="1.27" y="-3.048" size="1.016" layer="97">SCL</text>
+<text x="1.27" y="-4.318" size="1.016" layer="97">RS</text>
+<text x="1.27" y="-5.588" size="1.016" layer="97">!CS</text>
+<text x="1.27" y="-6.858" size="1.016" layer="97">SDA</text>
+<text x="1.27" y="-8.128" size="1.016" layer="97">SDO</text>
+<text x="1.27" y="-9.398" size="1.016" layer="97">GND</text>
+<text x="1.27" y="-10.668" size="1.016" layer="97">VDD</text>
+<text x="1.27" y="-13.208" size="1.016" layer="97">K1</text>
+<text x="1.27" y="-14.478" size="1.016" layer="97">K2</text>
+<text x="1.27" y="-15.748" size="1.016" layer="97">K3</text>
+<text x="1.27" y="-17.018" size="1.016" layer="97">K4</text>
+<text x="1.27" y="-18.288" size="1.016" layer="97">XL</text>
+<text x="1.27" y="-19.558" size="1.016" layer="97">YU</text>
+<text x="1.27" y="-20.828" size="1.016" layer="97">XR</text>
+<text x="1.27" y="-22.098" size="1.016" layer="97">YD</text>
+<text x="1.27" y="-11.938" size="1.016" layer="97">LEDA</text>
+<text x="0" y="3.302" size="1.27" layer="95">&gt;Name</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="TFT-18-1.0MM" prefix="TFT">
+<gates>
+<gate name="TFT$1" symbol="GBA_TFT" x="-20.32" y="12.7"/>
+</gates>
+<devices>
+<device name="" package="TFT-CONN-18">
+<connects>
+<connect gate="TFT$1" pin="!CS" pad="5"/>
+<connect gate="TFT$1" pin="!RESET" pad="2"/>
+<connect gate="TFT$1" pin="GND@1" pad="1"/>
+<connect gate="TFT$1" pin="GND@2" pad="8"/>
+<connect gate="TFT$1" pin="K1" pad="11"/>
+<connect gate="TFT$1" pin="K2" pad="12"/>
+<connect gate="TFT$1" pin="K3" pad="13"/>
+<connect gate="TFT$1" pin="K4" pad="14"/>
+<connect gate="TFT$1" pin="LEDA" pad="10"/>
+<connect gate="TFT$1" pin="RS" pad="4"/>
+<connect gate="TFT$1" pin="SCL" pad="3"/>
+<connect gate="TFT$1" pin="SDA" pad="6"/>
+<connect gate="TFT$1" pin="SDO" pad="7"/>
+<connect gate="TFT$1" pin="VDD" pad="9"/>
+<connect gate="TFT$1" pin="XL" pad="15"/>
+<connect gate="TFT$1" pin="XR" pad="17"/>
+<connect gate="TFT$1" pin="YD" pad="18"/>
+<connect gate="TFT$1" pin="YU" pad="16"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -615,146 +686,156 @@ Standard 9-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </class>
 </classes>
 <parts>
-<part name="U$2" library="custom" deviceset="FCC-18-0.8MM" device=""/>
 <part name="J1" library="SparkFun-Connectors" deviceset="M09" device="NO_SILK"/>
 <part name="J2" library="SparkFun-Connectors" deviceset="M09" device="NO_SILK"/>
+<part name="TFT1" library="custom" deviceset="TFT-18-1.0MM" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 </plain>
 <instances>
-<instance part="U$2" gate="G$1" x="33.02" y="33.02"/>
-<instance part="J1" gate="G$1" x="0" y="27.94"/>
-<instance part="J2" gate="G$1" x="-15.24" y="5.08"/>
+<instance part="J1" gate="G$1" x="-5.08" y="27.94"/>
+<instance part="J2" gate="G$1" x="-7.62" y="2.54"/>
+<instance part="TFT1" gate="TFT$1" x="35.56" y="22.86"/>
 </instances>
 <busses>
 </busses>
 <nets>
-<net name="N$1" class="0">
+<net name="GND" class="0">
 <segment>
-<pinref part="U$2" gate="G$1" pin="P$1"/>
-<wire x1="27.94" y1="38.1" x2="10.16" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="J1" gate="G$1" pin="9"/>
+<pinref part="TFT1" gate="TFT$1" pin="GND@1"/>
+<wire x1="5.08" y1="38.1" x2="22.86" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="38.1" x2="30.48" y2="22.86" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="J1" gate="G$1" pin="3"/>
+<pinref part="TFT1" gate="TFT$1" pin="SDO"/>
+<wire x1="5.08" y1="22.86" x2="15.24" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="22.86" x2="30.48" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
 <segment>
-<pinref part="U$2" gate="G$1" pin="P$2"/>
-<wire x1="27.94" y1="35.56" x2="10.16" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="J1" gate="G$1" pin="8"/>
+<pinref part="TFT1" gate="TFT$1" pin="!RESET"/>
+<wire x1="5.08" y1="35.56" x2="10.16" y2="34.29" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="34.29" x2="30.48" y2="21.59" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$3" class="0">
 <segment>
-<pinref part="U$2" gate="G$1" pin="P$3"/>
-<wire x1="27.94" y1="33.02" x2="10.16" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="J1" gate="G$1" pin="7"/>
+<pinref part="TFT1" gate="TFT$1" pin="SCL"/>
+<wire x1="5.08" y1="33.02" x2="30.48" y2="20.32" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$4" class="0">
 <segment>
-<pinref part="U$2" gate="G$1" pin="P$4"/>
-<wire x1="27.94" y1="30.48" x2="10.16" y2="30.48" width="0.1524" layer="91"/>
+<pinref part="TFT1" gate="TFT$1" pin="RS"/>
 <pinref part="J1" gate="G$1" pin="6"/>
+<wire x1="30.48" y1="19.05" x2="11.938" y2="30.226" width="0.1524" layer="91"/>
+<wire x1="11.938" y1="30.226" x2="5.08" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$5" class="0">
 <segment>
-<pinref part="U$2" gate="G$1" pin="P$5"/>
-<wire x1="27.94" y1="27.94" x2="10.16" y2="27.94" width="0.1524" layer="91"/>
 <pinref part="J1" gate="G$1" pin="5"/>
+<pinref part="TFT1" gate="TFT$1" pin="!CS"/>
+<wire x1="5.08" y1="27.94" x2="12.7" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="27.94" x2="30.48" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$6" class="0">
 <segment>
-<pinref part="U$2" gate="G$1" pin="P$6"/>
-<wire x1="27.94" y1="25.4" x2="10.16" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="J1" gate="G$1" pin="4"/>
+<pinref part="TFT1" gate="TFT$1" pin="SDA"/>
+<wire x1="5.08" y1="25.4" x2="13.97" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="13.97" y1="25.4" x2="30.48" y2="16.51" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$7" class="0">
+<net name="GND2" class="0">
 <segment>
-<pinref part="U$2" gate="G$1" pin="P$7"/>
-<wire x1="27.94" y1="22.86" x2="10.16" y2="22.86" width="0.1524" layer="91"/>
-<pinref part="J1" gate="G$1" pin="3"/>
-</segment>
-</net>
-<net name="N$8" class="0">
-<segment>
-<pinref part="U$2" gate="G$1" pin="P$8"/>
-<wire x1="27.94" y1="20.32" x2="10.16" y2="20.32" width="0.1524" layer="91"/>
 <pinref part="J1" gate="G$1" pin="2"/>
+<pinref part="TFT1" gate="TFT$1" pin="GND@2"/>
+<wire x1="5.08" y1="20.32" x2="16.51" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="16.51" y1="20.32" x2="30.48" y2="13.97" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="VDD" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="1"/>
+<pinref part="TFT1" gate="TFT$1" pin="VDD"/>
+<wire x1="5.08" y1="17.78" x2="17.78" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="17.78" x2="30.48" y2="12.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$10" class="0">
 <segment>
-<pinref part="U$2" gate="G$1" pin="P$10"/>
-<wire x1="27.94" y1="15.24" x2="-5.08" y2="15.24" width="0.1524" layer="91"/>
-<pinref part="J2" gate="G$1" pin="9"/>
+<pinref part="J2" gate="G$1" pin="1"/>
+<wire x1="2.54" y1="-7.62" x2="25.4" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="-5.08" x2="30.48" y2="0" width="0.1524" layer="91"/>
+<pinref part="TFT1" gate="TFT$1" pin="YD"/>
+<wire x1="30.48" y1="0" x2="30.48" y2="1.27" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$11" class="0">
 <segment>
-<pinref part="U$2" gate="G$1" pin="P$11"/>
-<wire x1="27.94" y1="12.7" x2="-5.08" y2="12.7" width="0.1524" layer="91"/>
-<pinref part="J2" gate="G$1" pin="8"/>
+<pinref part="J2" gate="G$1" pin="2"/>
+<pinref part="TFT1" gate="TFT$1" pin="XR"/>
+<wire x1="2.54" y1="-5.08" x2="25.4" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="-2.54" x2="30.48" y2="2.54" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$12" class="0">
 <segment>
-<pinref part="U$2" gate="G$1" pin="P$12"/>
-<wire x1="27.94" y1="10.16" x2="-5.08" y2="10.16" width="0.1524" layer="91"/>
-<pinref part="J2" gate="G$1" pin="7"/>
+<pinref part="J2" gate="G$1" pin="3"/>
+<wire x1="2.54" y1="-2.54" x2="30.734" y2="3.81" width="0.1524" layer="91"/>
+<pinref part="TFT1" gate="TFT$1" pin="YU"/>
+<wire x1="30.734" y1="3.81" x2="30.48" y2="3.81" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$13" class="0">
 <segment>
-<pinref part="U$2" gate="G$1" pin="P$13"/>
-<wire x1="27.94" y1="7.62" x2="-5.08" y2="7.62" width="0.1524" layer="91"/>
-<pinref part="J2" gate="G$1" pin="6"/>
+<pinref part="J2" gate="G$1" pin="4"/>
+<pinref part="TFT1" gate="TFT$1" pin="XL"/>
+<wire x1="2.54" y1="0" x2="30.48" y2="5.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$14" class="0">
 <segment>
-<pinref part="U$2" gate="G$1" pin="P$14"/>
-<wire x1="27.94" y1="5.08" x2="-5.08" y2="5.08" width="0.1524" layer="91"/>
 <pinref part="J2" gate="G$1" pin="5"/>
+<pinref part="TFT1" gate="TFT$1" pin="K4"/>
+<wire x1="2.54" y1="2.54" x2="30.48" y2="6.35" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$15" class="0">
+<net name="LEDA" class="0">
 <segment>
-<pinref part="U$2" gate="G$1" pin="P$15"/>
-<wire x1="27.94" y1="2.54" x2="-5.08" y2="2.54" width="0.1524" layer="91"/>
-<pinref part="J2" gate="G$1" pin="4"/>
-</segment>
-</net>
-<net name="N$16" class="0">
-<segment>
-<pinref part="U$2" gate="G$1" pin="P$16"/>
-<wire x1="27.94" y1="0" x2="-5.08" y2="0" width="0.1524" layer="91"/>
-<pinref part="J2" gate="G$1" pin="3"/>
+<pinref part="J2" gate="G$1" pin="9"/>
+<pinref part="TFT1" gate="TFT$1" pin="LEDA"/>
+<wire x1="2.54" y1="12.7" x2="30.48" y2="11.43" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$17" class="0">
 <segment>
-<pinref part="U$2" gate="G$1" pin="P$17"/>
-<wire x1="27.94" y1="-2.54" x2="-5.08" y2="-2.54" width="0.1524" layer="91"/>
-<pinref part="J2" gate="G$1" pin="2"/>
+<pinref part="J2" gate="G$1" pin="8"/>
+<pinref part="TFT1" gate="TFT$1" pin="K1"/>
+<wire x1="2.54" y1="10.16" x2="30.48" y2="10.16" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$18" class="0">
+<net name="N$15" class="0">
 <segment>
-<pinref part="U$2" gate="G$1" pin="P$18"/>
-<wire x1="27.94" y1="-5.08" x2="-5.08" y2="-5.08" width="0.1524" layer="91"/>
-<pinref part="J2" gate="G$1" pin="1"/>
+<pinref part="J2" gate="G$1" pin="7"/>
+<pinref part="TFT1" gate="TFT$1" pin="K2"/>
+<wire x1="2.54" y1="7.62" x2="30.48" y2="8.89" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$9" class="0">
+<net name="N$16" class="0">
 <segment>
-<pinref part="J1" gate="G$1" pin="1"/>
-<pinref part="U$2" gate="G$1" pin="P$9"/>
-<wire x1="10.16" y1="17.78" x2="27.94" y2="17.78" width="0.1524" layer="91"/>
+<pinref part="TFT1" gate="TFT$1" pin="K3"/>
+<pinref part="J2" gate="G$1" pin="6"/>
+<wire x1="30.48" y1="7.62" x2="2.54" y2="5.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
