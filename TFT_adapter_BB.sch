@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.05" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -590,6 +590,41 @@ Standard 9-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <text x="8" y="3.5" size="1.016" layer="21">18</text>
 <text x="-13" y="-2" size="1.27" layer="25" rot="R90">&gt;Name</text>
 </package>
+<package name="S020-75MM">
+<smd name="P$1" x="-3.81" y="0" dx="1.397" dy="0.3556" layer="1"/>
+<smd name="P$2" x="-3.81" y="-1.27" dx="1.397" dy="0.3556" layer="1"/>
+<smd name="P$3" x="-3.81" y="-2.54" dx="1.397" dy="0.3556" layer="1"/>
+<smd name="P$4" x="-3.81" y="-3.81" dx="1.397" dy="0.3556" layer="1"/>
+<smd name="P$5" x="-3.81" y="-5.08" dx="1.397" dy="0.3556" layer="1"/>
+<smd name="P$6" x="-3.81" y="-6.35" dx="1.397" dy="0.3556" layer="1"/>
+<smd name="P$7" x="-3.81" y="-7.62" dx="1.397" dy="0.3556" layer="1"/>
+<smd name="P$8" x="-3.81" y="-8.89" dx="1.397" dy="0.3556" layer="1"/>
+<smd name="P$9" x="-3.81" y="-10.16" dx="1.397" dy="0.3556" layer="1"/>
+<smd name="P$10" x="-3.81" y="-11.43" dx="1.397" dy="0.3556" layer="1"/>
+<smd name="P$11" x="5.08" y="0" dx="1.397" dy="0.3556" layer="1"/>
+<smd name="P$12" x="5.08" y="-1.27" dx="1.397" dy="0.3556" layer="1"/>
+<smd name="P$13" x="5.08" y="-2.54" dx="1.397" dy="0.3556" layer="1"/>
+<smd name="P$14" x="5.08" y="-3.81" dx="1.397" dy="0.3556" layer="1"/>
+<smd name="P$15" x="5.08" y="-5.08" dx="1.397" dy="0.3556" layer="1"/>
+<smd name="P$16" x="5.08" y="-6.35" dx="1.397" dy="0.3556" layer="1"/>
+<smd name="P$17" x="5.08" y="-7.62" dx="1.397" dy="0.3556" layer="1"/>
+<smd name="P$18" x="5.08" y="-8.89" dx="1.397" dy="0.3556" layer="1"/>
+<smd name="P$19" x="5.08" y="-10.16" dx="1.397" dy="0.3556" layer="1"/>
+<smd name="P$20" x="5.08" y="-11.43" dx="1.397" dy="0.3556" layer="1" rot="R180"/>
+<wire x1="-3.81" y1="1.27" x2="5.08" y2="1.27" width="0.127" layer="51"/>
+<wire x1="5.08" y1="1.27" x2="5.08" y2="-12.7" width="0.127" layer="51"/>
+<wire x1="5.08" y1="-12.7" x2="-3.81" y2="-12.7" width="0.127" layer="51"/>
+<wire x1="-3.81" y1="-12.7" x2="-3.81" y2="1.27" width="0.127" layer="51"/>
+<circle x="-1.905" y="-0.635" radius="0.635" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="1.27" x2="5.08" y2="1.27" width="0.127" layer="21"/>
+<wire x1="5.08" y1="1.27" x2="5.08" y2="0.635" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="1.27" x2="-3.81" y2="0.635" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="-12.065" x2="-3.81" y2="-12.7" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="-12.7" x2="5.08" y2="-12.7" width="0.127" layer="21"/>
+<wire x1="5.08" y1="-12.7" x2="5.08" y2="-12.065" width="0.127" layer="21"/>
+<text x="-3.81" y="1.905" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.81" y="-14.605" size="1.27" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="GBA_TFT">
@@ -640,6 +675,32 @@ Standard 9-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <text x="1.27" y="-11.938" size="1.016" layer="97">LEDA</text>
 <text x="0" y="3.302" size="1.27" layer="95">&gt;Name</text>
 </symbol>
+<symbol name="CBT3244AD">
+<wire x1="-10.16" y1="12.7" x2="10.16" y2="12.7" width="0.254" layer="94"/>
+<wire x1="10.16" y1="12.7" x2="10.16" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-15.24" x2="-10.16" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-15.24" x2="-10.16" y2="12.7" width="0.254" layer="94"/>
+<pin name="!1OE" x="-15.24" y="10.16" length="middle"/>
+<pin name="1A1" x="-15.24" y="7.62" length="middle" direction="in"/>
+<pin name="2B4" x="-15.24" y="5.08" length="middle" direction="out"/>
+<pin name="1A2" x="-15.24" y="2.54" length="middle" direction="in"/>
+<pin name="2B3" x="-15.24" y="0" length="middle" direction="out"/>
+<pin name="1A3" x="-15.24" y="-2.54" length="middle" direction="in"/>
+<pin name="2B2" x="-15.24" y="-5.08" length="middle" direction="out"/>
+<pin name="1A4" x="-15.24" y="-7.62" length="middle" direction="in"/>
+<pin name="2B1" x="-15.24" y="-10.16" length="middle" direction="out"/>
+<pin name="GND" x="-15.24" y="-12.7" length="middle" direction="pwr"/>
+<pin name="2A1" x="15.24" y="-12.7" length="middle" direction="in" rot="R180"/>
+<pin name="1B4" x="15.24" y="-10.16" length="middle" direction="out" rot="R180"/>
+<pin name="2A2" x="15.24" y="-7.62" length="middle" direction="in" rot="R180"/>
+<pin name="1B3" x="15.24" y="-5.08" length="middle" direction="out" rot="R180"/>
+<pin name="2A3" x="15.24" y="-2.54" length="middle" direction="in" rot="R180"/>
+<pin name="1B2" x="15.24" y="0" length="middle" direction="out" rot="R180"/>
+<pin name="2A4" x="15.24" y="2.54" length="middle" direction="in" rot="R180"/>
+<pin name="1B1" x="15.24" y="5.08" length="middle" direction="out" rot="R180"/>
+<pin name="2!OE" x="15.24" y="7.62" length="middle" direction="in" rot="R180"/>
+<pin name="VCC" x="15.24" y="10.16" length="middle" direction="pwr" rot="R180"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="TFT-18-1.0MM" prefix="TFT">
@@ -674,6 +735,40 @@ Standard 9-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </device>
 </devices>
 </deviceset>
+<deviceset name="CBT3244AD">
+<gates>
+<gate name="G$1" symbol="CBT3244AD" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="S020-75MM">
+<connects>
+<connect gate="G$1" pin="!1OE" pad="P$1"/>
+<connect gate="G$1" pin="1A1" pad="P$2"/>
+<connect gate="G$1" pin="1A2" pad="P$4"/>
+<connect gate="G$1" pin="1A3" pad="P$6"/>
+<connect gate="G$1" pin="1A4" pad="P$8"/>
+<connect gate="G$1" pin="1B1" pad="P$18"/>
+<connect gate="G$1" pin="1B2" pad="P$16"/>
+<connect gate="G$1" pin="1B3" pad="P$14"/>
+<connect gate="G$1" pin="1B4" pad="P$12"/>
+<connect gate="G$1" pin="2!OE" pad="P$19"/>
+<connect gate="G$1" pin="2A1" pad="P$11"/>
+<connect gate="G$1" pin="2A2" pad="P$13"/>
+<connect gate="G$1" pin="2A3" pad="P$15"/>
+<connect gate="G$1" pin="2A4" pad="P$17"/>
+<connect gate="G$1" pin="2B1" pad="P$9"/>
+<connect gate="G$1" pin="2B2" pad="P$7"/>
+<connect gate="G$1" pin="2B3" pad="P$5"/>
+<connect gate="G$1" pin="2B4" pad="P$3"/>
+<connect gate="G$1" pin="GND" pad="P$10"/>
+<connect gate="G$1" pin="VCC" pad="P$20"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </libraries>
@@ -689,6 +784,7 @@ Standard 9-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="J1" library="SparkFun-Connectors" deviceset="M09" device="NO_SILK"/>
 <part name="J2" library="SparkFun-Connectors" deviceset="M09" device="NO_SILK"/>
 <part name="TFT1" library="custom" deviceset="TFT-18-1.0MM" device=""/>
+<part name="U$1" library="custom" deviceset="CBT3244AD" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -698,6 +794,7 @@ Standard 9-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <instance part="J1" gate="G$1" x="-5.08" y="27.94"/>
 <instance part="J2" gate="G$1" x="-7.62" y="2.54"/>
 <instance part="TFT1" gate="TFT$1" x="35.56" y="22.86"/>
+<instance part="U$1" gate="G$1" x="43.18" y="-17.78"/>
 </instances>
 <busses>
 </busses>
