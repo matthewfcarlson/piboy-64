@@ -26,3 +26,5 @@ None yet
 
 ## Making your own
 So you read this whole thing and still want to make your own? Well. Let's get started then. Visiting the hackaday.io link will give you detailed build instructions. I'll try and document as I go.
+
+Good luck.
