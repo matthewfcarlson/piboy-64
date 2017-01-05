@@ -12027,6 +12027,8 @@ Standard 150mA LDO voltage regulator in SOT-23 layout. Micrel part MIC5205. BP (
 </library>
 </libraries>
 <attributes>
+<attribute name="CREVISION" value="0.2"/>
+<attribute name="DESIGNER" value="Matthew Carlson"/>
 </attributes>
 <variantdefs>
 </variantdefs>
@@ -12144,7 +12146,7 @@ Standard 150mA LDO voltage regulator in SOT-23 layout. Micrel part MIC5205. BP (
 <part name="SUPPLY24" library="SparkFun-Aesthetics" deviceset="V_USB" device=""/>
 <part name="THERM" library="SparkFun-Resistors" deviceset="RESISTOR" device="0603-RES" value="16k"/>
 <part name="GND7" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="FRAME2" library="SparkFun-Aesthetics" deviceset="FRAME-LETTER" device=""/>
+<part name="FRAME2" library="SparkFun-Aesthetics" deviceset="FRAME-LETTER" device="" value="Matthew Carlson"/>
 </parts>
 <sheets>
 <sheet>

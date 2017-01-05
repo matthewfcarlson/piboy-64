@@ -4212,6 +4212,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </library>
 </libraries>
 <attributes>
+<attribute name="DESIGNER" value="Matthew Carlson"/>
 </attributes>
 <variantdefs>
 </variantdefs>
@@ -4489,7 +4490,7 @@ Please make sure your boards conform to these design rules.</description>
 </element>
 <element name="LED2" library="adafruit" package="CHIPLED_0603" value="CHG" x="31.75" y="43.18"/>
 <element name="THERM" library="SparkFun-Resistors" package="0603-RES" value="16k" x="15.24" y="2.54"/>
-<element name="FRAME2" library="SparkFun-Aesthetics" package="CREATIVE_COMMONS" value="FRAME-LETTER" x="17.78" y="-10.16"/>
+<element name="FRAME2" library="SparkFun-Aesthetics" package="CREATIVE_COMMONS" value="Matthew Carlson" x="17.78" y="-10.16"/>
 <element name="U$4" library="custom" package="LOGO_1INCH" value="" x="35.56" y="2.54" rot="R90"/>
 </elements>
 <signals>
