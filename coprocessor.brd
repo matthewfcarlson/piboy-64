@@ -4381,7 +4381,7 @@ Please make sure your boards conform to these design rules.</description>
 <element name="J2" library="SparkFun-Connectors" package="1X10-2MM" value="" x="2.54" y="40.64" rot="R270"/>
 <element name="C4" library="SparkFun-Capacitors" package="EIA3216" value="10uF" x="2.794" y="17.3228" rot="R90"/>
 <element name="U$1" library="custom" package="10-MSOP" value="MCP48FEB01-E/UN" x="23.368" y="33.6296" rot="R90"/>
-<element name="J4" library="SparkFun-Connectors" package="1X02_LOCK" value="" x="30.3276" y="42.672" rot="R180"/>
+<element name="J4" library="SparkFun-Connectors" package="1X02_LOCK" value="" x="28.0924" y="41.148"/>
 <element name="U$2" library="custom" package="HC49/US" value="16MHZ" x="29.8704" y="31.75" rot="R270"/>
 <element name="R4" library="SparkFun-Resistors" package="0603-RES" value="340k" x="22.6568" y="19.5072" rot="R90">
 <attribute name="PROD_ID" value="RES-12616" x="22.6568" y="19.5072" size="1.778" layer="27" rot="R90" display="off"/>
@@ -4651,7 +4651,7 @@ Please make sure your boards conform to these design rules.</description>
 <signal name="DAC_VOUT">
 <contactref element="U$1" pad="4"/>
 <contactref element="J4" pad="1"/>
-<wire x1="23.868" y1="31.4296" x2="30.5054" y2="42.672" width="0" layer="19" extent="1-1"/>
+<wire x1="23.868" y1="31.4296" x2="27.9146" y2="41.148" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DATA-">
 <contactref element="R3" pad="1"/>
