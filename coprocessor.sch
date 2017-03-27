@@ -8,24 +8,24 @@
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
-<layer number="2" name="Route2" color="1" fill="3" visible="yes" active="no"/>
-<layer number="3" name="Route3" color="4" fill="3" visible="yes" active="no"/>
-<layer number="14" name="Route14" color="1" fill="6" visible="yes" active="no"/>
-<layer number="15" name="Route15" color="4" fill="6" visible="yes" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="no"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="no"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="no"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="no"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="no"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="no"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="no"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="no"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="no"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="no"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="no"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="no"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
@@ -34,8 +34,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="no"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
@@ -43,19 +43,19 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="no"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="no"/>
-<layer number="48" name="Document" color="7" fill="1" visible="yes" active="no"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="no"/>
-<layer number="50" name="dxf" color="7" fill="1" visible="yes" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="no"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="no"/>
-<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="yes" active="no"/>
-<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="yes" active="no"/>
-<layer number="56" name="wert" color="7" fill="1" visible="yes" active="no"/>
-<layer number="57" name="tCAD" color="7" fill="1" visible="yes" active="no"/>
-<layer number="59" name="tCarbon" color="7" fill="1" visible="yes" active="no"/>
-<layer number="60" name="bCarbon" color="7" fill="1" visible="yes" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
+<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -9183,16 +9183,16 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <library name="custom">
 <packages>
 <package name="10-MSOP">
-<smd name="2" x="-2.2" y="0.5" dx="1.4" dy="0.3" layer="1" rot="R180" stop="no"/>
-<smd name="1" x="-2.2" y="1" dx="1.4" dy="0.3" layer="1" roundness="1" rot="R180" stop="no"/>
-<smd name="3" x="-2.2" y="0" dx="1.4" dy="0.3" layer="1" rot="R180" stop="no"/>
-<smd name="4" x="-2.2" y="-0.5" dx="1.4" dy="0.3" layer="1" rot="R180" stop="no"/>
-<smd name="5" x="-2.2" y="-1" dx="1.4" dy="0.3" layer="1" rot="R180" stop="no"/>
-<smd name="10" x="2.2" y="1" dx="1.4" dy="0.3" layer="1" rot="R180" stop="no"/>
-<smd name="9" x="2.2" y="0.5" dx="1.4" dy="0.3" layer="1" rot="R180" stop="no"/>
-<smd name="8" x="2.2" y="0" dx="1.4" dy="0.3" layer="1" rot="R180" stop="no"/>
-<smd name="7" x="2.2" y="-0.5" dx="1.4" dy="0.3" layer="1" rot="R180" stop="no"/>
-<smd name="6" x="2.2" y="-1" dx="1.4" dy="0.3" layer="1" rot="R180" stop="no"/>
+<smd name="2" x="-2.2" y="0.5" dx="1.4" dy="0.3" layer="1" rot="R180"/>
+<smd name="1" x="-2.2" y="1" dx="1.4" dy="0.3" layer="1" roundness="1" rot="R180"/>
+<smd name="3" x="-2.2" y="0" dx="1.4" dy="0.3" layer="1" rot="R180"/>
+<smd name="4" x="-2.2" y="-0.5" dx="1.4" dy="0.3" layer="1" rot="R180"/>
+<smd name="5" x="-2.2" y="-1" dx="1.4" dy="0.3" layer="1" rot="R180"/>
+<smd name="10" x="2.2" y="1" dx="1.4" dy="0.3" layer="1" rot="R180"/>
+<smd name="9" x="2.2" y="0.5" dx="1.4" dy="0.3" layer="1" rot="R180"/>
+<smd name="8" x="2.2" y="0" dx="1.4" dy="0.3" layer="1" rot="R180"/>
+<smd name="7" x="2.2" y="-0.5" dx="1.4" dy="0.3" layer="1" rot="R180"/>
+<smd name="6" x="2.2" y="-1" dx="1.4" dy="0.3" layer="1" rot="R180"/>
 <wire x1="-1.5" y1="1.5" x2="1.5" y2="1.5" width="0.127" layer="51"/>
 <wire x1="1.5" y1="1.5" x2="1.5" y2="-1.5" width="0.127" layer="51"/>
 <wire x1="1.5" y1="-1.5" x2="-1.5" y2="-1.5" width="0.127" layer="51"/>
@@ -11854,8 +11854,7 @@ Standard 150mA LDO voltage regulator in SOT-23 layout. Micrel part MIC5205. BP (
 <pinref part="J1" gate="G$1" pin="3"/>
 <wire x1="139.7" y1="48.26" x2="132.08" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="132.08" y1="48.26" x2="132.08" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="132.08" y1="43.18" x2="127" y2="43.18" width="0.1524" layer="91"/>
-<label x="127" y="43.18" size="1.778" layer="95" rot="MR0" xref="yes"/>
+<label x="132.08" y="43.18" size="1.778" layer="95" rot="MR0" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="SCLK"/>
@@ -11879,8 +11878,8 @@ Standard 150mA LDO voltage regulator in SOT-23 layout. Micrel part MIC5205. BP (
 <segment>
 <pinref part="J1" gate="G$1" pin="1"/>
 <wire x1="139.7" y1="50.8" x2="127" y2="50.8" width="0.1524" layer="91"/>
-<label x="127" y="63.5" size="1.778" layer="95" rot="MR0" xref="yes"/>
-<wire x1="127" y1="50.8" x2="127" y2="63.5" width="0.1524" layer="91"/>
+<label x="127" y="58.42" size="1.778" layer="95" rot="MR0" xref="yes"/>
+<wire x1="127" y1="50.8" x2="127" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="SDO"/>
@@ -11974,8 +11973,8 @@ Standard 150mA LDO voltage regulator in SOT-23 layout. Micrel part MIC5205. BP (
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="PB1(SCK/PCINT1)"/>
-<wire x1="86.36" y1="45.72" x2="104.14" y2="45.72" width="0.1524" layer="91"/>
-<label x="104.14" y="45.72" size="1.778" layer="95" xref="yes"/>
+<wire x1="86.36" y1="45.72" x2="109.22" y2="45.72" width="0.1524" layer="91"/>
+<label x="109.22" y="45.72" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="MCU_MOSI" class="0">
@@ -12104,8 +12103,8 @@ Standard 150mA LDO voltage regulator in SOT-23 layout. Micrel part MIC5205. BP (
 <net name="MCU_MISO" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="PB3(PDO/MISO/PCINT3)"/>
-<wire x1="86.36" y1="40.64" x2="104.14" y2="40.64" width="0.1524" layer="91"/>
-<label x="104.14" y="40.64" size="1.778" layer="95" xref="yes"/>
+<wire x1="86.36" y1="40.64" x2="109.22" y2="40.64" width="0.1524" layer="91"/>
+<label x="109.22" y="40.64" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -12631,18 +12630,12 @@ Standard 150mA LDO voltage regulator in SOT-23 layout. Micrel part MIC5205. BP (
 </sheets>
 <errors>
 <approved hash="104,1,124.46,104.14,U$1,VDD,VCC,,,"/>
-<approved hash="104,2,139.7,63.5,U1,PGND,GND,,,"/>
 <approved hash="104,1,-10.16,-22.86,U4,V+,VCC,,,"/>
 <approved hash="104,1,-10.16,-38.1,U4,V-,GND,,,"/>
-<approved hash="113,1,99.7373,22.4113,J2,,,,,"/>
 <approved hash="113,1,100.923,96.7147,J4,,,,,"/>
 <approved hash="113,2,78.105,166.391,CN1,,,,,"/>
-<approved hash="113,2,127,75.9841,U1,,,,,"/>
 <approved hash="113,2,233.68,162.073,U2,,,,,"/>
 <approved hash="113,2,275.794,160.02,B1,,,,,"/>
-<approved hash="113,2,168.961,46.0163,T1,,,,,"/>
-<approved hash="113,2,177.072,26.67,D2,,,,,"/>
-<approved hash="113,2,184.807,80.01,C10,,,,,"/>
 </errors>
 </schematic>
 </drawing>
