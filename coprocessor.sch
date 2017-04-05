@@ -10279,39 +10279,39 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <text x="-13" y="-2" size="1.27" layer="25" rot="R90">&gt;Name</text>
 </package>
 <package name="S020-75MM">
-<smd name="P$1" x="-3.81" y="0" dx="1.524" dy="0.381" layer="1"/>
-<smd name="P$2" x="-3.81" y="-1.27" dx="1.524" dy="0.381" layer="1"/>
-<smd name="P$3" x="-3.81" y="-2.54" dx="1.524" dy="0.381" layer="1"/>
-<smd name="P$4" x="-3.81" y="-3.81" dx="1.524" dy="0.381" layer="1"/>
-<smd name="P$5" x="-3.81" y="-5.08" dx="1.524" dy="0.381" layer="1"/>
-<smd name="P$6" x="-3.81" y="-6.35" dx="1.524" dy="0.381" layer="1"/>
-<smd name="P$7" x="-3.81" y="-7.62" dx="1.524" dy="0.381" layer="1"/>
-<smd name="P$8" x="-3.81" y="-8.89" dx="1.524" dy="0.381" layer="1"/>
-<smd name="P$9" x="-3.81" y="-10.16" dx="1.524" dy="0.381" layer="1"/>
-<smd name="P$10" x="-3.81" y="-11.43" dx="1.524" dy="0.381" layer="1"/>
-<smd name="P$11" x="5.08" y="0" dx="1.524" dy="0.381" layer="1"/>
-<smd name="P$12" x="5.08" y="-1.27" dx="1.524" dy="0.381" layer="1"/>
-<smd name="P$13" x="5.08" y="-2.54" dx="1.524" dy="0.381" layer="1"/>
-<smd name="P$14" x="5.08" y="-3.81" dx="1.524" dy="0.381" layer="1"/>
-<smd name="P$15" x="5.08" y="-5.08" dx="1.524" dy="0.381" layer="1"/>
-<smd name="P$16" x="5.08" y="-6.35" dx="1.524" dy="0.381" layer="1"/>
-<smd name="P$17" x="5.08" y="-7.62" dx="1.524" dy="0.381" layer="1"/>
-<smd name="P$18" x="5.08" y="-8.89" dx="1.524" dy="0.381" layer="1"/>
-<smd name="P$19" x="5.08" y="-10.16" dx="1.524" dy="0.381" layer="1"/>
-<smd name="P$20" x="5.08" y="-11.43" dx="1.524" dy="0.381" layer="1" rot="R180"/>
-<wire x1="-3.81" y1="1.27" x2="5.08" y2="1.27" width="0.127" layer="51"/>
-<wire x1="5.08" y1="1.27" x2="5.08" y2="-12.7" width="0.127" layer="51"/>
-<wire x1="5.08" y1="-12.7" x2="-3.81" y2="-12.7" width="0.127" layer="51"/>
-<wire x1="-3.81" y1="-12.7" x2="-3.81" y2="1.27" width="0.127" layer="51"/>
-<circle x="-1.905" y="-0.635" radius="0.635" width="0.127" layer="21"/>
-<wire x1="-3.81" y1="1.27" x2="5.08" y2="1.27" width="0.127" layer="21"/>
-<wire x1="5.08" y1="1.27" x2="5.08" y2="0.635" width="0.127" layer="21"/>
-<wire x1="-3.81" y1="1.27" x2="-3.81" y2="0.635" width="0.127" layer="21"/>
-<wire x1="-3.81" y1="-12.065" x2="-3.81" y2="-12.7" width="0.127" layer="21"/>
-<wire x1="-3.81" y1="-12.7" x2="5.08" y2="-12.7" width="0.127" layer="21"/>
-<wire x1="5.08" y1="-12.7" x2="5.08" y2="-12.065" width="0.127" layer="21"/>
-<text x="-3.81" y="1.905" size="1.27" layer="25">&gt;NAME</text>
-<text x="-3.81" y="-14.605" size="1.27" layer="27">&gt;VALUE</text>
+<smd name="P$1" x="-5.08" y="0" dx="1.397" dy="0.4826" layer="1"/>
+<smd name="P$2" x="-5.08" y="-1.27" dx="1.397" dy="0.4826" layer="1"/>
+<smd name="P$3" x="-5.08" y="-2.54" dx="1.397" dy="0.4826" layer="1"/>
+<smd name="P$4" x="-5.08" y="-3.81" dx="1.397" dy="0.4826" layer="1"/>
+<smd name="P$5" x="-5.08" y="-5.08" dx="1.397" dy="0.4826" layer="1"/>
+<smd name="P$6" x="-5.08" y="-6.35" dx="1.397" dy="0.4826" layer="1"/>
+<smd name="P$7" x="-5.08" y="-7.62" dx="1.397" dy="0.4826" layer="1"/>
+<smd name="P$8" x="-5.08" y="-8.89" dx="1.397" dy="0.4826" layer="1"/>
+<smd name="P$9" x="-5.08" y="-10.16" dx="1.397" dy="0.4826" layer="1"/>
+<smd name="P$10" x="-5.08" y="-11.43" dx="1.397" dy="0.4826" layer="1"/>
+<smd name="P$11" x="5.08" y="0" dx="1.397" dy="0.4826" layer="1"/>
+<smd name="P$12" x="5.08" y="-1.27" dx="1.397" dy="0.4826" layer="1"/>
+<smd name="P$13" x="5.08" y="-2.54" dx="1.397" dy="0.4826" layer="1"/>
+<smd name="P$14" x="5.08" y="-3.81" dx="1.397" dy="0.4826" layer="1"/>
+<smd name="P$15" x="5.08" y="-5.08" dx="1.397" dy="0.4826" layer="1"/>
+<smd name="P$16" x="5.08" y="-6.35" dx="1.397" dy="0.4826" layer="1"/>
+<smd name="P$17" x="5.08" y="-7.62" dx="1.397" dy="0.4826" layer="1"/>
+<smd name="P$18" x="5.08" y="-8.89" dx="1.397" dy="0.4826" layer="1"/>
+<smd name="P$19" x="5.08" y="-10.16" dx="1.397" dy="0.4826" layer="1"/>
+<smd name="P$20" x="5.08" y="-11.43" dx="1.397" dy="0.4826" layer="1" rot="R180"/>
+<wire x1="-3.81" y1="0.889" x2="3.81" y2="0.889" width="0.127" layer="51"/>
+<wire x1="3.81" y1="0.889" x2="3.81" y2="-12.065" width="0.127" layer="51"/>
+<wire x1="3.81" y1="-12.065" x2="-3.81" y2="-12.065" width="0.127" layer="51"/>
+<wire x1="-3.81" y1="-12.065" x2="-3.81" y2="0.889" width="0.127" layer="51"/>
+<circle x="-2.54" y="0" radius="0.567959375" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="0.889" x2="3.81" y2="0.889" width="0.127" layer="21"/>
+<wire x1="3.81" y1="0.889" x2="3.81" y2="0.508" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="0.889" x2="-3.81" y2="0.508" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="-11.811" x2="-3.81" y2="-12.065" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="-12.065" x2="3.81" y2="-12.065" width="0.127" layer="21"/>
+<wire x1="3.81" y1="-12.065" x2="3.81" y2="-11.811" width="0.127" layer="21"/>
+<text x="-3.81" y="1.27" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.81" y="-13.97" size="1.27" layer="27">&gt;VALUE</text>
 </package>
 <package name="SOT23-5">
 <circle x="-1.016" y="1.6002" radius="0.127" width="0" layer="21"/>
@@ -11228,6 +11228,14 @@ Vishay IHLP
 </devices>
 </deviceset>
 <deviceset name="CBT3244AD">
+<description>The CBT3244A provides eight bits of high-speed TTL-compatible bus switching in a
+standard '244 device pinout. The low ON-state resistance of the switch allows connections
+to be made with minimal propagation delay.
+The CBT3244A device is organized as two 4-bit low-impedance switches with separate
+output-enable (OE) inputs. When OE is LOW, the switch is on and data can flow from
+port A to port B, or vice versa. When OE is HIGH, the switch is open and high-impedance
+state exists between the two ports.
+The CBT3244A is characterized for operation from −40 °C to +85 °C.</description>
 <gates>
 <gate name="G$1" symbol="CBT3244AD" x="0" y="0"/>
 </gates>
