@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.001832" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -130,7 +130,7 @@
 <layer number="196" name="mValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="199" name="Contour" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="200" name="200bmp" color="1" fill="10" visible="yes" active="yes"/>
-<layer number="201" name="201bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="201" name="201bmp" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="202" name="202bmp" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="203" name="203bmp" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="204" name="204bmp" color="7" fill="1" visible="yes" active="yes"/>
@@ -5502,6 +5502,69 @@ body 3 x 3 x 0.85 mm</description>
 <smd name="P$2" x="1.8" y="0" dx="1.4" dy="4" layer="1"/>
 <text x="-2" y="2.2" size="0.8128" layer="25" ratio="12">&gt;NAME</text>
 <text x="-2" y="3.2" size="0.8128" layer="27" ratio="12">&gt;VALUE</text>
+</package>
+<package name="LOGO_1INCH_SVG">
+<rectangle x1="1.53558125" y1="1.67518125" x2="5.25820625" y2="5.39780625" layer="21"/>
+<polygon width="0.127" layer="21">
+<vertex x="2.04744375" y="17.2171375"/>
+<vertex x="5.490871875" y="17.2171375"/>
+<vertex x="9.446159375" y="10.33028125"/>
+<vertex x="13.4945125" y="17.170603125"/>
+<vertex x="17.170603125" y="17.170603125"/>
+<vertex x="17.170603125" y="1.7217125"/>
+<vertex x="13.587578125" y="1.7217125"/>
+<vertex x="13.587578125" y="11.167871875"/>
+<vertex x="10.46988125" y="5.5839375"/>
+<vertex x="8.46896875" y="5.5839375"/>
+<vertex x="1.8613125" y="17.2171375"/>
+<vertex x="2.000909375" y="17.2171375"/>
+</polygon>
+<polygon width="0.127" layer="21">
+<vertex x="36.155984375" y="17.26366875"/>
+<vertex x="49.3713" y="17.26366875"/>
+<vertex x="49.3713" y="13.773709375"/>
+<vertex x="44.6714875" y="13.773709375"/>
+<vertex x="44.62495625" y="1.67518125"/>
+<vertex x="40.9488625" y="1.67518125"/>
+<vertex x="40.9488625" y="13.773709375"/>
+<vertex x="36.20251875" y="13.773709375"/>
+</polygon>
+<rectangle x1="66.123109375" y1="1.67518125" x2="69.84573125" y2="17.26366875" layer="21"/>
+<polygon width="0.127" layer="21">
+<vertex x="18.845784375" y="1.67518125"/>
+<vertex x="22.754540625" y="1.67518125"/>
+<vertex x="23.731728125" y="4.28101875"/>
+<vertex x="30.153253125" y="4.234484375"/>
+<vertex x="31.13044375" y="1.67518125"/>
+<vertex x="35.08573125" y="1.67518125"/>
+<vertex x="29.083" y="17.2171375"/>
+<vertex x="24.848515625" y="17.26366875"/>
+<vertex x="26.895959375" y="13.16878125"/>
+<vertex x="29.03646875" y="7.631378125"/>
+<vertex x="24.94158125" y="7.6779125"/>
+<vertex x="26.895959375" y="13.075715625"/>
+<vertex x="25.360375" y="17.26366875"/>
+<vertex x="24.848515625" y="17.26366875"/>
+<vertex x="18.845784375" y="1.7217125"/>
+<vertex x="18.892315625" y="1.7217125"/>
+</polygon>
+<polygon width="0.127" layer="21">
+<vertex x="24.80198125" y="17.310203125"/>
+<vertex x="29.12953125" y="17.26366875"/>
+<vertex x="26.942490625" y="12.98265"/>
+</polygon>
+<polygon width="0.127" layer="21">
+<vertex x="51.04648125" y="17.310203125"/>
+<vertex x="64.261796875" y="17.310203125"/>
+<vertex x="64.261796875" y="13.82024375"/>
+<vertex x="59.561984375" y="13.82024375"/>
+<vertex x="59.515453125" y="1.721715625"/>
+<vertex x="55.839359375" y="1.721715625"/>
+<vertex x="55.839359375" y="13.82024375"/>
+<vertex x="51.093015625" y="13.82024375"/>
+</polygon>
+<wire x1="85.620353125" y1="6.60765625" x2="85.71341875" y2="12.7499875" width="3.302" layer="21" curve="-304" cap="flat"/>
+<circle x="96.8629" y="9.398" radius="6.639690625" width="3.429" layer="21"/>
 </package>
 </packages>
 <symbols>

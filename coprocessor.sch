@@ -11500,7 +11500,6 @@ by exp-lbrs.ulp</description>
 <part name="SUPPLY9" library="SparkFun-Aesthetics" deviceset="V_BATT" device=""/>
 <part name="GND14" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND15" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="SUPPLY10" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 <part name="R7" library="SparkFun-Resistors" deviceset="1.8KOHM1/10W1%(0603)" device="" value="1.87M"/>
 <part name="R8" library="SparkFun-Resistors" deviceset="200KOHM1/10W1%(0603)" device="200K" value="200k"/>
 <part name="C7" library="SparkFun-Capacitors" deviceset="2.2UF-10V-20%(0603)" device="" value="2.2uF"/>
@@ -11569,6 +11568,7 @@ by exp-lbrs.ulp</description>
 <part name="SUPPLY16" library="SparkFun-Aesthetics" deviceset="V_USB" device=""/>
 <part name="SUPPLY19" library="SparkFun-Aesthetics" deviceset="V_USB" device=""/>
 <part name="SUPPLY24" library="SparkFun-Aesthetics" deviceset="V_USB" device=""/>
+<part name="SUPPLY10" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -12253,7 +12253,6 @@ by exp-lbrs.ulp</description>
 <instance part="SUPPLY9" gate="G$1" x="96.52" y="121.92"/>
 <instance part="GND14" gate="1" x="157.48" y="76.2"/>
 <instance part="GND15" gate="1" x="86.36" y="71.12"/>
-<instance part="SUPPLY10" gate="G$1" x="185.42" y="111.76"/>
 <instance part="R7" gate="G$1" x="162.56" y="101.6" rot="R90"/>
 <instance part="R8" gate="G$1" x="162.56" y="88.9" rot="R90"/>
 <instance part="C7" gate="G$1" x="170.18" y="101.6"/>
@@ -12303,6 +12302,7 @@ by exp-lbrs.ulp</description>
 <instance part="SUPPLY16" gate="G$1" x="185.42" y="200.66"/>
 <instance part="SUPPLY19" gate="G$1" x="203.2" y="180.34"/>
 <instance part="SUPPLY24" gate="G$1" x="200.66" y="152.4"/>
+<instance part="SUPPLY10" gate="G$1" x="185.42" y="111.76"/>
 </instances>
 <busses>
 </busses>
@@ -12467,26 +12467,6 @@ by exp-lbrs.ulp</description>
 <pinref part="L1" gate="G$1" pin="2"/>
 <wire x1="86.36" y1="104.14" x2="114.3" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="SW"/>
-</segment>
-</net>
-<net name="5V" class="0">
-<segment>
-<pinref part="SUPPLY10" gate="G$1" pin="5V"/>
-<wire x1="162.56" y1="106.68" x2="170.18" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="170.18" y1="106.68" x2="182.88" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="182.88" y1="106.68" x2="185.42" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="185.42" y1="106.68" x2="185.42" y2="111.76" width="0.1524" layer="91"/>
-<pinref part="R7" gate="G$1" pin="2"/>
-<pinref part="C7" gate="G$1" pin="1"/>
-<junction x="170.18" y="106.68"/>
-<pinref part="U1" gate="G$1" pin="VOUT"/>
-<wire x1="139.7" y1="104.14" x2="154.94" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="154.94" y1="104.14" x2="154.94" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="154.94" y1="106.68" x2="162.56" y2="106.68" width="0.1524" layer="91"/>
-<junction x="162.56" y="106.68"/>
-<pinref part="C10" gate="G$1" pin="+"/>
-<wire x1="182.88" y1="104.14" x2="182.88" y2="106.68" width="0.1524" layer="91"/>
-<junction x="182.88" y="106.68"/>
 </segment>
 </net>
 <net name="N$13" class="0">
@@ -12692,11 +12672,29 @@ by exp-lbrs.ulp</description>
 </net>
 <net name="VCC" class="0">
 <segment>
+<pinref part="SUPPLY11" gate="G$1" pin="VCC"/>
 <wire x1="218.44" y1="93.98" x2="218.44" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="218.44" y1="91.44" x2="231.14" y2="91.44" width="0.1524" layer="91"/>
 <pinref part="SUPPLY17" gate="G$1" pin="5V"/>
 <wire x1="231.14" y1="91.44" x2="231.14" y2="93.98" width="0.1524" layer="91"/>
-<pinref part="SUPPLY11" gate="G$1" pin="VCC"/>
+<wire x1="218.44" y1="91.44" x2="231.14" y2="91.44" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="162.56" y1="106.68" x2="170.18" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="106.68" x2="182.88" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="106.68" x2="185.42" y2="106.68" width="0.1524" layer="91"/>
+<pinref part="R7" gate="G$1" pin="2"/>
+<pinref part="C7" gate="G$1" pin="1"/>
+<junction x="170.18" y="106.68"/>
+<pinref part="U1" gate="G$1" pin="VOUT"/>
+<wire x1="139.7" y1="104.14" x2="154.94" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="104.14" x2="154.94" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="106.68" x2="162.56" y2="106.68" width="0.1524" layer="91"/>
+<junction x="162.56" y="106.68"/>
+<pinref part="C10" gate="G$1" pin="+"/>
+<wire x1="182.88" y1="104.14" x2="182.88" y2="106.68" width="0.1524" layer="91"/>
+<junction x="182.88" y="106.68"/>
+<wire x1="185.42" y1="106.68" x2="185.42" y2="111.76" width="0.1524" layer="91"/>
+<pinref part="SUPPLY10" gate="G$1" pin="VCC"/>
 </segment>
 </net>
 </nets>
