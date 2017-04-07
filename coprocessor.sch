@@ -8,24 +8,24 @@
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
-<layer number="2" name="Route2" color="1" fill="3" visible="yes" active="no"/>
-<layer number="3" name="Route3" color="4" fill="3" visible="yes" active="no"/>
-<layer number="14" name="Route14" color="1" fill="6" visible="yes" active="no"/>
-<layer number="15" name="Route15" color="4" fill="6" visible="yes" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="no"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="no"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="no"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="no"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="no"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="no"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="no"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="no"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="no"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="no"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="no"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="no"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
@@ -34,8 +34,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="no"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
@@ -43,19 +43,19 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="no"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="no"/>
-<layer number="48" name="Document" color="7" fill="1" visible="yes" active="no"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="no"/>
-<layer number="50" name="dxf" color="7" fill="1" visible="yes" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="no"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="no"/>
-<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="yes" active="no"/>
-<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="yes" active="no"/>
-<layer number="56" name="wert" color="7" fill="1" visible="yes" active="no"/>
-<layer number="57" name="tCAD" color="7" fill="1" visible="yes" active="no"/>
-<layer number="59" name="tCarbon" color="7" fill="1" visible="yes" active="no"/>
-<layer number="60" name="bCarbon" color="7" fill="1" visible="yes" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
+<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -11418,6 +11418,35 @@ Standard 150mA LDO voltage regulator in SOT-23 layout. Micrel part MIC5205. BP (
 </deviceset>
 </devicesets>
 </library>
+<library name="Adafruit_PowerBoost">
+<description>Generated from &lt;b&gt;Adafruit_PowerBoost.sch&lt;/b&gt;&lt;p&gt;
+by exp-lbrs.ulp</description>
+<packages>
+</packages>
+<symbols>
+<symbol name="MICROBUILDER_VLIPO">
+<wire x1="-1.27" y1="-1.27" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
+<pin name="VLIPO" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+<text x="-1.524" y="1.016" size="1.27" layer="96">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="MICROBUILDER_VLIPO">
+<description>&lt;b&gt;VLIPO&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="MICROBUILDER_VLIPO" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 <attribute name="CREVISION" value="0.2"/>
@@ -11532,9 +11561,14 @@ Standard 150mA LDO voltage regulator in SOT-23 layout. Micrel part MIC5205. BP (
 <part name="GND7" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY25" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="GND29" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="SUPPLY16" library="SparkFun-Aesthetics" deviceset="V_USB" device=""/>
 <part name="SUPPLY17" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
-<part name="SUPPLY13" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
+<part name="U$1" library="Adafruit_PowerBoost" deviceset="MICROBUILDER_VLIPO" device=""/>
+<part name="SUPPLY11" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
+<part name="SUPPLY12" library="SparkFun-Aesthetics" deviceset="V_USB" device=""/>
+<part name="SUPPLY13" library="SparkFun-Aesthetics" deviceset="V_USB" device=""/>
+<part name="SUPPLY16" library="SparkFun-Aesthetics" deviceset="V_USB" device=""/>
+<part name="SUPPLY19" library="SparkFun-Aesthetics" deviceset="V_USB" device=""/>
+<part name="SUPPLY24" library="SparkFun-Aesthetics" deviceset="V_USB" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -12203,6 +12237,7 @@ Standard 150mA LDO voltage regulator in SOT-23 layout. Micrel part MIC5205. BP (
 <text x="66.04" y="147.32" size="1.778" layer="97">USB Connector</text>
 <text x="116.84" y="119.38" size="1.778" layer="97">Boost converter</text>
 <text x="223.52" y="182.88" size="1.778" layer="97">Battery controller</text>
+<text x="198.12" y="53.34" size="1.778" layer="91">Lovingly borrowed from Adafruit's PowerBoost 1000 circut</text>
 </plain>
 <instances>
 <instance part="R4" gate="G$1" x="86.36" y="81.28" rot="R90"/>
@@ -12214,8 +12249,8 @@ Standard 150mA LDO voltage regulator in SOT-23 layout. Micrel part MIC5205. BP (
 <instance part="GND13" gate="1" x="58.42" y="76.2"/>
 <instance part="SUPPLY8" gate="G$1" x="53.34" y="116.84"/>
 <instance part="L1" gate="G$1" x="81.28" y="104.14"/>
-<instance part="R6" gate="G$1" x="96.52" y="111.76" rot="R90"/>
-<instance part="SUPPLY9" gate="G$1" x="96.52" y="119.38"/>
+<instance part="R6" gate="G$1" x="96.52" y="116.84" rot="R90"/>
+<instance part="SUPPLY9" gate="G$1" x="96.52" y="121.92"/>
 <instance part="GND14" gate="1" x="157.48" y="76.2"/>
 <instance part="GND15" gate="1" x="86.36" y="71.12"/>
 <instance part="SUPPLY10" gate="G$1" x="185.42" y="111.76"/>
@@ -12244,11 +12279,14 @@ Standard 150mA LDO voltage regulator in SOT-23 layout. Micrel part MIC5205. BP (
 <instance part="C9" gate="G$1" x="266.7" y="160.02"/>
 <instance part="GND22" gate="1" x="266.7" y="149.86"/>
 <instance part="GND23" gate="1" x="276.86" y="149.86"/>
-<instance part="T1" gate="G$1" x="172.72" y="66.04"/>
-<instance part="SUPPLY15" gate="G$1" x="175.26" y="71.12"/>
-<instance part="R13" gate="G$1" x="175.26" y="55.88" rot="R90"/>
-<instance part="D2" gate="G$1" x="175.26" y="43.18" rot="R270"/>
-<instance part="GND24" gate="1" x="175.26" y="35.56"/>
+<instance part="T1" gate="G$1" x="172.72" y="68.58" smashed="yes">
+<attribute name="NAME" x="175.26" y="66.04" size="1.778" layer="95"/>
+<attribute name="VALUE" x="162.56" y="73.66" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY15" gate="G$1" x="175.26" y="78.74"/>
+<instance part="R13" gate="G$1" x="175.26" y="58.42" rot="R90"/>
+<instance part="D2" gate="G$1" x="175.26" y="48.26" rot="R270"/>
+<instance part="GND24" gate="1" x="175.26" y="43.18"/>
 <instance part="C10" gate="G$1" x="182.88" y="101.6"/>
 <instance part="GND25" gate="1" x="182.88" y="93.98"/>
 <instance part="R16" gate="G$1" x="175.26" y="170.18" rot="R90"/>
@@ -12257,9 +12295,14 @@ Standard 150mA LDO voltage regulator in SOT-23 layout. Micrel part MIC5205. BP (
 <instance part="LED2" gate="G$1" x="165.1" y="180.34"/>
 <instance part="THERM" gate="G$1" x="259.08" y="149.86" rot="R90"/>
 <instance part="GND7" gate="1" x="259.08" y="132.08"/>
-<instance part="SUPPLY16" gate="G$1" x="218.44" y="93.98"/>
 <instance part="SUPPLY17" gate="G$1" x="231.14" y="93.98"/>
-<instance part="SUPPLY13" gate="G$1" x="200.66" y="152.4"/>
+<instance part="U$1" gate="G$1" x="276.86" y="170.18"/>
+<instance part="SUPPLY11" gate="G$1" x="218.44" y="93.98"/>
+<instance part="SUPPLY12" gate="G$1" x="165.1" y="195.58"/>
+<instance part="SUPPLY13" gate="G$1" x="175.26" y="195.58"/>
+<instance part="SUPPLY16" gate="G$1" x="185.42" y="200.66"/>
+<instance part="SUPPLY19" gate="G$1" x="203.2" y="180.34"/>
+<instance part="SUPPLY24" gate="G$1" x="200.66" y="152.4"/>
 </instances>
 <busses>
 </busses>
@@ -12354,7 +12397,6 @@ Standard 150mA LDO voltage regulator in SOT-23 layout. Micrel part MIC5205. BP (
 <segment>
 <pinref part="D2" gate="G$1" pin="C"/>
 <pinref part="GND24" gate="1" pin="GND"/>
-<wire x1="175.26" y1="40.64" x2="175.26" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C10" gate="G$1" pin="-"/>
@@ -12381,17 +12423,16 @@ Standard 150mA LDO voltage regulator in SOT-23 layout. Micrel part MIC5205. BP (
 <net name="V_BATT" class="0">
 <segment>
 <pinref part="R5" gate="G$1" pin="2"/>
-<wire x1="86.36" y1="101.6" x2="86.36" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="86.36" y1="101.6" x2="71.12" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="99.06" x2="71.12" y2="99.06" width="0.1524" layer="91"/>
 <pinref part="C6" gate="G$1" pin="1"/>
-<wire x1="71.12" y1="101.6" x2="58.42" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="58.42" y1="101.6" x2="53.34" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="58.42" y1="101.6" x2="58.42" y2="91.44" width="0.1524" layer="91"/>
-<junction x="58.42" y="101.6"/>
+<wire x1="71.12" y1="99.06" x2="58.42" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="99.06" x2="53.34" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="99.06" x2="58.42" y2="91.44" width="0.1524" layer="91"/>
+<junction x="58.42" y="99.06"/>
 <pinref part="C5" gate="G$1" pin="1"/>
-<wire x1="71.12" y1="91.44" x2="71.12" y2="101.6" width="0.1524" layer="91"/>
-<junction x="71.12" y="101.6"/>
-<wire x1="53.34" y1="101.6" x2="53.34" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="91.44" x2="71.12" y2="99.06" width="0.1524" layer="91"/>
+<junction x="71.12" y="99.06"/>
+<wire x1="53.34" y1="99.06" x2="53.34" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="SUPPLY8" gate="G$1" pin="V_BATT"/>
 <pinref part="L1" gate="G$1" pin="1"/>
 <wire x1="53.34" y1="104.14" x2="53.34" y2="116.84" width="0.1524" layer="91"/>
@@ -12404,7 +12445,6 @@ Standard 150mA LDO voltage regulator in SOT-23 layout. Micrel part MIC5205. BP (
 <segment>
 <pinref part="R6" gate="G$1" pin="2"/>
 <pinref part="SUPPLY9" gate="G$1" pin="V_BATT"/>
-<wire x1="96.52" y1="119.38" x2="96.52" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="VOUT1"/>
@@ -12419,6 +12459,7 @@ Standard 150mA LDO voltage regulator in SOT-23 layout. Micrel part MIC5205. BP (
 <segment>
 <pinref part="T1" gate="G$1" pin="E"/>
 <pinref part="SUPPLY15" gate="G$1" pin="V_BATT"/>
+<wire x1="175.26" y1="78.74" x2="175.26" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$11" class="0">
@@ -12469,11 +12510,50 @@ Standard 150mA LDO voltage regulator in SOT-23 layout. Micrel part MIC5205. BP (
 <junction x="101.6" y="170.18"/>
 </segment>
 <segment>
+<pinref part="LED2" gate="G$1" pin="A"/>
+<wire x1="165.1" y1="182.88" x2="165.1" y2="195.58" width="0.1524" layer="91"/>
+<pinref part="SUPPLY12" gate="G$1" pin="V_USB"/>
+</segment>
+<segment>
+<pinref part="LED1" gate="G$1" pin="A"/>
+<wire x1="175.26" y1="195.58" x2="175.26" y2="185.42" width="0.1524" layer="91"/>
+<pinref part="SUPPLY13" gate="G$1" pin="V_USB"/>
+</segment>
+<segment>
+<pinref part="R9" gate="G$1" pin="2"/>
 <pinref part="SUPPLY16" gate="G$1" pin="V_USB"/>
-<wire x1="218.44" y1="93.98" x2="218.44" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="218.44" y1="91.44" x2="231.14" y2="91.44" width="0.1524" layer="91"/>
-<pinref part="SUPPLY17" gate="G$1" pin="5V"/>
-<wire x1="231.14" y1="91.44" x2="231.14" y2="93.98" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U2" gate="G$1" pin="VIN1"/>
+<wire x1="215.9" y1="177.8" x2="208.28" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="208.28" y1="177.8" x2="203.2" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="177.8" x2="203.2" y2="180.34" width="0.1524" layer="91"/>
+<pinref part="U2" gate="G$1" pin="VIN2"/>
+<wire x1="215.9" y1="175.26" x2="208.28" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="208.28" y1="175.26" x2="208.28" y2="177.8" width="0.1524" layer="91"/>
+<junction x="208.28" y="177.8"/>
+<pinref part="SUPPLY19" gate="G$1" pin="V_USB"/>
+</segment>
+<segment>
+<wire x1="200.66" y1="152.4" x2="200.66" y2="149.86" width="0.1524" layer="91"/>
+<pinref part="U2" gate="G$1" pin="SEL"/>
+<wire x1="215.9" y1="157.48" x2="208.28" y2="157.48" width="0.1524" layer="91"/>
+<pinref part="U2" gate="G$1" pin="PROG2"/>
+<wire x1="215.9" y1="154.94" x2="210.82" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="154.94" x2="208.28" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="208.28" y1="154.94" x2="208.28" y2="157.48" width="0.1524" layer="91"/>
+<pinref part="U2" gate="G$1" pin="CE"/>
+<wire x1="215.9" y1="149.86" x2="213.36" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="149.86" x2="213.36" y2="152.4" width="0.1524" layer="91"/>
+<pinref part="U2" gate="G$1" pin="/TE"/>
+<wire x1="213.36" y1="152.4" x2="215.9" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="152.4" x2="210.82" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="152.4" x2="210.82" y2="154.94" width="0.1524" layer="91"/>
+<junction x="213.36" y="152.4"/>
+<junction x="210.82" y="154.94"/>
+<wire x1="200.66" y1="149.86" x2="213.36" y2="149.86" width="0.1524" layer="91"/>
+<junction x="213.36" y="149.86"/>
+<pinref part="SUPPLY24" gate="G$1" pin="V_USB"/>
 </segment>
 </net>
 <net name="DATA+" class="0">
@@ -12490,12 +12570,18 @@ Standard 150mA LDO voltage regulator in SOT-23 layout. Micrel part MIC5205. BP (
 <label x="129.54" y="165.1" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="N$4" class="0">
+<net name="PWR_ENABLE" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="EN"/>
 <wire x1="114.3" y1="96.52" x2="96.52" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="R6" gate="G$1" pin="1"/>
-<wire x1="96.52" y1="96.52" x2="96.52" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="96.52" x2="96.52" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="109.22" x2="96.52" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="109.22" x2="88.9" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="109.22" x2="88.9" y2="116.84" width="0.1524" layer="91"/>
+<junction x="96.52" y="109.22"/>
+<wire x1="88.9" y1="116.84" x2="86.36" y2="116.84" width="0.1524" layer="91"/>
+<label x="86.36" y="116.84" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -12524,34 +12610,12 @@ Standard 150mA LDO voltage regulator in SOT-23 layout. Micrel part MIC5205. BP (
 <wire x1="215.9" y1="142.24" x2="203.2" y2="142.24" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$8" class="0">
-<segment>
-<pinref part="U2" gate="G$1" pin="VBAT1"/>
-<pinref part="B1" gate="G$1" pin="+"/>
-<wire x1="251.46" y1="167.64" x2="256.54" y2="167.64" width="0.1524" layer="91"/>
-<wire x1="256.54" y1="167.64" x2="266.7" y2="167.64" width="0.1524" layer="91"/>
-<wire x1="266.7" y1="167.64" x2="276.86" y2="167.64" width="0.1524" layer="91"/>
-<wire x1="276.86" y1="167.64" x2="276.86" y2="162.56" width="0.1524" layer="91"/>
-<pinref part="C9" gate="G$1" pin="1"/>
-<wire x1="266.7" y1="165.1" x2="266.7" y2="167.64" width="0.1524" layer="91"/>
-<junction x="266.7" y="167.64"/>
-<pinref part="U2" gate="G$1" pin="VBAT2"/>
-<wire x1="251.46" y1="165.1" x2="254" y2="165.1" width="0.1524" layer="91"/>
-<wire x1="254" y1="165.1" x2="256.54" y2="165.1" width="0.1524" layer="91"/>
-<wire x1="256.54" y1="165.1" x2="256.54" y2="167.64" width="0.1524" layer="91"/>
-<junction x="256.54" y="167.64"/>
-<pinref part="U2" gate="G$1" pin="VBATSENS"/>
-<wire x1="251.46" y1="162.56" x2="254" y2="162.56" width="0.1524" layer="91"/>
-<wire x1="254" y1="162.56" x2="254" y2="165.1" width="0.1524" layer="91"/>
-<junction x="254" y="165.1"/>
-</segment>
-</net>
 <net name="N$15" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="LBO"/>
 <wire x1="139.7" y1="86.36" x2="147.32" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="147.32" y1="86.36" x2="147.32" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="147.32" y1="66.04" x2="165.1" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="86.36" x2="147.32" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="68.58" x2="165.1" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="T1" gate="G$1" pin="B"/>
 </segment>
 </net>
@@ -12565,7 +12629,6 @@ Standard 150mA LDO voltage regulator in SOT-23 layout. Micrel part MIC5205. BP (
 <segment>
 <pinref part="R13" gate="G$1" pin="1"/>
 <pinref part="D2" gate="G$1" pin="A"/>
-<wire x1="175.26" y1="50.8" x2="175.26" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$18" class="0">
@@ -12603,51 +12666,37 @@ Standard 150mA LDO voltage regulator in SOT-23 layout. Micrel part MIC5205. BP (
 <wire x1="259.08" y1="154.94" x2="251.46" y2="154.94" width="0.1524" layer="91"/>
 </segment>
 </net>
+<net name="VLIPO" class="0">
+<segment>
+<pinref part="U2" gate="G$1" pin="VBAT1"/>
+<pinref part="B1" gate="G$1" pin="+"/>
+<wire x1="251.46" y1="167.64" x2="256.54" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="256.54" y1="167.64" x2="266.7" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="266.7" y1="167.64" x2="276.86" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="276.86" y1="167.64" x2="276.86" y2="162.56" width="0.1524" layer="91"/>
+<pinref part="C9" gate="G$1" pin="1"/>
+<wire x1="266.7" y1="165.1" x2="266.7" y2="167.64" width="0.1524" layer="91"/>
+<junction x="266.7" y="167.64"/>
+<pinref part="U2" gate="G$1" pin="VBAT2"/>
+<wire x1="251.46" y1="165.1" x2="254" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="254" y1="165.1" x2="256.54" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="256.54" y1="165.1" x2="256.54" y2="167.64" width="0.1524" layer="91"/>
+<junction x="256.54" y="167.64"/>
+<pinref part="U2" gate="G$1" pin="VBATSENS"/>
+<wire x1="251.46" y1="162.56" x2="254" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="254" y1="162.56" x2="254" y2="165.1" width="0.1524" layer="91"/>
+<junction x="254" y="165.1"/>
+<pinref part="U$1" gate="G$1" pin="VLIPO"/>
+<junction x="276.86" y="167.64"/>
+</segment>
+</net>
 <net name="VCC" class="0">
 <segment>
-<wire x1="200.66" y1="152.4" x2="200.66" y2="149.86" width="0.1524" layer="91"/>
-<pinref part="U2" gate="G$1" pin="SEL"/>
-<wire x1="215.9" y1="157.48" x2="208.28" y2="157.48" width="0.1524" layer="91"/>
-<pinref part="U2" gate="G$1" pin="PROG2"/>
-<wire x1="215.9" y1="154.94" x2="210.82" y2="154.94" width="0.1524" layer="91"/>
-<wire x1="210.82" y1="154.94" x2="208.28" y2="154.94" width="0.1524" layer="91"/>
-<wire x1="208.28" y1="154.94" x2="208.28" y2="157.48" width="0.1524" layer="91"/>
-<pinref part="U2" gate="G$1" pin="CE"/>
-<wire x1="215.9" y1="149.86" x2="213.36" y2="149.86" width="0.1524" layer="91"/>
-<wire x1="213.36" y1="149.86" x2="213.36" y2="152.4" width="0.1524" layer="91"/>
-<pinref part="U2" gate="G$1" pin="/TE"/>
-<wire x1="213.36" y1="152.4" x2="215.9" y2="152.4" width="0.1524" layer="91"/>
-<wire x1="213.36" y1="152.4" x2="210.82" y2="152.4" width="0.1524" layer="91"/>
-<wire x1="210.82" y1="152.4" x2="210.82" y2="154.94" width="0.1524" layer="91"/>
-<junction x="213.36" y="152.4"/>
-<junction x="210.82" y="154.94"/>
-<wire x1="200.66" y1="149.86" x2="213.36" y2="149.86" width="0.1524" layer="91"/>
-<junction x="213.36" y="149.86"/>
-<pinref part="SUPPLY13" gate="G$1" pin="VCC"/>
-</segment>
-</net>
-<net name="N$31" class="0">
-<segment>
-<pinref part="LED2" gate="G$1" pin="A"/>
-<wire x1="165.1" y1="182.88" x2="165.1" y2="195.58" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$32" class="0">
-<segment>
-<pinref part="LED1" gate="G$1" pin="A"/>
-<wire x1="175.26" y1="195.58" x2="175.26" y2="185.42" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$33" class="0">
-<segment>
-<pinref part="U2" gate="G$1" pin="VIN1"/>
-<wire x1="215.9" y1="177.8" x2="208.28" y2="177.8" width="0.1524" layer="91"/>
-<wire x1="208.28" y1="177.8" x2="203.2" y2="177.8" width="0.1524" layer="91"/>
-<wire x1="203.2" y1="177.8" x2="203.2" y2="180.34" width="0.1524" layer="91"/>
-<pinref part="U2" gate="G$1" pin="VIN2"/>
-<wire x1="215.9" y1="175.26" x2="208.28" y2="175.26" width="0.1524" layer="91"/>
-<wire x1="208.28" y1="175.26" x2="208.28" y2="177.8" width="0.1524" layer="91"/>
-<junction x="208.28" y="177.8"/>
+<wire x1="218.44" y1="93.98" x2="218.44" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="91.44" x2="231.14" y2="91.44" width="0.1524" layer="91"/>
+<pinref part="SUPPLY17" gate="G$1" pin="5V"/>
+<wire x1="231.14" y1="91.44" x2="231.14" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="SUPPLY11" gate="G$1" pin="VCC"/>
 </segment>
 </net>
 </nets>
