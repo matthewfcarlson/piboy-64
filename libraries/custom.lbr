@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.001832" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -5503,7 +5503,7 @@ body 3 x 3 x 0.85 mm</description>
 <text x="-2" y="2.2" size="0.8128" layer="25" ratio="12">&gt;NAME</text>
 <text x="-2" y="3.2" size="0.8128" layer="27" ratio="12">&gt;VALUE</text>
 </package>
-<package name="LOGO_1INCH_SVG">
+<package name="LOGO_4INCH_SVG">
 <rectangle x1="1.53558125" y1="1.67518125" x2="5.25820625" y2="5.39780625" layer="21"/>
 <polygon width="0.127" layer="21">
 <vertex x="2.04744375" y="17.2171375"/>
@@ -5565,6 +5565,78 @@ body 3 x 3 x 0.85 mm</description>
 </polygon>
 <wire x1="85.620353125" y1="6.60765625" x2="85.71341875" y2="12.7499875" width="3.302" layer="21" curve="-304" cap="flat"/>
 <circle x="96.8629" y="9.398" radius="6.639690625" width="3.429" layer="21"/>
+</package>
+<package name="LOGO_2INCH_SVG">
+<rectangle x1="0.635" y1="0.762" x2="2.413" y2="2.54" layer="21"/>
+<polygon width="0.127" layer="21">
+<vertex x="16.51" y="7.874"/>
+<vertex x="16.51" y="6.35"/>
+<vertex x="18.669" y="6.35"/>
+<vertex x="18.669" y="0.762"/>
+<vertex x="20.32" y="0.762"/>
+<vertex x="20.32" y="6.223"/>
+<vertex x="20.32" y="6.35"/>
+<vertex x="22.479" y="6.35"/>
+<vertex x="22.479" y="7.874"/>
+</polygon>
+<polygon width="0.127" layer="21">
+<vertex x="23.114" y="7.874"/>
+<vertex x="23.114" y="6.35"/>
+<vertex x="25.4" y="6.35"/>
+<vertex x="25.4" y="0.762"/>
+<vertex x="26.924" y="0.762"/>
+<vertex x="26.924" y="6.35"/>
+<vertex x="29.21" y="6.35"/>
+<vertex x="29.21" y="7.874"/>
+</polygon>
+<polygon width="0.127" layer="21">
+<vertex x="30.099" y="7.874"/>
+<vertex x="31.75" y="7.874"/>
+<vertex x="31.75" y="0.762"/>
+<vertex x="30.099" y="0.762"/>
+</polygon>
+<polygon width="0.127" layer="21">
+<vertex x="0.889" y="7.874"/>
+<vertex x="2.54" y="7.874"/>
+<vertex x="4.318" y="4.699"/>
+<vertex x="6.096" y="7.874"/>
+<vertex x="7.874" y="7.874"/>
+<vertex x="7.874" y="0.762"/>
+<vertex x="6.223" y="0.762"/>
+<vertex x="6.223" y="5.08"/>
+<vertex x="4.699" y="2.54"/>
+<vertex x="3.81" y="2.54"/>
+<vertex x="0.762" y="7.874"/>
+</polygon>
+<polygon width="0.127" layer="21">
+<vertex x="8.636" y="0.762"/>
+<vertex x="10.287" y="0.762"/>
+<vertex x="10.795" y="1.905"/>
+<vertex x="13.716" y="1.905"/>
+<vertex x="14.224" y="0.762"/>
+<vertex x="16.002" y="0.762"/>
+<vertex x="13.208" y="7.874"/>
+<vertex x="11.303" y="7.874"/>
+<vertex x="12.192" y="5.969"/>
+<vertex x="13.208" y="3.429"/>
+<vertex x="11.303" y="3.429"/>
+<vertex x="12.192" y="5.842"/>
+</polygon>
+<polygon width="0.127" layer="21">
+<vertex x="9.398" y="0.762"/>
+<vertex x="12.573" y="7.874"/>
+<vertex x="11.303" y="7.874"/>
+<vertex x="8.636" y="0.762"/>
+<vertex x="9.271" y="0.762"/>
+</polygon>
+<polygon width="0.127" layer="21">
+<vertex x="11.049" y="3.81"/>
+<vertex x="12.573" y="6.477"/>
+<vertex x="11.811" y="6.858"/>
+<vertex x="10.414" y="3.937"/>
+</polygon>
+<circle x="44.0182" y="4.318" radius="2.921" width="1.7526" layer="21"/>
+<wire x1="38.862" y1="3.175" x2="38.862" y2="5.588" width="1.7526" layer="21" curve="-310" cap="flat"/>
 </package>
 </packages>
 <symbols>
@@ -6329,6 +6401,70 @@ length 90R differential pairs</text>
 <text x="7.366" y="-2.286" size="1.016" layer="94" ratio="15">L</text>
 <text x="7.366" y="0.254" size="1.016" layer="94" ratio="15">R</text>
 <text x="0" y="5.588" size="1.778" layer="95">&gt;NAME</text>
+</symbol>
+<symbol name="MATTICO_LOGO">
+<rectangle x1="0.762" y1="0.762" x2="3.048" y2="3.048" layer="94"/>
+<polygon width="0.254" layer="94">
+<vertex x="1.016" y="9.398"/>
+<vertex x="3.048" y="9.398"/>
+<vertex x="5.08" y="5.588"/>
+<vertex x="7.366" y="9.398"/>
+<vertex x="9.398" y="9.398"/>
+<vertex x="9.398" y="1.016"/>
+<vertex x="7.366" y="1.016"/>
+<vertex x="7.366" y="5.842"/>
+<vertex x="5.842" y="3.048"/>
+<vertex x="4.572" y="3.048"/>
+</polygon>
+<polygon width="0.254" layer="94">
+<vertex x="10.414" y="1.016"/>
+<vertex x="12.446" y="1.016"/>
+<vertex x="12.954" y="2.286"/>
+<vertex x="16.51" y="2.286"/>
+<vertex x="17.018" y="1.016"/>
+<vertex x="19.05" y="1.016"/>
+<vertex x="15.748" y="9.398"/>
+<vertex x="13.716" y="9.398"/>
+<vertex x="14.732" y="7.366"/>
+<vertex x="15.748" y="4.318"/>
+<vertex x="13.716" y="4.318"/>
+<vertex x="15.494" y="9.398"/>
+<vertex x="13.716" y="9.398"/>
+</polygon>
+<polygon width="0.254" layer="94">
+<vertex x="13.716" y="9.398"/>
+<vertex x="15.748" y="9.398"/>
+<vertex x="14.732" y="7.112"/>
+</polygon>
+<polygon width="0.254" layer="94">
+<vertex x="19.812" y="9.398"/>
+<vertex x="26.924" y="9.398"/>
+<vertex x="26.924" y="7.62"/>
+<vertex x="24.384" y="7.62"/>
+<vertex x="24.384" y="1.016"/>
+<vertex x="22.352" y="1.016"/>
+<vertex x="22.352" y="7.62"/>
+<vertex x="19.812" y="7.62"/>
+</polygon>
+<polygon width="0.254" layer="94">
+<vertex x="27.94" y="9.398"/>
+<vertex x="35.052" y="9.398"/>
+<vertex x="35.052" y="7.62"/>
+<vertex x="32.512" y="7.62"/>
+<vertex x="32.512" y="1.016"/>
+<vertex x="30.48" y="1.016"/>
+<vertex x="30.48" y="7.366"/>
+<vertex x="30.48" y="7.62"/>
+<vertex x="27.94" y="7.62"/>
+</polygon>
+<polygon width="0.254" layer="94">
+<vertex x="36.068" y="9.398"/>
+<vertex x="38.1" y="9.398"/>
+<vertex x="38.1" y="1.016"/>
+<vertex x="36.068" y="1.016"/>
+</polygon>
+<circle x="52.832" y="5.207" radius="3.77598125" width="1.7526" layer="94"/>
+<wire x1="46.736" y1="3.302" x2="46.736" y2="6.858" width="1.7526" layer="94" curve="-300" cap="flat"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -7560,6 +7696,28 @@ FQP27P06 -
 <connect gate="X$1" pin="LEFT" pad="L"/>
 <connect gate="X$1" pin="RIGHT" pad="R"/>
 </connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LOGO">
+<gates>
+<gate name="G$1" symbol="MATTICO_LOGO" x="-40.64" y="2.54"/>
+</gates>
+<devices>
+<device name="4INCH_SVG" package="LOGO_4INCH_SVG">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="1INCH" package="LOGO_1INCH">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="2INCH_SVG" package="LOGO_2INCH_SVG">
 <technologies>
 <technology name=""/>
 </technologies>
