@@ -20567,6 +20567,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND16" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY9" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="R13" library="SparkFun-Resistors" deviceset="4.7KOHM-1/10W-1%(0603)" device="" value="4.7K"/>
+<part name="GND19" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="SW6" library="adafruit" deviceset="SWITCH_PUSHBUTTON" device="SOFTTOUCHSMD_SJ"/>
+<part name="SW7" library="adafruit" deviceset="SWITCH_PUSHBUTTON" device="SOFTTOUCHSMD_SJ"/>
 </parts>
 <sheets>
 <sheet>
@@ -20606,10 +20609,10 @@ WHICH PREVENTS FLICKERING AT THE SETPOINT.</text>
 <text x="514.35" y="-31.75" size="2.54" layer="94">VIA RYAN WENDLAND</text>
 <text x="514.35" y="-21.59" size="2.54" layer="94">BY MATTHEW CARLSON</text>
 <text x="548.64" y="-36.83" size="2.54" layer="94">0</text>
-<wire x1="300.99" y1="-33.02" x2="422.91" y2="-33.02" width="0.8128" layer="94"/>
-<wire x1="300.99" y1="50.8" x2="422.91" y2="50.8" width="0.8128" layer="94"/>
+<wire x1="300.99" y1="-33.02" x2="440.69" y2="-33.02" width="0.8128" layer="94"/>
+<wire x1="300.99" y1="50.8" x2="440.69" y2="50.8" width="0.8128" layer="94"/>
 <wire x1="300.99" y1="-33.02" x2="300.99" y2="50.8" width="0.8128" layer="94"/>
-<wire x1="422.91" y1="50.8" x2="422.91" y2="-33.02" width="0.8128" layer="94"/>
+<wire x1="440.69" y1="50.8" x2="440.69" y2="-33.02" width="0.8128" layer="94"/>
 <text x="182.88" y="129.54" size="2.1844" layer="94">POWER LED INDICATION</text>
 <text x="309.88" y="53.34" size="2.1844" layer="94">BUTTONS</text>
 <text x="255.27" y="198.12" size="1.778" layer="97">Place C10 as close as
@@ -20734,11 +20737,14 @@ possible to Vout on U3.</text>
 <instance part="U$4" gate="G$1" x="411.48" y="40.64"/>
 <instance part="GND15" gate="1" x="401.32" y="12.7"/>
 <instance part="SUPPLY1" gate="G$1" x="391.16" y="43.18"/>
-<instance part="SW4" gate="G$1" x="406.4" y="-2.54"/>
-<instance part="SW5" gate="G$1" x="406.4" y="-10.16"/>
-<instance part="GND16" gate="1" x="416.56" y="-17.78"/>
-<instance part="SUPPLY9" gate="G$1" x="396.24" y="2.54"/>
-<instance part="R13" gate="G$1" x="396.24" y="-2.54" rot="R90"/>
+<instance part="SW4" gate="G$1" x="414.02" y="-2.54"/>
+<instance part="SW5" gate="G$1" x="414.02" y="-10.16"/>
+<instance part="GND16" gate="1" x="419.1" y="-15.24"/>
+<instance part="SUPPLY9" gate="G$1" x="398.78" y="2.54"/>
+<instance part="R13" gate="G$1" x="398.78" y="-2.54" rot="R90"/>
+<instance part="GND19" gate="1" x="436.88" y="-10.16"/>
+<instance part="SW6" gate="G$1" x="429.26" y="7.62"/>
+<instance part="SW7" gate="G$1" x="429.26" y="0"/>
 </instances>
 <busses>
 </busses>
@@ -20979,12 +20985,20 @@ possible to Vout on U3.</text>
 <segment>
 <pinref part="SW5" gate="G$1" pin="P$2"/>
 <pinref part="GND16" gate="1" pin="GND"/>
-<wire x1="411.48" y1="-10.16" x2="416.56" y2="-10.16" width="0.1524" layer="91"/>
-<wire x1="416.56" y1="-10.16" x2="416.56" y2="-15.24" width="0.1524" layer="91"/>
+<wire x1="419.1" y1="-10.16" x2="419.1" y2="-12.7" width="0.1524" layer="91"/>
 <pinref part="SW4" gate="G$1" pin="P$2"/>
-<wire x1="411.48" y1="-2.54" x2="416.56" y2="-2.54" width="0.1524" layer="91"/>
-<wire x1="416.56" y1="-2.54" x2="416.56" y2="-10.16" width="0.1524" layer="91"/>
-<junction x="416.56" y="-10.16"/>
+<wire x1="419.1" y1="-2.54" x2="419.1" y2="-10.16" width="0.1524" layer="91"/>
+<junction x="419.1" y="-10.16"/>
+</segment>
+<segment>
+<pinref part="GND19" gate="1" pin="GND"/>
+<wire x1="434.34" y1="0" x2="436.88" y2="0" width="0.1524" layer="91"/>
+<wire x1="436.88" y1="0" x2="436.88" y2="-7.62" width="0.1524" layer="91"/>
+<wire x1="436.88" y1="0" x2="436.88" y2="7.62" width="0.1524" layer="91"/>
+<junction x="436.88" y="0"/>
+<wire x1="436.88" y1="7.62" x2="434.34" y2="7.62" width="0.1524" layer="91"/>
+<pinref part="SW6" gate="G$1" pin="P$2"/>
+<pinref part="SW7" gate="G$1" pin="P$2"/>
 </segment>
 </net>
 <net name="3.3V_FTDI" class="0">
@@ -21516,15 +21530,13 @@ possible to Vout on U3.</text>
 <net name="Z_BTN" class="0">
 <segment>
 <pinref part="R13" gate="G$1" pin="1"/>
-<wire x1="396.24" y1="-7.62" x2="396.24" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="398.78" y1="-7.62" x2="398.78" y2="-10.16" width="0.1524" layer="91"/>
 <pinref part="SW5" gate="G$1" pin="P$1"/>
-<wire x1="396.24" y1="-10.16" x2="401.32" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="398.78" y1="-10.16" x2="408.94" y2="-10.16" width="0.1524" layer="91"/>
 <pinref part="SW4" gate="G$1" pin="P$1"/>
-<wire x1="401.32" y1="-2.54" x2="401.32" y2="-10.16" width="0.1524" layer="91"/>
-<junction x="401.32" y="-10.16"/>
-<wire x1="401.32" y1="-10.16" x2="401.32" y2="-17.78" width="0.1524" layer="91"/>
-<wire x1="401.32" y1="-17.78" x2="408.94" y2="-17.78" width="0.1524" layer="91"/>
-<wire x1="408.94" y1="-17.78" x2="408.94" y2="-25.4" width="0.1524" layer="91"/>
+<wire x1="408.94" y1="-2.54" x2="408.94" y2="-10.16" width="0.1524" layer="91"/>
+<junction x="408.94" y="-10.16"/>
+<wire x1="408.94" y1="-10.16" x2="408.94" y2="-25.4" width="0.1524" layer="91"/>
 <wire x1="408.94" y1="-25.4" x2="406.4" y2="-25.4" width="0.1524" layer="91"/>
 <label x="406.4" y="-25.4" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
