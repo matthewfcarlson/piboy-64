@@ -3261,7 +3261,7 @@ Please make sure your boards conform to these design rules.</description>
 <element name="U$3" library="custom" package="10-MSOP" value="MCP48FEB01-E/UN" x="50.6" y="38.336" rot="MR180"/>
 <element name="U$1" library="custom" package="S020-75MM" value="CBT3244AD" x="80.16" y="51.844" rot="R90"/>
 <element name="POT1" library="adafruit" package="THUMBWHEEL" value="THUMBPOT" x="91.2908" y="26.0612" rot="R195"/>
-<element name="U$4" library="custom" package="254SA103B50A" value="CTS254_JOYSTICKSM" x="27.432" y="24.384"/>
+<element name="U$4" library="custom" package="254SA103B50A" value="CTS254_JOYSTICKSM" x="28.956" y="24.384"/>
 <element name="SW4" library="adafruit" package="TACT_PANA-EVQ" value="" x="45.212" y="69.596"/>
 <element name="SW5" library="adafruit" package="TACT_PANA-EVQ" value="" x="121.412" y="69.596"/>
 <element name="R13" library="SparkFun-Resistors" package="0603-RES" value="4.7K" x="46.736" y="64.516">
@@ -3472,12 +3472,12 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="97.31125" y1="64.77" x2="105.73" y2="58.42" width="0" layer="19" extent="1-16"/>
 <wire x1="91.125" y1="73.025" x2="97.31125" y2="64.77" width="0" layer="19" extent="16-16"/>
 <wire x1="84.29875" y1="74.850625" x2="91.125" y2="73.025" width="0" layer="19" extent="16-16"/>
-<wire x1="33.932" y1="36.184" x2="26.782" y2="28.184" width="0" layer="19" extent="1-1"/>
-<wire x1="37.677790625" y1="45.56770625" x2="33.932" y2="36.184" width="0" layer="19" extent="1-1"/>
+<wire x1="35.456" y1="36.184" x2="28.306" y2="28.184" width="0" layer="19" extent="1-1"/>
+<wire x1="37.677790625" y1="45.56770625" x2="35.456" y2="36.184" width="0" layer="19" extent="1-1"/>
 <wire x1="29.69269375" y1="53.293165625" x2="37.677790625" y2="45.56770625" width="0" layer="19" extent="1-1"/>
 <wire x1="37.737625" y1="61.42204375" x2="45.69403125" y2="53.50889375" width="0" layer="19" extent="1-1"/>
 <wire x1="147" y1="28.575" x2="133.178471875" y2="27.330959375" width="0" layer="19" extent="16-16"/>
-<wire x1="125.524" y1="60.452" x2="36.632" y2="23.384" width="0" layer="19" extent="1-1"/>
+<wire x1="125.524" y1="60.452" x2="38.156" y2="23.384" width="0" layer="19" extent="1-1"/>
 <wire x1="139.24" y1="62.484" x2="125.524" y2="60.452" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="TXD">
@@ -3788,8 +3788,8 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="U$4" pad="P$1"/>
 <contactref element="U$4" pad="P$4"/>
 <contactref element="U$4" pad="P$5"/>
-<wire x1="31.232" y1="23.384" x2="26.782" y2="33.584" width="0" layer="19" extent="1-1"/>
-<wire x1="33.932" y1="23.384" x2="31.232" y2="23.384" width="0" layer="19" extent="1-1"/>
+<wire x1="32.756" y1="23.384" x2="28.306" y2="33.584" width="0" layer="19" extent="1-1"/>
+<wire x1="35.456" y1="23.384" x2="32.756" y2="23.384" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="Z_BTN">
 <contactref element="R13" pad="1"/>
