@@ -22228,11 +22228,6 @@ possible to Vout on U3.</text>
 </net>
 <net name="MOSI" class="0">
 <segment>
-<pinref part="U$3" gate="G$1" pin="SDI"/>
-<wire x1="370.84" y1="104.14" x2="375.92" y2="104.14" width="0.1524" layer="91"/>
-<label x="375.92" y="104.14" size="1.778" layer="95" xref="yes"/>
-</segment>
-<segment>
 <pinref part="TFT1" gate="TFT$1" pin="SDA"/>
 <wire x1="486.41" y1="85.09" x2="482.6" y2="85.09" width="0.1524" layer="91"/>
 <wire x1="482.6" y1="85.09" x2="480.06" y2="82.55" width="0.1524" layer="91"/>
@@ -22242,11 +22237,6 @@ possible to Vout on U3.</text>
 </net>
 <net name="SCLK" class="0">
 <segment>
-<pinref part="U$3" gate="G$1" pin="SCLK"/>
-<wire x1="370.84" y1="101.6" x2="386.08" y2="101.6" width="0.1524" layer="91"/>
-<label x="386.08" y="101.6" size="1.778" layer="95" xref="yes"/>
-</segment>
-<segment>
 <pinref part="TFT1" gate="TFT$1" pin="SCL"/>
 <wire x1="486.41" y1="88.9" x2="482.6" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="482.6" y1="88.9" x2="481.33" y2="90.17" width="0.1524" layer="91"/>
@@ -22254,11 +22244,11 @@ possible to Vout on U3.</text>
 <label x="478.79" y="90.17" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="MISO" class="0">
+<net name="COPRO_MISO" class="0">
 <segment>
 <pinref part="U$3" gate="G$1" pin="SDO"/>
-<wire x1="370.84" y1="99.06" x2="398.78" y2="99.06" width="0.1524" layer="91"/>
-<label x="398.78" y="99.06" size="1.778" layer="95" xref="yes"/>
+<wire x1="370.84" y1="99.06" x2="388.62" y2="99.06" width="0.1524" layer="91"/>
+<label x="388.62" y="99.06" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="DAC_CS" class="0">
@@ -22323,6 +22313,24 @@ possible to Vout on U3.</text>
 <wire x1="408.94" y1="-10.16" x2="408.94" y2="-25.4" width="0.1524" layer="91"/>
 <wire x1="408.94" y1="-25.4" x2="406.4" y2="-25.4" width="0.1524" layer="91"/>
 <label x="406.4" y="-25.4" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="COPRO_MOSI" class="0">
+<segment>
+<pinref part="U$3" gate="G$1" pin="SDI"/>
+<wire x1="370.84" y1="104.14" x2="378.46" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="378.46" y1="104.14" x2="378.46" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="378.46" y1="114.3" x2="388.62" y2="114.3" width="0.1524" layer="91"/>
+<label x="388.62" y="114.3" size="1.778" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="COPRO_SCK" class="0">
+<segment>
+<pinref part="U$3" gate="G$1" pin="SCLK"/>
+<wire x1="370.84" y1="101.6" x2="383.54" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="383.54" y1="101.6" x2="383.54" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="383.54" y1="106.68" x2="388.62" y2="106.68" width="0.1524" layer="91"/>
+<label x="388.62" y="106.68" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
