@@ -20206,6 +20206,68 @@ Square - 0.425" L x 0.425" W x 0.366" H (10.80mm x 10.80mm x 9.30mm)</descriptio
 <text x="-5.08" y="3.175" size="0.8128" layer="25">&gt;NAME</text>
 <text x="-5.08" y="-3.81" size="0.8128" layer="27">&gt;VALUE</text>
 </package>
+<package name="QFN37P50_600X600X100L62X24T370N">
+<wire x1="-3" y1="3" x2="3" y2="3" width="0.127" layer="51"/>
+<wire x1="3" y1="3" x2="3" y2="-3" width="0.127" layer="51"/>
+<wire x1="3" y1="-3" x2="-3" y2="-3" width="0.127" layer="51"/>
+<wire x1="-3" y1="-3" x2="-3" y2="3" width="0.127" layer="51"/>
+<wire x1="-2.3" y1="3" x2="-3" y2="3" width="0.127" layer="21"/>
+<wire x1="-3" y1="3" x2="-3" y2="2.3" width="0.127" layer="21"/>
+<wire x1="2.3" y1="3" x2="3" y2="3" width="0.127" layer="21"/>
+<wire x1="3" y1="3" x2="3" y2="2.3" width="0.127" layer="21"/>
+<wire x1="2.4" y1="-3" x2="3" y2="-3" width="0.127" layer="21"/>
+<wire x1="3" y1="-3" x2="3" y2="-2.4" width="0.127" layer="21"/>
+<wire x1="-3" y1="-2.48" x2="-3" y2="-3" width="0.127" layer="21"/>
+<wire x1="-3" y1="-3" x2="-2.48" y2="-3" width="0.127" layer="21"/>
+<circle x="-3.61" y="2.4" radius="0.15" width="0" layer="21"/>
+<wire x1="-3.5" y1="3.5" x2="3.5" y2="3.5" width="0.05" layer="39"/>
+<wire x1="3.5" y1="3.5" x2="3.5" y2="-3.5" width="0.05" layer="39"/>
+<wire x1="3.5" y1="-3.5" x2="-3.5" y2="-3.5" width="0.05" layer="39"/>
+<wire x1="-3.5" y1="-3.5" x2="-3.5" y2="3.5" width="0.05" layer="39"/>
+<text x="-3.50078125" y="3.50078125" size="1.27028125" layer="25">&gt;NAME</text>
+<text x="-3.50243125" y="-5.00346875" size="1.27088125" layer="27">&gt;VALUE</text>
+<rectangle x1="0.180084375" y1="0.180084375" x2="1.49" y2="1.49" layer="31"/>
+<rectangle x1="-1.492540625" y1="-1.492540625" x2="-0.18" y2="-0.18" layer="31" rot="R180"/>
+<rectangle x1="0.180315625" y1="-1.492609375" x2="1.49" y2="-0.18" layer="31" rot="R270"/>
+<rectangle x1="-1.49081875" y1="0.1801" x2="-0.18" y2="1.49" layer="31" rot="R90"/>
+<smd name="1" x="-2.765" y="2" dx="1" dy="0.26" layer="1" roundness="54" rot="R180"/>
+<smd name="2" x="-2.765" y="1.5" dx="1" dy="0.26" layer="1" roundness="54" rot="R180"/>
+<smd name="3" x="-2.765" y="1" dx="1" dy="0.26" layer="1" roundness="54"/>
+<smd name="4" x="-2.765" y="0.5" dx="1" dy="0.26" layer="1" roundness="54" rot="R180"/>
+<smd name="5" x="-2.765" y="0" dx="1" dy="0.26" layer="1" roundness="54" rot="R180"/>
+<smd name="6" x="-2.765" y="-0.5" dx="1" dy="0.26" layer="1" roundness="54"/>
+<smd name="7" x="-2.765" y="-1" dx="1" dy="0.26" layer="1" roundness="54" rot="R180"/>
+<smd name="8" x="-2.765" y="-1.5" dx="1" dy="0.26" layer="1" roundness="54" rot="R180"/>
+<smd name="9" x="-2.765" y="-2" dx="1" dy="0.26" layer="1" roundness="54" rot="R180"/>
+<smd name="10" x="-2" y="-2.765" dx="1" dy="0.26" layer="1" roundness="54" rot="R270"/>
+<smd name="11" x="-1.5" y="-2.765" dx="1" dy="0.26" layer="1" roundness="54" rot="R270"/>
+<smd name="12" x="-1" y="-2.765" dx="1" dy="0.26" layer="1" roundness="54" rot="R270"/>
+<smd name="13" x="-0.5" y="-2.765" dx="1" dy="0.26" layer="1" roundness="54" rot="R270"/>
+<smd name="14" x="0" y="-2.765" dx="1" dy="0.26" layer="1" roundness="54" rot="R270"/>
+<smd name="15" x="0.5" y="-2.765" dx="1" dy="0.26" layer="1" roundness="54" rot="R270"/>
+<smd name="16" x="1" y="-2.765" dx="1" dy="0.26" layer="1" roundness="54" rot="R270"/>
+<smd name="17" x="1.5" y="-2.765" dx="1" dy="0.26" layer="1" roundness="54" rot="R270"/>
+<smd name="18" x="2" y="-2.765" dx="1" dy="0.26" layer="1" roundness="54" rot="R270"/>
+<smd name="19" x="2.765" y="-2" dx="1" dy="0.26" layer="1" roundness="54"/>
+<smd name="20" x="2.765" y="-1.5" dx="1" dy="0.26" layer="1" roundness="54"/>
+<smd name="21" x="2.765" y="-1" dx="1" dy="0.26" layer="1" roundness="54"/>
+<smd name="22" x="2.765" y="-0.5" dx="1" dy="0.26" layer="1" roundness="54"/>
+<smd name="23" x="2.765" y="0" dx="1" dy="0.26" layer="1" roundness="54"/>
+<smd name="24" x="2.765" y="0.5" dx="1" dy="0.26" layer="1" roundness="54"/>
+<smd name="25" x="2.765" y="1" dx="1" dy="0.26" layer="1" roundness="54"/>
+<smd name="26" x="2.765" y="1.5" dx="1" dy="0.26" layer="1" roundness="54"/>
+<smd name="27" x="2.765" y="2" dx="1" dy="0.26" layer="1" roundness="54"/>
+<smd name="28" x="2" y="2.765" dx="1" dy="0.26" layer="1" roundness="54" rot="R90"/>
+<smd name="29" x="1.5" y="2.765" dx="1" dy="0.26" layer="1" roundness="54" rot="R90"/>
+<smd name="30" x="1" y="2.765" dx="1" dy="0.26" layer="1" roundness="54" rot="R90"/>
+<smd name="31" x="0.5" y="2.765" dx="1" dy="0.26" layer="1" roundness="54" rot="R90"/>
+<smd name="32" x="0" y="2.765" dx="1" dy="0.26" layer="1" roundness="54" rot="R90"/>
+<smd name="33" x="-0.5" y="2.765" dx="1" dy="0.26" layer="1" roundness="54" rot="R90"/>
+<smd name="34" x="-1" y="2.765" dx="1" dy="0.26" layer="1" roundness="54" rot="R90"/>
+<smd name="35" x="-1.5" y="2.765" dx="1" dy="0.26" layer="1" roundness="54" rot="R90"/>
+<smd name="36" x="-2" y="2.765" dx="1" dy="0.26" layer="1" roundness="54" rot="R90"/>
+<smd name="37" x="0" y="0" dx="3.7" dy="3.7" layer="1" cream="no"/>
+</package>
 </packages>
 <symbols>
 <symbol name="MCP48FEB01">
@@ -20345,6 +20407,41 @@ Digi-Key Part Number	568-3619-5-ND</description>
 <wire x1="2.54" y1="-2.54" x2="2.54" y2="2.54" width="0.254" layer="94"/>
 <text x="-1.778" y="-3.556" size="0.6096" layer="96">&gt;VALUE</text>
 </symbol>
+<symbol name="USB2523B">
+<wire x1="-7.62" y1="33.02" x2="20.32" y2="33.02" width="0.254" layer="94"/>
+<wire x1="20.32" y1="33.02" x2="20.32" y2="-33.02" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-33.02" x2="-7.62" y2="-33.02" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-33.02" x2="-7.62" y2="33.02" width="0.254" layer="94"/>
+<pin name="USBD_M1" x="-12.7" y="12.7" length="middle"/>
+<pin name="USBD_P1" x="-12.7" y="10.16" length="middle"/>
+<pin name="USBD_M2" x="-12.7" y="5.08" length="middle"/>
+<pin name="USBD_P2" x="-12.7" y="2.54" length="middle"/>
+<pin name="VDDA33" x="-12.7" y="30.48" length="middle" direction="pwr"/>
+<pin name="USBD_M3" x="-12.7" y="-2.54" length="middle"/>
+<pin name="USBD_P3" x="-12.7" y="-5.08" length="middle"/>
+<pin name="TEST" x="25.4" y="22.86" length="middle" rot="R180"/>
+<pin name="PRTPWR1" x="-12.7" y="-12.7" length="middle"/>
+<pin name="OCS_N1" x="-12.7" y="-15.24" length="middle"/>
+<pin name="CRFILT" x="25.4" y="10.16" length="middle" rot="R180"/>
+<pin name="VDD33" x="-12.7" y="25.4" length="middle" direction="pwr"/>
+<pin name="PRTPWR2" x="-12.7" y="-20.32" length="middle"/>
+<pin name="OCS_N2" x="-12.7" y="-22.86" length="middle"/>
+<pin name="PRTPWR3" x="-12.7" y="-27.94" length="middle"/>
+<pin name="OCS_N3" x="-12.7" y="-30.48" length="middle"/>
+<pin name="SDA" x="25.4" y="0" length="middle" rot="R180"/>
+<pin name="SCL" x="25.4" y="-2.54" length="middle" rot="R180"/>
+<pin name="HS_IND" x="25.4" y="-5.08" length="middle" rot="R180"/>
+<pin name="RESET_N" x="25.4" y="-12.7" length="middle" function="dot" rot="R180"/>
+<pin name="VBUS_DET" x="25.4" y="30.48" length="middle" rot="R180"/>
+<pin name="SUSP_IND" x="25.4" y="-10.16" length="middle" rot="R180"/>
+<pin name="USBDM_UP" x="25.4" y="-17.78" length="middle" rot="R180"/>
+<pin name="UDBDP_UP" x="25.4" y="-20.32" length="middle" rot="R180"/>
+<pin name="XTALOUT" x="25.4" y="-25.4" length="middle" rot="R180"/>
+<pin name="XTALIN" x="25.4" y="-27.94" length="middle" rot="R180"/>
+<pin name="PLLFILT" x="25.4" y="12.7" length="middle" rot="R180"/>
+<pin name="RBIAS" x="25.4" y="17.78" length="middle" rot="R180"/>
+<pin name="GND" x="-12.7" y="20.32" length="middle" direction="pwr"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="MCP48FEB01-E">
@@ -20468,6 +20565,53 @@ The CBT3244A is characterized for operation from −40 °C to +85 °C.</descript
 <connects>
 <connect gate="G$1" pin="P$1" pad="P$1"/>
 <connect gate="G$1" pin="P$2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="USB2523B">
+<description>Microchip's USB251xB is a family of versatile, cost-effective, and power-efficient USB 2.0 hub controllers. Leveraging Microchip's innovative MultiTRAK™ technology that delivers industry-leading data throughput in mixed-speed USB environments, the USB251xB family is a USB port expansion solution for applications that demand ultra low power and a small footprint without compromising on performance.
+Well-suited for consumer and mobile applications, all members of the USB251xB family are available in a space-saving package. The common 36-pin package shared among the 2/3/4 port hub controllers measures only 6x6 mm and provides an ultra small footprint for space-constrained designs while allowing scalable port expansion from two to four ports.
+Over 30 programmable features including Microchip's unique PortMap, PortSwap, and PHYBoost are designed to aid system designers in simplifying PCB layout and optimizing bill-of-material cost. Every downstream port of the USB251xB hubs can be enabled to support USB Battery Charging 1.1 specification as a Charging Downstream Port (CDP). A CDP provides universal battery charging capability to a compliant mobile phone or portable electronic device using a standard USB port.
+The USB251xB supports an extended operating temperature range of 0° to 85°C. The USB251xBi is designed to meet -40° to 85°C industrial temperature requirements.</description>
+<gates>
+<gate name="G$1" symbol="USB2523B" x="-5.08" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="QFN37P50_600X600X100L62X24T370N">
+<connects>
+<connect gate="G$1" pin="CRFILT" pad="14"/>
+<connect gate="G$1" pin="GND" pad="37"/>
+<connect gate="G$1" pin="HS_IND" pad="25"/>
+<connect gate="G$1" pin="OCS_N1" pad="13"/>
+<connect gate="G$1" pin="OCS_N2" pad="17"/>
+<connect gate="G$1" pin="OCS_N3" pad="19"/>
+<connect gate="G$1" pin="PLLFILT" pad="34"/>
+<connect gate="G$1" pin="PRTPWR1" pad="12"/>
+<connect gate="G$1" pin="PRTPWR2" pad="16"/>
+<connect gate="G$1" pin="PRTPWR3" pad="18"/>
+<connect gate="G$1" pin="RBIAS" pad="35"/>
+<connect gate="G$1" pin="RESET_N" pad="26"/>
+<connect gate="G$1" pin="SCL" pad="24"/>
+<connect gate="G$1" pin="SDA" pad="22"/>
+<connect gate="G$1" pin="SUSP_IND" pad="28"/>
+<connect gate="G$1" pin="TEST" pad="11"/>
+<connect gate="G$1" pin="UDBDP_UP" pad="31"/>
+<connect gate="G$1" pin="USBDM_UP" pad="30"/>
+<connect gate="G$1" pin="USBD_M1" pad="1"/>
+<connect gate="G$1" pin="USBD_M2" pad="3"/>
+<connect gate="G$1" pin="USBD_M3" pad="6"/>
+<connect gate="G$1" pin="USBD_P1" pad="2"/>
+<connect gate="G$1" pin="USBD_P2" pad="4"/>
+<connect gate="G$1" pin="USBD_P3" pad="7"/>
+<connect gate="G$1" pin="VBUS_DET" pad="27"/>
+<connect gate="G$1" pin="VDD33" pad="15 23 29"/>
+<connect gate="G$1" pin="VDDA33" pad="5 10 36"/>
+<connect gate="G$1" pin="XTALIN" pad="33"/>
+<connect gate="G$1" pin="XTALOUT" pad="32"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -21207,6 +21351,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="R19" library="SparkFun-Resistors" deviceset="10KOHM-1/10W-1%(0603)" device="0603" value="10K"/>
 <part name="SUPPLY19" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 <part name="SUPPLY20" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
+<part name="U$6" library="custom" deviceset="USB2523B" device=""/>
+<part name="SUPPLY21" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
+<part name="GND34" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -22608,6 +22755,10 @@ possible to Vout on U3.</text>
 <wire x1="142.24" y1="45.72" x2="7.62" y2="45.72" width="0.8128" layer="94"/>
 <wire x1="7.62" y1="45.72" x2="7.62" y2="167.64" width="0.8128" layer="94"/>
 <text x="10.16" y="170.18" size="1.778" layer="94">Coprocessor</text>
+<wire x1="147.32" y1="167.64" x2="251.46" y2="167.64" width="0.8128" layer="94"/>
+<wire x1="251.46" y1="167.64" x2="251.46" y2="76.2" width="0.8128" layer="94"/>
+<wire x1="251.46" y1="76.2" x2="147.32" y2="76.2" width="0.8128" layer="94"/>
+<wire x1="147.32" y1="76.2" x2="147.32" y2="167.64" width="0.8128" layer="94"/>
 </plain>
 <instances>
 <instance part="FRAME3" gate="G$1" x="0" y="0"/>
@@ -22627,6 +22778,9 @@ possible to Vout on U3.</text>
 <instance part="R19" gate="G$1" x="38.1" y="58.42" rot="R90"/>
 <instance part="SUPPLY19" gate="G$1" x="30.48" y="142.24"/>
 <instance part="SUPPLY20" gate="G$1" x="38.1" y="66.04"/>
+<instance part="U$6" gate="G$1" x="198.12" y="119.38"/>
+<instance part="SUPPLY21" gate="G$1" x="170.18" y="154.94"/>
+<instance part="GND34" gate="1" x="170.18" y="137.16"/>
 </instances>
 <busses>
 </busses>
@@ -22686,6 +22840,11 @@ possible to Vout on U3.</text>
 <wire x1="86.36" y1="60.96" x2="91.44" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="GND30" gate="1" pin="GND"/>
 <wire x1="91.44" y1="60.96" x2="91.44" y2="55.88" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$6" gate="G$1" pin="GND"/>
+<pinref part="GND34" gate="1" pin="GND"/>
+<wire x1="185.42" y1="139.7" x2="170.18" y2="139.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$28" class="0">
@@ -22796,6 +22955,19 @@ possible to Vout on U3.</text>
 <pinref part="R19" gate="G$1" pin="2"/>
 <pinref part="SUPPLY20" gate="G$1" pin="5V"/>
 <wire x1="38.1" y1="66.04" x2="38.1" y2="63.5" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="3.3V" class="0">
+<segment>
+<pinref part="U$6" gate="G$1" pin="VDDA33"/>
+<pinref part="SUPPLY21" gate="G$1" pin="3.3V"/>
+<wire x1="185.42" y1="149.86" x2="180.34" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="149.86" x2="170.18" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="149.86" x2="170.18" y2="154.94" width="0.1524" layer="91"/>
+<pinref part="U$6" gate="G$1" pin="VDD33"/>
+<wire x1="185.42" y1="144.78" x2="180.34" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="144.78" x2="180.34" y2="149.86" width="0.1524" layer="91"/>
+<junction x="180.34" y="149.86"/>
 </segment>
 </net>
 </nets>
