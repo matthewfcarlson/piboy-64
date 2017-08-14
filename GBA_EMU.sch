@@ -21815,6 +21815,44 @@ Square - 0.425" L x 0.425" W x 0.366" H (10.80mm x 10.80mm x 9.30mm)</descriptio
 <text x="-1.905" y="1.905" size="1.27" layer="25">&gt;NAME</text>
 <text x="-1.905" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
 </package>
+<package name="HDMI_10029449-113RLF">
+<description>Amphenol FCI 10029449-001RLF 
+Digi-Key Part Number
+609-1010-1-ND 
+HDMI HDMI™ 1.4 Receptacle Connector 19 Position Surface Mount, Right Angle; Through Hole</description>
+<smd name="P$1" x="4.5" y="0.1" dx="0.3" dy="1.9" layer="1"/>
+<smd name="P$2" x="4" y="0.1" dx="0.3" dy="1.9" layer="1"/>
+<smd name="P$3" x="3.5" y="0.1" dx="0.3" dy="1.9" layer="1"/>
+<smd name="P$4" x="3" y="0.1" dx="0.3" dy="1.9" layer="1"/>
+<smd name="P$5" x="2.5" y="0.1" dx="0.3" dy="1.9" layer="1"/>
+<smd name="P$6" x="2" y="0.1" dx="0.3" dy="1.9" layer="1"/>
+<smd name="P$7" x="1.5" y="0.1" dx="0.3" dy="1.9" layer="1"/>
+<smd name="P$8" x="1" y="0.1" dx="0.3" dy="1.9" layer="1"/>
+<smd name="P$9" x="0.5" y="0.1" dx="0.3" dy="1.9" layer="1"/>
+<smd name="P$10" x="0" y="0.1" dx="0.3" dy="1.9" layer="1"/>
+<smd name="P$11" x="-0.5" y="0.1" dx="0.3" dy="1.9" layer="1"/>
+<smd name="P$12" x="-1" y="0.1" dx="0.3" dy="1.9" layer="1"/>
+<smd name="P$13" x="-1.5" y="0.1" dx="0.3" dy="1.9" layer="1"/>
+<smd name="P$14" x="-2" y="0.1" dx="0.3" dy="1.9" layer="1"/>
+<smd name="P$15" x="-2.5" y="0.1" dx="0.3" dy="1.9" layer="1"/>
+<smd name="P$16" x="-3" y="0.1" dx="0.3" dy="1.9" layer="1"/>
+<smd name="P$17" x="-3.5" y="0.1" dx="0.3" dy="1.9" layer="1"/>
+<smd name="P$18" x="-4" y="0.1" dx="0.3" dy="1.9" layer="1"/>
+<smd name="P$19" x="-4.5" y="0.1" dx="0.3" dy="1.9" layer="1"/>
+<hole x="7.25" y="-0.95" drill="1.3"/>
+<hole x="-7.25" y="-0.95" drill="1.3"/>
+<hole x="-7.85" y="-5.9" drill="1.3"/>
+<hole x="7.85" y="-5.6" drill="1.3"/>
+<wire x1="-5.46" y1="0" x2="-6.46" y2="-1" width="0.127" layer="51"/>
+<wire x1="-6.46" y1="-1" x2="-6.46" y2="-8.5" width="0.127" layer="51"/>
+<wire x1="5.46" y1="0" x2="6.46" y2="-1" width="0.127" layer="51"/>
+<wire x1="6.46" y1="-1" x2="6.46" y2="-8.45" width="0.127" layer="51"/>
+<wire x1="-6.46" y1="-8.4" x2="6.46" y2="-8.4" width="0.127" layer="21"/>
+<wire x1="-5.46" y1="0" x2="-5.1" y2="0" width="0.127" layer="51"/>
+<wire x1="-5.1" y1="0" x2="-5" y2="0.1" width="0.127" layer="51"/>
+<wire x1="5.46" y1="0" x2="5.1" y2="0" width="0.127" layer="51"/>
+<wire x1="5.1" y1="0" x2="5" y2="0.1" width="0.127" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="MCP48FEB01">
@@ -22154,6 +22192,38 @@ Digi-Key Part Number	568-3619-5-ND</description>
 <pin name="E" x="2.54" y="5.08" visible="off" length="short" direction="pas" swaplevel="2" rot="R270"/>
 <text x="-10.16" y="7.62" size="1.778" layer="95">&gt;NAME</text>
 <text x="-10.16" y="5.08" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="HDMI_SINGLE">
+<description>HDMI Type Single Data Port</description>
+<wire x1="-2.54" y1="17.78" x2="-2.54" y2="-33.02" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-33.02" x2="12.7" y2="-33.02" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-33.02" x2="15.24" y2="-30.48" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-30.48" x2="15.24" y2="15.24" width="0.254" layer="94"/>
+<wire x1="15.24" y1="15.24" x2="12.7" y2="17.78" width="0.254" layer="94"/>
+<wire x1="12.7" y1="17.78" x2="-2.54" y2="17.78" width="0.254" layer="94"/>
+<pin name="TMDS_D2_P" x="-7.62" y="15.24" length="middle"/>
+<pin name="TMDS_D2_SH" x="-7.62" y="12.7" length="middle"/>
+<pin name="TMDS_D2_M" x="-7.62" y="10.16" length="middle"/>
+<pin name="TMDS_D1_P" x="-7.62" y="7.62" length="middle"/>
+<pin name="TMDS_D1_SH" x="-7.62" y="5.08" length="middle"/>
+<pin name="TMDS_D1_M" x="-7.62" y="2.54" length="middle"/>
+<pin name="TMDS_D0_P" x="-7.62" y="0" length="middle"/>
+<pin name="TMDS_D0_SH" x="-7.62" y="-2.54" length="middle"/>
+<pin name="TMDS_D0_M" x="-7.62" y="-5.08" length="middle"/>
+<pin name="TMDS_CLK_P" x="-7.62" y="-7.62" length="middle" function="clk"/>
+<pin name="TMDS_CLK_SH" x="-7.62" y="-10.16" length="middle"/>
+<pin name="TMDS_CLK_M" x="-7.62" y="-12.7" length="middle" function="dotclk"/>
+<pin name="CEC" x="-7.62" y="-15.24" length="middle"/>
+<pin name="FUTURE" x="-7.62" y="-17.78" length="middle"/>
+<pin name="SCL" x="-7.62" y="-20.32" length="middle"/>
+<pin name="SDA" x="-7.62" y="-22.86" length="middle"/>
+<pin name="GND" x="-7.62" y="-25.4" length="middle" direction="pwr"/>
+<pin name="5V" x="-7.62" y="-27.94" length="middle" direction="pwr"/>
+<pin name="HOTPLUG" x="-7.62" y="-30.48" length="middle"/>
+<circle x="-3.81" y="12.7" radius="3.175" width="0.254" layer="94"/>
+<circle x="-3.81" y="5.08" radius="3.175" width="0.254" layer="94"/>
+<circle x="-3.81" y="-2.54" radius="3.175" width="0.254" layer="94"/>
+<circle x="-3.81" y="-10.16" radius="3.175" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -22752,6 +22822,40 @@ Vishay IHLP
 <technology name="MUN2112T1"/>
 <technology name="MUN2113T1"/>
 <technology name="MUN2114T1"/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="HDMI_A_RECPT">
+<description>A HDMI type A single data receptacle</description>
+<gates>
+<gate name="G$1" symbol="HDMI_SINGLE" x="-2.54" y="5.08"/>
+</gates>
+<devices>
+<device name="" package="HDMI_10029449-113RLF">
+<connects>
+<connect gate="G$1" pin="5V" pad="P$18"/>
+<connect gate="G$1" pin="CEC" pad="P$13"/>
+<connect gate="G$1" pin="FUTURE" pad="P$14"/>
+<connect gate="G$1" pin="GND" pad="P$17"/>
+<connect gate="G$1" pin="HOTPLUG" pad="P$19"/>
+<connect gate="G$1" pin="SCL" pad="P$15"/>
+<connect gate="G$1" pin="SDA" pad="P$16"/>
+<connect gate="G$1" pin="TMDS_CLK_M" pad="P$12"/>
+<connect gate="G$1" pin="TMDS_CLK_P" pad="P$10"/>
+<connect gate="G$1" pin="TMDS_CLK_SH" pad="P$11"/>
+<connect gate="G$1" pin="TMDS_D0_M" pad="P$9"/>
+<connect gate="G$1" pin="TMDS_D0_P" pad="P$7"/>
+<connect gate="G$1" pin="TMDS_D0_SH" pad="P$8"/>
+<connect gate="G$1" pin="TMDS_D1_M" pad="P$6"/>
+<connect gate="G$1" pin="TMDS_D1_P" pad="P$4"/>
+<connect gate="G$1" pin="TMDS_D1_SH" pad="P$5"/>
+<connect gate="G$1" pin="TMDS_D2_M" pad="P$3"/>
+<connect gate="G$1" pin="TMDS_D2_P" pad="P$1"/>
+<connect gate="G$1" pin="TMDS_D2_SH" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -24681,6 +24785,8 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <classes>
 <class number="0" name="default" width="0" drill="0">
 </class>
+<class number="1" name="diff pairs" width="0.4064" drill="0">
+</class>
 </classes>
 <parts>
 <part name="UP" library="GBA" deviceset="GBA_BTN_CONDUCTIVE" device=""/>
@@ -24859,6 +24965,9 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="GND45" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="T1" library="custom" deviceset="TRANSISTOR_PNP_DRIVER" device="SC59-BEC" technology="MUN2111T1"/>
 <part name="R12" library="SparkFun-Resistors" deviceset="1KOHM-1/10W-1%(0603)" device="" value="1K"/>
+<part name="U$8" library="custom" deviceset="HDMI_A_RECPT" device=""/>
+<part name="SUPPLY34" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
+<part name="GND46" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -26262,6 +26371,85 @@ possible to Vout on U3.</text>
 <wire x1="139.7" y1="50.8" x2="167.64" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
+<net name="HDMI_D1_N" class="1">
+<segment>
+<pinref part="PCB1" gate="G$1" pin="123/HDMI_D1_N*"/>
+<wire x1="33.02" y1="0" x2="-5.08" y2="0" width="0.1524" layer="91"/>
+<label x="-5.08" y="0" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="HDMI_D1_P" class="1">
+<segment>
+<pinref part="PCB1" gate="G$1" pin="125/HDMI_D1_P*"/>
+<wire x1="33.02" y1="-2.54" x2="20.32" y2="-2.54" width="0.1524" layer="91"/>
+<label x="20.32" y="-2.54" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="HDMI_D0_N" class="1">
+<segment>
+<pinref part="PCB1" gate="G$1" pin="117/HDMI_D0_N*"/>
+<wire x1="33.02" y1="7.62" x2="-5.08" y2="7.62" width="0.1524" layer="91"/>
+<label x="-5.08" y="7.62" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="HDMI_D0_P" class="1">
+<segment>
+<pinref part="PCB1" gate="G$1" pin="119/HDMI_D0_P*"/>
+<wire x1="33.02" y1="5.08" x2="20.32" y2="5.08" width="0.1524" layer="91"/>
+<label x="20.32" y="5.08" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="HDMI_CLK_P" class="1">
+<segment>
+<pinref part="PCB1" gate="G$1" pin="113/HDMI_CK_P*"/>
+<wire x1="33.02" y1="12.7" x2="20.32" y2="12.7" width="0.1524" layer="91"/>
+<label x="20.32" y="12.7" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="HDMI_CLK_N" class="1">
+<segment>
+<pinref part="PCB1" gate="G$1" pin="111/HDMI_CK_N*"/>
+<wire x1="33.02" y1="15.24" x2="-5.08" y2="15.24" width="0.1524" layer="91"/>
+<label x="-5.08" y="15.24" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="HDMI_D2_N" class="1">
+<segment>
+<pinref part="PCB1" gate="G$1" pin="129/HDMI_D2_N*"/>
+<wire x1="33.02" y1="-7.62" x2="-5.08" y2="-7.62" width="0.1524" layer="91"/>
+<label x="-5.08" y="-7.62" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="HDMI_D2_P" class="1">
+<segment>
+<pinref part="PCB1" gate="G$1" pin="131/HDMI_D2_P*"/>
+<wire x1="33.02" y1="-10.16" x2="20.32" y2="-10.16" width="0.1524" layer="91"/>
+<label x="20.32" y="-10.16" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="HDMI_CEC" class="1">
+<segment>
+<pinref part="PCB1" gate="G$1" pin="171/HDMI_CEC"/>
+<wire x1="38.1" y1="-60.96" x2="10.16" y2="-60.96" width="0.1524" layer="91"/>
+<label x="5.08" y="-55.88" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="10.16" y1="-60.96" x2="5.08" y2="-55.88" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="HDMI_SDA" class="0">
+<segment>
+<pinref part="PCB1" gate="G$1" pin="173/HDMI_SDA"/>
+<wire x1="38.1" y1="-63.5" x2="7.62" y2="-63.5" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="-63.5" x2="5.08" y2="-60.96" width="0.1524" layer="91"/>
+<label x="5.08" y="-60.96" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="HDMI_SCLK" class="0">
+<segment>
+<pinref part="PCB1" gate="G$1" pin="175/HDMI_SCL"/>
+<wire x1="38.1" y1="-66.04" x2="5.08" y2="-66.04" width="0.1524" layer="91"/>
+<label x="5.08" y="-66.04" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
@@ -26639,11 +26827,16 @@ possible to Vout on U3.</text>
 <wire x1="259.08" y1="76.2" x2="129.54" y2="76.2" width="0.4064" layer="94"/>
 <wire x1="259.08" y1="76.2" x2="259.08" y2="157.48" width="0.4064" layer="94"/>
 <text x="132.08" y="160.02" size="1.778" layer="94">Battery Controller</text>
-<wire x1="0" y1="68.58" x2="53.34" y2="68.58" width="0.4064" layer="94"/>
-<wire x1="53.34" y1="68.58" x2="53.34" y2="-5.08" width="0.4064" layer="94"/>
 <wire x1="53.34" y1="-5.08" x2="0" y2="-5.08" width="0.4064" layer="94"/>
 <wire x1="0" y1="-5.08" x2="0" y2="68.58" width="0.4064" layer="94"/>
 <text x="0.508" y="70.358" size="1.778" layer="94">FAN</text>
+<wire x1="0" y1="68.58" x2="53.34" y2="68.58" width="0.4064" layer="94"/>
+<wire x1="58.42" y1="68.58" x2="127" y2="68.58" width="0.4064" layer="94"/>
+<wire x1="53.34" y1="68.58" x2="53.34" y2="-5.08" width="0.4064" layer="94"/>
+<wire x1="58.42" y1="68.58" x2="58.42" y2="-5.08" width="0.4064" layer="94"/>
+<wire x1="127" y1="68.58" x2="127" y2="-5.08" width="0.4064" layer="94"/>
+<wire x1="58.42" y1="-5.08" x2="127" y2="-5.08" width="0.4064" layer="94"/>
+<text x="58.928" y="70.358" size="1.778" layer="94">HDMI Plug</text>
 </plain>
 <instances>
 <instance part="FRAME4" gate="G$1" x="-7.62" y="-12.7"/>
@@ -26679,6 +26872,9 @@ possible to Vout on U3.</text>
 <instance part="GND45" gate="1" x="20.32" y="12.7"/>
 <instance part="T1" gate="G$1" x="22.86" y="30.48" rot="R180"/>
 <instance part="R12" gate="G$1" x="33.02" y="38.1" rot="R90"/>
+<instance part="U$8" gate="G$1" x="109.22" y="38.1"/>
+<instance part="SUPPLY34" gate="G$1" x="60.96" y="12.7"/>
+<instance part="GND46" gate="1" x="96.52" y="0"/>
 </instances>
 <busses>
 </busses>
@@ -26760,6 +26956,12 @@ possible to Vout on U3.</text>
 <pinref part="GND45" gate="1" pin="GND"/>
 <wire x1="20.32" y1="25.4" x2="20.32" y2="15.24" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="U$8" gate="G$1" pin="GND"/>
+<wire x1="101.6" y1="12.7" x2="96.52" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="12.7" x2="96.52" y2="2.54" width="0.1524" layer="91"/>
+<pinref part="GND46" gate="1" pin="GND"/>
+</segment>
 </net>
 <net name="5V" class="0">
 <segment>
@@ -26776,6 +26978,12 @@ possible to Vout on U3.</text>
 <wire x1="22.86" y1="40.64" x2="22.86" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="FAN" gate="G$1" pin="2"/>
 <wire x1="22.86" y1="40.64" x2="17.78" y2="40.64" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$8" gate="G$1" pin="5V"/>
+<wire x1="101.6" y1="10.16" x2="60.96" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="10.16" x2="60.96" y2="12.7" width="0.1524" layer="91"/>
+<pinref part="SUPPLY34" gate="G$1" pin="5V"/>
 </segment>
 </net>
 <net name="V_USB" class="0">
@@ -26886,6 +27094,103 @@ possible to Vout on U3.</text>
 <pinref part="R12" gate="G$1" pin="2"/>
 <wire x1="33.02" y1="43.18" x2="33.02" y2="45.72" width="0.1524" layer="91"/>
 <label x="33.02" y="45.72" size="1.778" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="HDMI_D2_P" class="1">
+<segment>
+<pinref part="U$8" gate="G$1" pin="TMDS_D2_P"/>
+<wire x1="101.6" y1="53.34" x2="99.06" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="53.34" x2="99.06" y2="66.04" width="0.1524" layer="91"/>
+<label x="99.06" y="66.04" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="N$42" class="0">
+<segment>
+<pinref part="U$8" gate="G$1" pin="TMDS_D2_SH"/>
+<wire x1="101.6" y1="50.8" x2="96.52" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="50.8" x2="96.52" y2="60.96" width="0.1524" layer="91"/>
+<label x="96.52" y="60.96" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="HDMI_D2_N" class="1">
+<segment>
+<pinref part="U$8" gate="G$1" pin="TMDS_D2_M"/>
+<wire x1="101.6" y1="48.26" x2="93.98" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="48.26" x2="93.98" y2="55.88" width="0.1524" layer="91"/>
+<label x="93.98" y="55.88" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="HDMI_D1_P" class="1">
+<segment>
+<pinref part="U$8" gate="G$1" pin="TMDS_D1_P"/>
+<wire x1="101.6" y1="45.72" x2="91.44" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="45.72" x2="91.44" y2="50.8" width="0.1524" layer="91"/>
+<label x="91.44" y="50.8" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="N$47" class="0">
+<segment>
+<pinref part="U$8" gate="G$1" pin="TMDS_D1_SH"/>
+<wire x1="101.6" y1="43.18" x2="88.9" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="43.18" x2="88.9" y2="45.72" width="0.1524" layer="91"/>
+<label x="88.9" y="45.72" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="HDMI_D1_N" class="1">
+<segment>
+<pinref part="U$8" gate="G$1" pin="TMDS_D1_M"/>
+<wire x1="101.6" y1="40.64" x2="88.9" y2="40.64" width="0.1524" layer="91"/>
+<label x="88.9" y="40.64" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="HDMI_D0_P" class="1">
+<segment>
+<pinref part="U$8" gate="G$1" pin="TMDS_D0_P"/>
+<wire x1="101.6" y1="38.1" x2="88.9" y2="35.56" width="0.1524" layer="91"/>
+<label x="88.9" y="35.56" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="HDMI_D0_N" class="1">
+<segment>
+<pinref part="U$8" gate="G$1" pin="TMDS_D0_M"/>
+<wire x1="101.6" y1="33.02" x2="88.9" y2="30.48" width="0.1524" layer="91"/>
+<label x="88.9" y="30.48" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="HDMI_CLK_P" class="1">
+<segment>
+<pinref part="U$8" gate="G$1" pin="TMDS_CLK_P"/>
+<wire x1="101.6" y1="30.48" x2="96.52" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="30.48" x2="91.44" y2="25.4" width="0.1524" layer="91"/>
+<label x="91.44" y="25.4" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="HDMI_CLK_N" class="1">
+<segment>
+<pinref part="U$8" gate="G$1" pin="TMDS_CLK_M"/>
+<wire x1="101.6" y1="25.4" x2="91.44" y2="20.32" width="0.1524" layer="91"/>
+<label x="91.44" y="20.32" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="HDMI_SCLK" class="0">
+<segment>
+<pinref part="U$8" gate="G$1" pin="SCL"/>
+<wire x1="101.6" y1="17.78" x2="86.36" y2="7.62" width="0.1524" layer="91"/>
+<label x="86.36" y="7.62" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="HDMI_SDA" class="0">
+<segment>
+<pinref part="U$8" gate="G$1" pin="SDA"/>
+<wire x1="101.6" y1="15.24" x2="86.36" y2="2.54" width="0.1524" layer="91"/>
+<label x="86.36" y="2.54" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="HDMI_CEC" class="1">
+<segment>
+<pinref part="U$8" gate="G$1" pin="CEC"/>
+<wire x1="101.6" y1="22.86" x2="91.44" y2="15.24" width="0.1524" layer="91"/>
+<label x="91.44" y="15.24" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>
