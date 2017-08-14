@@ -24968,6 +24968,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="U$8" library="custom" deviceset="HDMI_A_RECPT" device=""/>
 <part name="SUPPLY34" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 <part name="GND46" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="FRAME5" library="frames" deviceset="A4L-LOC" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -27193,6 +27194,18 @@ possible to Vout on U3.</text>
 <label x="91.44" y="15.24" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
+</nets>
+</sheet>
+<sheet>
+<description>Power Generation and management</description>
+<plain>
+</plain>
+<instances>
+<instance part="FRAME5" gate="G$1" x="0" y="0"/>
+</instances>
+<busses>
+</busses>
+<nets>
 </nets>
 </sheet>
 </sheets>
