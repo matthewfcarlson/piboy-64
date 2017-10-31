@@ -21699,6 +21699,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="SUPPLY37" library="SparkFun-Aesthetics" deviceset="V_USB" device=""/>
 <part name="R2" library="SparkFun-Resistors" deviceset="4.7KOHM-1/10W-1%(0603)" device="" value="4.7K"/>
 <part name="SUPPLY1" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
+<part name="U1" library="custom" deviceset="SPARKFUN-ANALOGIC_MIC7221" device="" value="MIC7221"/>
 <part name="U2" library="custom" deviceset="MICROCHIP_MCP1642B-ADJ" device=""/>
 </parts>
 <sheets>
@@ -21841,10 +21842,10 @@ possible to Vout on U3.</text>
 <instance part="SUPPLY36" gate="G$1" x="414.02" y="40.64"/>
 <instance part="R25" gate="G$1" x="406.4" y="33.02" rot="R90"/>
 <instance part="R26" gate="G$1" x="414.02" y="35.56" rot="R90"/>
-<instance part="U1" gate="U$1" x="474.98" y="175.26"/>
 <instance part="SUPPLY37" gate="G$1" x="228.6" y="193.04"/>
 <instance part="R2" gate="G$1" x="414.02" y="0" rot="R90"/>
 <instance part="SUPPLY1" gate="G$1" x="414.02" y="7.62"/>
+<instance part="U1" gate="U$1" x="474.98" y="175.26"/>
 </instances>
 <busses>
 </busses>
