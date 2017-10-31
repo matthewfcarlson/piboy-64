@@ -22274,6 +22274,9 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="GND5" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="C1" library="SparkFun-Capacitors" deviceset="CAP" device="0603-CAP" value="100nF"/>
 <part name="C2" library="SparkFun-Capacitors" deviceset="CAP" device="0603-CAP" value="100nF"/>
+<part name="R21" library="SparkFun-Resistors" deviceset="4.7KOHM-1/10W-1%(0603)" device="" value="4.7K"/>
+<part name="R22" library="SparkFun-Resistors" deviceset="4.7KOHM-1/10W-1%(0603)" device="" value="4.7K"/>
+<part name="SUPPLY27" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -22402,7 +22405,7 @@ possible to Vout on U3.</text>
 <instance part="U$3" gate="G$1" x="358.14" y="99.06"/>
 <instance part="GND14" gate="1" x="388.62" y="78.74"/>
 <instance part="SUPPLY10" gate="G$1" x="332.74" y="111.76"/>
-<instance part="U$1" gate="G$1" x="231.14" y="17.78"/>
+<instance part="U$1" gate="G$1" x="228.6" y="17.78"/>
 <instance part="POT1" gate="SW" x="378.46" y="142.24"/>
 <instance part="SW4" gate="G$1" x="426.72" y="2.54"/>
 <instance part="SW5" gate="G$1" x="426.72" y="-12.7"/>
@@ -22412,7 +22415,7 @@ possible to Vout on U3.</text>
 <instance part="GND19" gate="1" x="436.88" y="20.32"/>
 <instance part="SW6" gate="G$1" x="429.26" y="38.1"/>
 <instance part="SW7" gate="G$1" x="429.26" y="25.4"/>
-<instance part="GND23" gate="1" x="210.82" y="-2.54"/>
+<instance part="GND23" gate="1" x="210.82" y="-10.16"/>
 <instance part="SUPPLY35" gate="G$1" x="406.4" y="40.64"/>
 <instance part="SUPPLY36" gate="G$1" x="414.02" y="40.64"/>
 <instance part="R25" gate="G$1" x="406.4" y="33.02" rot="R90"/>
@@ -22438,6 +22441,9 @@ possible to Vout on U3.</text>
 <instance part="GND5" gate="1" x="525.78" y="152.4"/>
 <instance part="C1" gate="G$1" x="449.58" y="162.56"/>
 <instance part="C2" gate="G$1" x="464.82" y="162.56"/>
+<instance part="R21" gate="G$1" x="210.82" y="38.1" rot="R90"/>
+<instance part="R22" gate="G$1" x="254" y="30.48" rot="R90"/>
+<instance part="SUPPLY27" gate="G$1" x="246.38" y="43.18"/>
 </instances>
 <busses>
 </busses>
@@ -22607,8 +22613,8 @@ possible to Vout on U3.</text>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="GND"/>
-<wire x1="215.9" y1="5.08" x2="210.82" y2="5.08" width="0.1524" layer="91"/>
-<wire x1="210.82" y1="5.08" x2="210.82" y2="0" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="5.08" x2="210.82" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="5.08" x2="210.82" y2="-7.62" width="0.1524" layer="91"/>
 <pinref part="GND23" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -22804,12 +22810,38 @@ possible to Vout on U3.</text>
 <wire x1="485.14" y1="107.95" x2="483.87" y2="107.95" width="0.1524" layer="91"/>
 <label x="483.87" y="107.95" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="1B3"/>
+<wire x1="243.84" y1="12.7" x2="251.46" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="251.46" y1="12.7" x2="251.46" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="251.46" y1="5.08" x2="256.54" y2="5.08" width="0.1524" layer="91"/>
+<label x="256.54" y="5.08" size="1.778" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="2B3"/>
+<wire x1="213.36" y1="17.78" x2="200.66" y2="17.78" width="0.1524" layer="91"/>
+<label x="200.66" y="17.78" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="TFT_DC" class="0">
 <segment>
 <pinref part="TFT1" gate="TFT$1" pin="RS"/>
 <wire x1="491.49" y1="102.87" x2="483.87" y2="102.87" width="0.1524" layer="91"/>
 <label x="483.87" y="102.87" size="1.016" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="1B4"/>
+<wire x1="243.84" y1="7.62" x2="246.38" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="246.38" y1="7.62" x2="246.38" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="246.38" y1="-5.08" x2="256.54" y2="-5.08" width="0.1524" layer="91"/>
+<label x="256.54" y="-5.08" size="1.778" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="2B4"/>
+<wire x1="213.36" y1="22.86" x2="205.74" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="22.86" x2="205.74" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="27.94" x2="198.12" y2="27.94" width="0.1524" layer="91"/>
+<label x="198.12" y="27.94" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="TFT_CS" class="0">
@@ -22967,12 +22999,7 @@ possible to Vout on U3.</text>
 <label x="327.66" y="83.82" size="1.778" layer="95" rot="MR0" xref="yes"/>
 </segment>
 </net>
-<net name="N$18" class="0">
-<segment>
-<wire x1="248.92" y1="116.84" x2="250.19" y2="115.57" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="MOSI" class="0">
+<net name="TFT_MOSI" class="0">
 <segment>
 <pinref part="TFT1" gate="TFT$1" pin="SDA"/>
 <wire x1="491.49" y1="100.33" x2="487.68" y2="100.33" width="0.1524" layer="91"/>
@@ -22980,14 +23007,42 @@ possible to Vout on U3.</text>
 <wire x1="485.14" y1="97.79" x2="483.87" y2="97.79" width="0.1524" layer="91"/>
 <label x="483.87" y="97.79" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="1B2"/>
+<wire x1="243.84" y1="17.78" x2="256.54" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="256.54" y1="17.78" x2="256.54" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="256.54" y1="15.24" x2="259.08" y2="15.24" width="0.1524" layer="91"/>
+<label x="259.08" y="15.24" size="1.778" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="2B2"/>
+<wire x1="213.36" y1="12.7" x2="203.2" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="12.7" x2="203.2" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="7.62" x2="198.12" y2="7.62" width="0.1524" layer="91"/>
+<label x="198.12" y="7.62" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
-<net name="SCLK" class="0">
+<net name="TFT_SCLK" class="0">
 <segment>
 <pinref part="TFT1" gate="TFT$1" pin="SCL"/>
 <wire x1="491.49" y1="104.14" x2="487.68" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="487.68" y1="104.14" x2="486.41" y2="105.41" width="0.1524" layer="91"/>
 <wire x1="486.41" y1="105.41" x2="483.87" y2="105.41" width="0.1524" layer="91"/>
 <label x="483.87" y="105.41" size="1.016" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="1B1"/>
+<wire x1="243.84" y1="22.86" x2="256.54" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="256.54" y1="22.86" x2="256.54" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="256.54" y1="25.4" x2="259.08" y2="25.4" width="0.1524" layer="91"/>
+<label x="259.08" y="25.4" size="1.778" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="2B1"/>
+<wire x1="213.36" y1="7.62" x2="208.28" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="208.28" y1="7.62" x2="208.28" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="208.28" y1="-2.54" x2="198.12" y2="-2.54" width="0.1524" layer="91"/>
+<label x="198.12" y="-2.54" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="COPRO_MISO" class="0">
@@ -23030,6 +23085,19 @@ possible to Vout on U3.</text>
 <pinref part="R2" gate="G$1" pin="2"/>
 <wire x1="414.02" y1="7.62" x2="414.02" y2="5.08" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="VCC"/>
+<wire x1="243.84" y1="27.94" x2="246.38" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="246.38" y1="27.94" x2="246.38" y2="35.56" width="0.1524" layer="91"/>
+<pinref part="R22" gate="G$1" pin="2"/>
+<wire x1="246.38" y1="35.56" x2="246.38" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="254" y1="35.56" x2="246.38" y2="35.56" width="0.1524" layer="91"/>
+<junction x="246.38" y="35.56"/>
+<pinref part="R21" gate="G$1" pin="2"/>
+<wire x1="210.82" y1="43.18" x2="246.38" y2="43.18" width="0.1524" layer="91"/>
+<pinref part="SUPPLY27" gate="G$1" pin="3.3V"/>
+<junction x="246.38" y="43.18"/>
+</segment>
 </net>
 <net name="DAC_REF" class="0">
 <segment>
@@ -23047,6 +23115,12 @@ possible to Vout on U3.</text>
 <wire x1="378.46" y1="114.3" x2="388.62" y2="114.3" width="0.1524" layer="91"/>
 <label x="388.62" y="114.3" size="1.778" layer="95" xref="yes"/>
 </segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="1A2"/>
+<wire x1="213.36" y1="20.32" x2="203.2" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="20.32" x2="203.2" y2="22.86" width="0.1524" layer="91"/>
+<label x="203.2" y="22.86" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="COPRO_SCK" class="0">
 <segment>
@@ -23055,6 +23129,13 @@ possible to Vout on U3.</text>
 <wire x1="383.54" y1="101.6" x2="383.54" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="383.54" y1="106.68" x2="388.62" y2="106.68" width="0.1524" layer="91"/>
 <label x="388.62" y="106.68" size="1.778" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="1A1"/>
+<wire x1="213.36" y1="25.4" x2="208.28" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="208.28" y1="25.4" x2="208.28" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="208.28" y1="33.02" x2="205.74" y2="33.02" width="0.1524" layer="91"/>
+<label x="205.74" y="33.02" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="X_BTN" class="0">
@@ -23183,6 +23264,72 @@ possible to Vout on U3.</text>
 <pinref part="R20" gate="G$1" pin="2"/>
 <wire x1="523.24" y1="175.26" x2="525.78" y2="175.26" width="0.1524" layer="91"/>
 <wire x1="525.78" y1="175.26" x2="525.78" y2="167.64" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$10" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="2!OE"/>
+<pinref part="R22" gate="G$1" pin="1"/>
+<wire x1="243.84" y1="25.4" x2="254" y2="25.4" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$18" class="0">
+<segment>
+<pinref part="R21" gate="G$1" pin="1"/>
+<wire x1="210.82" y1="33.02" x2="210.82" y2="27.94" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="!1OE"/>
+<wire x1="210.82" y1="27.94" x2="213.36" y2="27.94" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="PI_SCK" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="2A1"/>
+<wire x1="243.84" y1="5.08" x2="243.84" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="243.84" y1="-10.16" x2="256.54" y2="-10.16" width="0.1524" layer="91"/>
+<label x="256.54" y="-10.16" size="1.778" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="PI_MOSI" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="2A2"/>
+<wire x1="243.84" y1="10.16" x2="248.92" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="248.92" y1="10.16" x2="248.92" y2="0" width="0.1524" layer="91"/>
+<wire x1="248.92" y1="0" x2="256.54" y2="0" width="0.1524" layer="91"/>
+<label x="256.54" y="0" size="1.778" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="PI_TFT_RESET" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="2A3"/>
+<wire x1="243.84" y1="15.24" x2="254" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="254" y1="15.24" x2="254" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="254" y1="10.16" x2="256.54" y2="10.16" width="0.1524" layer="91"/>
+<label x="256.54" y="10.16" size="1.778" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="COPRO_DC" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="1A4"/>
+<wire x1="213.36" y1="10.16" x2="205.74" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="10.16" x2="205.74" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="2.54" x2="198.12" y2="2.54" width="0.1524" layer="91"/>
+<label x="198.12" y="2.54" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="COPRO_TFT_RESET" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="1A3"/>
+<wire x1="213.36" y1="15.24" x2="200.66" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="15.24" x2="200.66" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="12.7" x2="198.12" y2="12.7" width="0.1524" layer="91"/>
+<label x="198.12" y="12.7" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="PI_DC" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="2A4"/>
+<wire x1="243.84" y1="20.32" x2="259.08" y2="20.32" width="0.1524" layer="91"/>
+<label x="259.08" y="20.32" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
@@ -24002,7 +24149,7 @@ possible to Vout on U3.</text>
 <label x="129.54" y="127" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="Z_BTN" class="0">
+<net name="COPRO_TFT_RESET" class="0">
 <segment>
 <pinref part="COPRO" gate="G$1" pin="PB0(SS/PCINT0)"/>
 <wire x1="104.14" y1="114.3" x2="106.68" y2="114.3" width="0.1524" layer="91"/>
@@ -24086,6 +24233,13 @@ possible to Vout on U3.</text>
 <wire x1="114.3" y1="132.08" x2="114.3" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="114.3" y1="147.32" x2="119.38" y2="147.32" width="0.1524" layer="91"/>
 <label x="119.38" y="147.32" size="1.778" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="COPRO_DC" class="0">
+<segment>
+<pinref part="COPRO" gate="G$1" pin="PB6(PCINT6)"/>
+<wire x1="104.14" y1="99.06" x2="127" y2="99.06" width="0.1524" layer="91"/>
+<label x="127" y="99.06" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
