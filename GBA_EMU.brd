@@ -3389,6 +3389,9 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="PROD_ID" value="RES-07857" x="48.768" y="57.404" size="1.778" layer="27" display="off"/>
 </element>
 <element name="J3" library="SparkFun-Connectors" package="1X06" value="" x="123.444" y="28.956" rot="R90"/>
+<element name="R2" library="SparkFun-Resistors" package="0603-RES" value="4.7K" x="17.272" y="-10.16">
+<attribute name="PROD_ID" value="RES-07857" x="17.272" y="-10.16" size="1.778" layer="27" display="off"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
@@ -3758,13 +3761,13 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="RIGHT">
 <contactref element="RIGHT" pad="2"/>
-<contactref element="COPRO" pad="9"/>
-<wire x1="37.852" y1="45.9994" x2="45.69403125" y2="48.42889375" width="0" layer="19" extent="1-16"/>
+<contactref element="COPRO" pad="22"/>
+<wire x1="30.7594" y1="51.492" x2="45.69403125" y2="48.42889375" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="LEFT">
 <contactref element="LEFT" pad="2"/>
-<contactref element="COPRO" pad="8"/>
-<wire x1="29.69269375" y1="48.213165625" x2="39.3446" y2="47.492" width="0" layer="19" extent="1-16"/>
+<contactref element="COPRO" pad="23"/>
+<wire x1="29.69269375" y1="48.213165625" x2="30.7594" y2="52.292" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="LEFT_BUMP">
 <contactref element="SW1" pad="2"/>
@@ -3811,6 +3814,7 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="TP2" pad="TP"/>
 <contactref element="R25" pad="2"/>
 <contactref element="R26" pad="2"/>
+<contactref element="R2" pad="2"/>
 <wire x1="115.658" y1="58.674" x2="124.6" y2="53.084" width="0" layer="19" extent="1-16"/>
 <wire x1="106.34" y1="44.16" x2="115.658" y2="58.674" width="0" layer="19" extent="1-16"/>
 <wire x1="57.14" y1="44.16" x2="106.34" y2="44.16" width="0" layer="19" extent="16-16"/>
@@ -3821,6 +3825,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="49.618" y1="60.452" x2="49.618" y2="57.404" width="0" layer="19" extent="1-1"/>
 <wire x1="46.57" y1="66.548" x2="49.618" y2="60.452" width="0" layer="19" extent="1-16"/>
 <wire x1="26.924" y1="21.336" x2="56.54" y2="44.16" width="0" layer="19" extent="1-16"/>
+<wire x1="18.122" y1="-10.16" x2="26.924" y2="21.336" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="1.8V">
 <contactref element="PCB1" pad="183"/>
@@ -3890,13 +3895,7 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="U$1" pad="P$20"/>
 </signal>
 <signal name="Z_BTN">
-<contactref element="R13" pad="1"/>
-<contactref element="SW5" pad="P$1"/>
-<contactref element="SW4" pad="P$1"/>
 <contactref element="COPRO" pad="14"/>
-<wire x1="45.212" y1="70.306" x2="127.508" y2="63.806" width="0" layer="19" extent="1-1"/>
-<wire x1="44.87" y1="66.548" x2="45.212" y2="70.306" width="0" layer="19" extent="16-16"/>
-<wire x1="33.852" y1="45.9994" x2="44.87" y2="66.548" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="N$19">
 <contactref element="R17" pad="2"/>
@@ -3954,12 +3953,6 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="COPRO" pad="24"/>
 <wire x1="30.7594" y1="53.092" x2="26.582" y2="57.404" width="0" layer="19" extent="16-16"/>
 <wire x1="33.528" y1="32.004" x2="30.7594" y2="53.092" width="0" layer="19" extent="16-16"/>
-</signal>
-<signal name="JOY_V">
-<contactref element="COPRO" pad="25"/>
-</signal>
-<signal name="JOY_H">
-<contactref element="COPRO" pad="26"/>
 </signal>
 <signal name="V_USB">
 <contactref element="J1" pad="VBUS"/>
@@ -4029,6 +4022,26 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="COPRO" pad="5"/>
 <wire x1="47.918" y1="60.452" x2="145.24" y2="62.484" width="0" layer="19" extent="1-1"/>
 <wire x1="39.3446" y1="49.892" x2="47.918" y2="60.452" width="0" layer="19" extent="1-16"/>
+</signal>
+<signal name="L2_BTN">
+<contactref element="R2" pad="1"/>
+<contactref element="SW4" pad="P$1"/>
+<contactref element="COPRO" pad="26"/>
+<wire x1="33.052" y1="54.5846" x2="45.212" y2="70.306" width="0" layer="19" extent="16-16"/>
+<wire x1="16.422" y1="-10.16" x2="33.052" y2="54.5846" width="0" layer="19" extent="1-16"/>
+</signal>
+<signal name="R2_BTN">
+<contactref element="R13" pad="1"/>
+<contactref element="SW5" pad="P$1"/>
+<contactref element="COPRO" pad="25"/>
+<wire x1="44.87" y1="66.548" x2="127.508" y2="63.806" width="0" layer="19" extent="16-16"/>
+<wire x1="32.252" y1="54.5846" x2="44.87" y2="66.548" width="0" layer="19" extent="16-16"/>
+</signal>
+<signal name="COPRO_RX">
+<contactref element="COPRO" pad="8"/>
+</signal>
+<signal name="COPRO_TX">
+<contactref element="COPRO" pad="9"/>
 </signal>
 </signals>
 </board>
