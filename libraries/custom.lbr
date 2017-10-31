@@ -6163,6 +6163,34 @@ Source: http://ww1.microchip.com/downloads/en/DeviceDoc/21796H.pdf</description>
 <text x="-1.905" y="-1.905" size="1.27" layer="25" rot="R90">&gt;NAME</text>
 <text x="3.175" y="-1.905" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
 </package>
+<package name="GBA_BATTERY">
+<wire x1="-2" y1="5.25" x2="2" y2="5.25" width="0.01" layer="20"/>
+<wire x1="2" y1="5.25" x2="2" y2="3.75" width="0.01" layer="20"/>
+<wire x1="2" y1="3.75" x2="-2" y2="3.75" width="0.01" layer="20"/>
+<wire x1="-2" y1="3.75" x2="-2" y2="5.25" width="0.01" layer="20"/>
+<wire x1="-2" y1="2.75" x2="-2" y2="1.25" width="0.01" layer="20"/>
+<wire x1="-2" y1="1.25" x2="1" y2="1.25" width="0.01" layer="20"/>
+<wire x1="1" y1="1.25" x2="1" y2="2.75" width="0.01" layer="20"/>
+<wire x1="1" y1="2.75" x2="-2" y2="2.75" width="0.01" layer="20"/>
+<wire x1="-2" y1="-1" x2="2" y2="-1" width="0.01" layer="20"/>
+<wire x1="2" y1="-1" x2="2" y2="-2.5" width="0.01" layer="20"/>
+<wire x1="2" y1="-2.5" x2="-2" y2="-2.5" width="0.01" layer="20"/>
+<wire x1="-2" y1="-2.5" x2="-2" y2="-1" width="0.01" layer="20"/>
+<wire x1="-1" y1="-3.5" x2="-1" y2="-5" width="0.01" layer="20"/>
+<wire x1="-1" y1="-5" x2="2" y2="-5" width="0.01" layer="20"/>
+<wire x1="2" y1="-5" x2="2" y2="-3.5" width="0.01" layer="20"/>
+<wire x1="2" y1="-3.5" x2="-1" y2="-3.5" width="0.01" layer="20"/>
+<rectangle x1="-2.5" y1="0.75" x2="2.5" y2="5.75" layer="1"/>
+<rectangle x1="-2.5" y1="-5.5" x2="2.5" y2="-0.5" layer="1"/>
+<rectangle x1="-2.75" y1="0.5" x2="2.75" y2="6" layer="30"/>
+<rectangle x1="-2.75" y1="0.5" x2="2.75" y2="6" layer="29"/>
+<rectangle x1="-2.75" y1="-5.75" x2="2.75" y2="-0.25" layer="30"/>
+<rectangle x1="-2.75" y1="-5.75" x2="2.75" y2="-0.25" layer="29"/>
+<pad name="BT+1" x="0" y="4.5" drill="1" diameter="2.5" shape="long"/>
+<pad name="BT+2" x="0" y="2" drill="1" diameter="2.5" shape="long"/>
+<pad name="BT-1" x="0" y="-1.75" drill="1" diameter="2.5" shape="long"/>
+<pad name="BT-2" x="0" y="-4.25" drill="1" diameter="2.5" shape="long"/>
+</package>
 </packages>
 <symbols>
 <symbol name="MCP48FEB01">
@@ -7102,6 +7130,17 @@ length 90R differential pairs</text>
 <pin name="VOUT" x="22.86" y="7.62" length="middle" rot="R180"/>
 <text x="10.16" y="12.7" size="1.27" layer="95">&gt;Name</text>
 <text x="10.16" y="-7.62" size="1.27" layer="96">&gt;Value</text>
+</symbol>
+<symbol name="GBA_BATTERY">
+<wire x1="-5.08" y1="0" x2="-2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="1.27" x2="-2.54" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="2.54" x2="-1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="0" x2="-1.27" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="0" x2="1.27" y2="0" width="0.254" layer="94"/>
+<pin name="+" x="1.27" y="0" visible="pin" length="point"/>
+<pin name="-" x="-5.08" y="0" visible="pin" length="point" rot="R180"/>
+<text x="-5.08" y="5.08" size="1.27" layer="96">&gt;VALUE</text>
+<text x="-5.08" y="3.048" size="1.27" layer="95">&gt;NAME</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -8510,6 +8549,22 @@ The USB251xB supports an extended operating temperature range of 0° to 85°C. T
 <connect gate="U$1" pin="VFB" pad="2"/>
 <connect gate="U$1" pin="VIN" pad="8"/>
 <connect gate="U$1" pin="VOUT" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="GBA_BATTERY" prefix="BT" uservalue="yes">
+<gates>
+<gate name="BT$1" symbol="GBA_BATTERY" x="1.778" y="0" swaplevel="3"/>
+</gates>
+<devices>
+<device name="" package="GBA_BATTERY">
+<connects>
+<connect gate="BT$1" pin="+" pad="BT+1 BT+2"/>
+<connect gate="BT$1" pin="-" pad="BT-1 BT-2"/>
 </connects>
 <technologies>
 <technology name=""/>
