@@ -20206,61 +20206,6 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <text x="-3.81" y="1.27" size="1.27" layer="25">&gt;NAME</text>
 <text x="-3.81" y="-13.97" size="1.27" layer="27">&gt;VALUE</text>
 </package>
-<package name="254SA103B50A">
-<description>Digikey Part: 254TA103B50A-ND
-Manufacturer
-CTS Electrocomponents
-
-Series
-254 
-
-Packaging  
-Bulk  
-
-Part Status 
-Active 
-
-Axis 
-2 
-
-Resistance (Ohms) 
-10k 
-
-Power (Watts) 
-0.0125W 
-
-Tolerance 
-±20% 
-
-Adjustment Type 
-Top Adjustment 
-
-Rotation Angle 
-50° 
-
-Mounting Type 
-Surface Mount 
-
-Size / Dimension 
-Square - 0.425" L x 0.425" W x 0.366" H (10.80mm x 10.80mm x 9.30mm)</description>
-<wire x1="2.2" y1="0" x2="10.6" y2="0" width="0.127" layer="51"/>
-<wire x1="10.6" y1="0" x2="10.6" y2="10.6" width="0.127" layer="21"/>
-<wire x1="10.6" y1="10.6" x2="0" y2="10.6" width="0.127" layer="21"/>
-<wire x1="0" y1="10.6" x2="0" y2="2.2" width="0.127" layer="51"/>
-<wire x1="0" y1="2.2" x2="1" y2="2.2" width="0.127" layer="51"/>
-<wire x1="2.2" y1="1" x2="2.2" y2="0" width="0.127" layer="51"/>
-<wire x1="1" y1="2.2" x2="2.2" y2="1" width="0.127" layer="21" curve="-112.619865"/>
-<hole x="6.5" y="8.85" drill="1.3"/>
-<hole x="6.5" y="4.15" drill="1.3"/>
-<smd name="P$1" x="-0.65" y="9.2" dx="1.5" dy="1.3" layer="1"/>
-<smd name="P$2" x="-0.65" y="6.5" dx="1.5" dy="1.3" layer="1"/>
-<smd name="P$3" x="-0.65" y="3.8" dx="1.5" dy="1.3" layer="1"/>
-<smd name="P$4" x="3.8" y="-1" dx="1.5" dy="1.3" layer="1" rot="R90"/>
-<smd name="P$5" x="6.5" y="-1" dx="1.5" dy="1.3" layer="1" rot="R90"/>
-<smd name="P$6" x="9.2" y="-1" dx="1.5" dy="1.3" layer="1" rot="R90"/>
-<smd name="P$7" x="11.8" y="6.5" dx="1.5" dy="1.3" layer="1" rot="R270"/>
-<smd name="P$8" x="6.5" y="11.8" dx="1.5" dy="1.3" layer="1"/>
-</package>
 <package name="HC49/US">
 <description>Typical footprint for crystal</description>
 <smd name="P$1" x="-4.7498" y="0" dx="5.588" dy="2.1082" layer="1"/>
@@ -20403,20 +20348,6 @@ Digi-Key Part Number	568-3619-5-ND</description>
 <pin name="2!OE" x="15.24" y="7.62" visible="pin" length="middle" direction="in" rot="R180"/>
 <pin name="VCC" x="15.24" y="10.16" visible="pin" length="middle" direction="pwr" rot="R180"/>
 </symbol>
-<symbol name="CTS254_JOYSTICK">
-<wire x1="-2.54" y1="5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
-<wire x1="7.62" y1="5.08" x2="7.62" y2="-22.86" width="0.254" layer="94"/>
-<wire x1="7.62" y1="-22.86" x2="-2.54" y2="-22.86" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="-22.86" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
-<pin name="VERT1" x="-7.62" y="2.54" length="middle" direction="in"/>
-<pin name="VERT2" x="-7.62" y="0" length="middle" direction="out"/>
-<pin name="VERT3" x="-7.62" y="-2.54" length="middle" direction="in"/>
-<pin name="HORZ1" x="-7.62" y="-7.62" length="middle" direction="in"/>
-<pin name="HORZ2" x="-7.62" y="-10.16" length="middle" direction="out"/>
-<pin name="HORZ3" x="-7.62" y="-12.7" length="middle"/>
-<pin name="BTN" x="-7.62" y="-17.78" length="middle" direction="in"/>
-<pin name="BTN2" x="-7.62" y="-20.32" length="middle" direction="out"/>
-</symbol>
 <symbol name="CRYSTAL-2PAD">
 <pin name="P$1" x="-5.08" y="0" visible="off" length="short"/>
 <pin name="P$2" x="5.08" y="0" visible="off" length="short" rot="R180"/>
@@ -20551,29 +20482,6 @@ The CBT3244A is characterized for operation from −40 °C to +85 °C.</descript
 <connect gate="G$1" pin="2B4" pad="P$3"/>
 <connect gate="G$1" pin="GND" pad="P$10"/>
 <connect gate="G$1" pin="VCC" pad="P$20"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="CTS254_JOYSTICK">
-<description>TwoAxis,Ultra-miniature JoystickWithOptional MomentarySwitch</description>
-<gates>
-<gate name="G$1" symbol="CTS254_JOYSTICK" x="-15.24" y="20.32"/>
-</gates>
-<devices>
-<device name="SM" package="254SA103B50A">
-<connects>
-<connect gate="G$1" pin="BTN" pad="P$7"/>
-<connect gate="G$1" pin="BTN2" pad="P$8"/>
-<connect gate="G$1" pin="HORZ1" pad="P$4"/>
-<connect gate="G$1" pin="HORZ2" pad="P$5"/>
-<connect gate="G$1" pin="HORZ3" pad="P$6"/>
-<connect gate="G$1" pin="VERT1" pad="P$1"/>
-<connect gate="G$1" pin="VERT2" pad="P$2"/>
-<connect gate="G$1" pin="VERT3" pad="P$3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -22033,7 +21941,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="SUPPLY10" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="U$1" library="custom" deviceset="CBT3244AD" device=""/>
 <part name="POT1" library="adafruit" deviceset="THUMBPOT" device=""/>
-<part name="U$4" library="custom" deviceset="CTS254_JOYSTICK" device="SM"/>
 <part name="SW4" library="adafruit" deviceset="SWITCH_PUSHBUTTON" device="EVQ-PE"/>
 <part name="SW5" library="adafruit" deviceset="SWITCH_PUSHBUTTON" device="EVQ-PE"/>
 <part name="GND16" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -22059,11 +21966,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="R19" library="SparkFun-Resistors" deviceset="10KOHM-1/10W-1%(0603)" device="0603" value="10K"/>
 <part name="SUPPLY19" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 <part name="SUPPLY20" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
-<part name="SUPPLY1" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
-<part name="SUPPLY22" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
-<part name="GND15" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="GND35" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="GND36" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="TP1" library="testpad" deviceset="PTR1" device="TP12R"/>
 <part name="TP2" library="testpad" deviceset="PTR1" device="TP12R"/>
 <part name="TP3" library="testpad" deviceset="PTR1" device="TP12R"/>
@@ -22217,7 +22119,6 @@ possible to Vout on U3.</text>
 <instance part="SUPPLY10" gate="G$1" x="332.74" y="111.76"/>
 <instance part="U$1" gate="G$1" x="231.14" y="17.78"/>
 <instance part="POT1" gate="SW" x="378.46" y="142.24"/>
-<instance part="U$4" gate="G$1" x="436.88" y="40.64"/>
 <instance part="SW4" gate="G$1" x="414.02" y="-12.7"/>
 <instance part="SW5" gate="G$1" x="414.02" y="-20.32"/>
 <instance part="GND16" gate="1" x="419.1" y="-25.4"/>
@@ -22226,11 +22127,6 @@ possible to Vout on U3.</text>
 <instance part="GND19" gate="1" x="436.88" y="-10.16"/>
 <instance part="SW6" gate="G$1" x="429.26" y="7.62"/>
 <instance part="SW7" gate="G$1" x="429.26" y="0"/>
-<instance part="SUPPLY1" gate="G$1" x="416.56" y="43.18"/>
-<instance part="SUPPLY22" gate="G$1" x="416.56" y="33.02"/>
-<instance part="GND15" gate="1" x="424.18" y="15.24"/>
-<instance part="GND35" gate="1" x="416.56" y="25.4"/>
-<instance part="GND36" gate="1" x="408.94" y="33.02"/>
 <instance part="GND23" gate="1" x="210.82" y="-2.54"/>
 <instance part="SUPPLY35" gate="G$1" x="406.4" y="10.16"/>
 <instance part="SUPPLY36" gate="G$1" x="414.02" y="10.16"/>
@@ -22405,23 +22301,6 @@ possible to Vout on U3.</text>
 <wire x1="436.88" y1="7.62" x2="434.34" y2="7.62" width="0.1524" layer="91"/>
 <pinref part="SW6" gate="G$1" pin="P$2"/>
 <pinref part="SW7" gate="G$1" pin="P$2"/>
-</segment>
-<segment>
-<pinref part="GND35" gate="1" pin="GND"/>
-<pinref part="U$4" gate="G$1" pin="HORZ3"/>
-<wire x1="416.56" y1="27.94" x2="429.26" y2="27.94" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="GND15" gate="1" pin="GND"/>
-<pinref part="U$4" gate="G$1" pin="BTN2"/>
-<wire x1="424.18" y1="17.78" x2="424.18" y2="20.32" width="0.1524" layer="91"/>
-<wire x1="424.18" y1="20.32" x2="429.26" y2="20.32" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="U$4" gate="G$1" pin="VERT3"/>
-<wire x1="429.26" y1="38.1" x2="408.94" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="408.94" y1="38.1" x2="408.94" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="GND36" gate="1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="GND"/>
@@ -22795,16 +22674,6 @@ possible to Vout on U3.</text>
 <wire x1="398.78" y1="-7.62" x2="398.78" y2="-5.08" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="SUPPLY1" gate="G$1" pin="3.3V"/>
-<pinref part="U$4" gate="G$1" pin="VERT1"/>
-<wire x1="416.56" y1="43.18" x2="429.26" y2="43.18" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="U$4" gate="G$1" pin="HORZ1"/>
-<pinref part="SUPPLY22" gate="G$1" pin="3.3V"/>
-<wire x1="429.26" y1="33.02" x2="416.56" y2="33.02" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="SUPPLY35" gate="G$1" pin="3.3V"/>
 <pinref part="R25" gate="G$1" pin="2"/>
 </segment>
@@ -22850,27 +22719,6 @@ possible to Vout on U3.</text>
 <wire x1="383.54" y1="101.6" x2="383.54" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="383.54" y1="106.68" x2="388.62" y2="106.68" width="0.1524" layer="91"/>
 <label x="388.62" y="106.68" size="1.778" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="JOY_BTN" class="0">
-<segment>
-<pinref part="U$4" gate="G$1" pin="BTN"/>
-<wire x1="429.26" y1="22.86" x2="406.4" y2="22.86" width="0.1524" layer="91"/>
-<label x="406.4" y="22.86" size="1.778" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="JOY_V" class="0">
-<segment>
-<pinref part="U$4" gate="G$1" pin="VERT2"/>
-<wire x1="429.26" y1="40.64" x2="406.4" y2="40.64" width="0.1524" layer="91"/>
-<label x="406.4" y="40.64" size="1.778" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="JOY_H" class="0">
-<segment>
-<pinref part="U$4" gate="G$1" pin="HORZ2"/>
-<wire x1="429.26" y1="30.48" x2="406.4" y2="30.48" width="0.1524" layer="91"/>
-<label x="406.4" y="30.48" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="X_BTN" class="0">
