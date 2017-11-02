@@ -24756,7 +24756,7 @@ WHICH PREVENTS FLICKERING AT THE SETPOINT.</text>
 <instance part="SUPPLY18" gate="G$1" x="162.56" y="-83.82"/>
 <instance part="FRAME2" gate="G$1" x="-106.68" y="-104.14"/>
 <instance part="FRAME2" gate="G$2" x="223.52" y="-104.14"/>
-<instance part="SUPPLY5" gate="G$1" x="10.16" y="106.68"/>
+<instance part="SUPPLY5" gate="G$1" x="-27.94" y="106.68"/>
 <instance part="SUPPLY11" gate="G$1" x="167.64" y="165.1"/>
 <instance part="GND13" gate="1" x="167.64" y="137.16"/>
 <instance part="R7" gate="G$1" x="167.64" y="160.02" rot="R90"/>
@@ -25071,7 +25071,7 @@ WHICH PREVENTS FLICKERING AT THE SETPOINT.</text>
 <segment>
 <pinref part="SUPPLY5" gate="G$1" pin="3.3V"/>
 <pinref part="PCB1" gate="G$1" pin="39/GPIO0-27_VREF"/>
-<wire x1="10.16" y1="106.68" x2="38.1" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="-27.94" y1="106.68" x2="38.1" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SUPPLY11" gate="G$1" pin="3.3V"/>
@@ -25302,8 +25302,8 @@ WHICH PREVENTS FLICKERING AT THE SETPOINT.</text>
 <pinref part="PCB1" gate="G$1" pin="65/GPIO19"/>
 <wire x1="38.1" y1="73.66" x2="22.86" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="22.86" y1="73.66" x2="22.86" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="22.86" y1="71.12" x2="10.16" y2="71.12" width="0.1524" layer="91"/>
-<label x="10.16" y="71.12" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="22.86" y1="71.12" x2="-15.24" y2="71.12" width="0.1524" layer="91"/>
+<label x="-15.24" y="71.12" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="RIGHT_BTN" class="0">
@@ -25356,18 +25356,16 @@ WHICH PREVENTS FLICKERING AT THE SETPOINT.</text>
 <segment>
 <pinref part="PCB1" gate="G$1" pin="33/GPIO10"/>
 <wire x1="38.1" y1="114.3" x2="17.78" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="17.78" y1="114.3" x2="17.78" y2="119.38" width="0.1524" layer="91"/>
-<wire x1="17.78" y1="119.38" x2="10.16" y2="119.38" width="0.1524" layer="91"/>
-<label x="10.16" y="119.38" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="17.78" y1="114.3" x2="17.78" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="116.84" x2="10.16" y2="116.84" width="0.1524" layer="91"/>
+<label x="10.16" y="116.84" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="PI_SCK" class="0">
 <segment>
 <pinref part="PCB1" gate="G$1" pin="35/GPIO11"/>
-<wire x1="38.1" y1="111.76" x2="15.24" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="15.24" y1="111.76" x2="15.24" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="15.24" y1="114.3" x2="10.16" y2="114.3" width="0.1524" layer="91"/>
-<label x="10.16" y="114.3" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="38.1" y1="111.76" x2="10.16" y2="111.76" width="0.1524" layer="91"/>
+<label x="10.16" y="111.76" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="R2_BTN" class="0">
@@ -25398,8 +25396,8 @@ WHICH PREVENTS FLICKERING AT THE SETPOINT.</text>
 <net name="R1_BTN" class="0">
 <segment>
 <pinref part="PCB1" gate="G$1" pin="71/GPIO21"/>
-<wire x1="38.1" y1="66.04" x2="10.16" y2="66.04" width="0.1524" layer="91"/>
-<label x="10.16" y="66.04" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="38.1" y1="66.04" x2="-15.24" y2="66.04" width="0.1524" layer="91"/>
+<label x="-15.24" y="66.04" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$30" class="0">
@@ -25436,6 +25434,43 @@ WHICH PREVENTS FLICKERING AT THE SETPOINT.</text>
 <wire x1="139.7" y1="-93.98" x2="144.78" y2="-93.98" width="0.1524" layer="91"/>
 <wire x1="144.78" y1="-93.98" x2="144.78" y2="-96.52" width="0.1524" layer="91"/>
 <junction x="144.78" y="-96.52"/>
+</segment>
+</net>
+<net name="PI_SHUTDOWN" class="0">
+<segment>
+<pinref part="PCB1" gate="G$1" pin="69/GPIO20"/>
+<wire x1="38.1" y1="68.58" x2="10.16" y2="68.58" width="0.1524" layer="91"/>
+<label x="10.16" y="68.58" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="N$38" class="0">
+<segment>
+<pinref part="PCB1" gate="G$1" pin="47/GPIO13"/>
+<wire x1="38.1" y1="96.52" x2="10.16" y2="96.52" width="0.1524" layer="91"/>
+<label x="10.16" y="96.52" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="N$41" class="0">
+<segment>
+<pinref part="PCB1" gate="G$1" pin="23/GPIO7"/>
+<wire x1="38.1" y1="127" x2="20.32" y2="127" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="127" x2="20.32" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="124.46" x2="-17.78" y2="124.46" width="0.1524" layer="91"/>
+<label x="-17.78" y="124.46" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="N$42" class="0">
+<segment>
+<pinref part="PCB1" gate="G$1" pin="27/GPIO8"/>
+<wire x1="38.1" y1="121.92" x2="10.16" y2="121.92" width="0.1524" layer="91"/>
+<label x="10.16" y="121.92" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="N$43" class="0">
+<segment>
+<pinref part="PCB1" gate="G$1" pin="29/GPIO9"/>
+<wire x1="38.1" y1="119.38" x2="-17.78" y2="119.38" width="0.1524" layer="91"/>
+<label x="-17.78" y="119.38" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>
