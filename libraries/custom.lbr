@@ -6191,6 +6191,18 @@ Source: http://ww1.microchip.com/downloads/en/DeviceDoc/21796H.pdf</description>
 <pad name="BT-1" x="0" y="-1.75" drill="1" diameter="2.5" shape="long"/>
 <pad name="BT-2" x="0" y="-4.25" drill="1" diameter="2.5" shape="long"/>
 </package>
+<package name="DIODE_POWERDI_123">
+<wire x1="-1.27" y1="0.9525" x2="3.175" y2="0.9525" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="-0.9525" x2="3.175" y2="-0.9525" width="0.127" layer="21"/>
+<wire x1="3.175" y1="-0.9525" x2="3.175" y2="0.9525" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="0.9525" x2="-1.27" y2="-0.9525" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="0.9525" x2="-1.5875" y2="0.9525" width="0.127" layer="21"/>
+<wire x1="-1.5875" y1="0.9525" x2="-1.5875" y2="-0.9525" width="0.127" layer="21"/>
+<wire x1="-1.5875" y1="-0.9525" x2="-1.27" y2="-0.9525" width="0.127" layer="21"/>
+<rectangle x1="-1.5875" y1="-0.9525" x2="-1.27" y2="0.9525" layer="21"/>
+<smd name="1" x="2.54" y="0" dx="0.9" dy="1.4" layer="1" rot="R180"/>
+<smd name="2" x="0" y="0" dx="1.4" dy="2.2" layer="1" rot="R90"/>
+</package>
 </packages>
 <symbols>
 <symbol name="MCP48FEB01">
@@ -7141,6 +7153,21 @@ length 90R differential pairs</text>
 <pin name="-" x="-5.08" y="0" visible="pin" length="point" rot="R180"/>
 <text x="-5.08" y="5.08" size="1.27" layer="96">&gt;VALUE</text>
 <text x="-5.08" y="3.048" size="1.27" layer="95">&gt;NAME</text>
+</symbol>
+<symbol name="DIODE_SCHOTTKY">
+<wire x1="-1.27" y1="-1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="-1.27" y2="1.27" width="0.254" layer="94"/>
+<wire x1="1.905" y1="1.27" x2="1.27" y2="1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="1.27" x2="-1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="1.905" y1="1.27" x2="1.905" y2="1.016" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-1.27" x2="0.635" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="0.635" y1="-1.016" x2="0.635" y2="-1.27" width="0.254" layer="94"/>
+<pin name="A" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
+<pin name="C" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+<text x="-2.286" y="1.905" size="1.778" layer="95">&gt;NAME</text>
+<text x="-2.286" y="-3.429" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -8565,6 +8592,22 @@ The USB251xB supports an extended operating temperature range of 0° to 85°C. T
 <connects>
 <connect gate="BT$1" pin="+" pad="BT+1 BT+2"/>
 <connect gate="BT$1" pin="-" pad="BT-1 BT-2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DIODE_DFLS130L" prefix="D">
+<gates>
+<gate name="D$1" symbol="DIODE_SCHOTTKY" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DIODE_POWERDI_123">
+<connects>
+<connect gate="D$1" pin="A" pad="1"/>
+<connect gate="D$1" pin="C" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
