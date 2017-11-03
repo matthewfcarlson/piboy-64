@@ -23686,6 +23686,7 @@ by exp-lbrs.ulp</description>
 <part name="GND38" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY34" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="SUPPLY38" library="SparkFun-Aesthetics" deviceset="1.8V" device=""/>
+<part name="R24" library="SparkFun-Resistors" deviceset="10KOHM-1/10W-1%(0603)" device="0603" value="10K"/>
 </parts>
 <sheets>
 <sheet>
@@ -23814,22 +23815,22 @@ WHICH PREVENTS FLICKERING AT THE SETPOINT.</text>
 <instance part="SUPPLY10" gate="G$1" x="332.74" y="111.76"/>
 <instance part="U$1" gate="G$1" x="238.76" y="12.7"/>
 <instance part="POT1" gate="SW" x="304.8" y="152.4" rot="R90"/>
-<instance part="SW4" gate="G$1" x="426.72" y="2.54"/>
+<instance part="SW4" gate="G$1" x="431.8" y="12.7"/>
 <instance part="SW5" gate="G$1" x="426.72" y="-12.7"/>
-<instance part="GND16" gate="1" x="431.8" y="-15.24"/>
-<instance part="SUPPLY9" gate="G$1" x="401.32" y="7.62"/>
-<instance part="R13" gate="G$1" x="401.32" y="-2.54" rot="R90"/>
+<instance part="GND16" gate="1" x="436.88" y="-15.24"/>
+<instance part="SUPPLY9" gate="G$1" x="401.32" y="12.7"/>
+<instance part="R13" gate="G$1" x="401.32" y="5.08" rot="R90"/>
 <instance part="GND19" gate="1" x="436.88" y="20.32"/>
 <instance part="SW6" gate="G$1" x="429.26" y="38.1"/>
 <instance part="SW7" gate="G$1" x="429.26" y="25.4"/>
 <instance part="GND23" gate="1" x="220.98" y="-15.24"/>
-<instance part="SUPPLY35" gate="G$1" x="406.4" y="40.64"/>
+<instance part="SUPPLY35" gate="G$1" x="403.86" y="40.64"/>
 <instance part="SUPPLY36" gate="G$1" x="414.02" y="40.64"/>
-<instance part="R25" gate="G$1" x="406.4" y="33.02" rot="R90"/>
+<instance part="R25" gate="G$1" x="403.86" y="33.02" rot="R90"/>
 <instance part="R26" gate="G$1" x="414.02" y="35.56" rot="R90"/>
 <instance part="SUPPLY37" gate="G$1" x="228.6" y="193.04"/>
-<instance part="R2" gate="G$1" x="414.02" y="0" rot="R90"/>
-<instance part="SUPPLY1" gate="G$1" x="414.02" y="7.62"/>
+<instance part="R2" gate="G$1" x="414.02" y="5.08" rot="R90"/>
+<instance part="SUPPLY1" gate="G$1" x="414.02" y="12.7"/>
 <instance part="U1" gate="U$1" x="474.98" y="175.26"/>
 <instance part="R3" gate="G$1" x="477.52" y="193.04"/>
 <instance part="R4" gate="G$1" x="449.58" y="187.96" rot="R90"/>
@@ -24005,8 +24006,9 @@ WHICH PREVENTS FLICKERING AT THE SETPOINT.</text>
 <pinref part="SW5" gate="G$1" pin="P$2"/>
 <pinref part="GND16" gate="1" pin="GND"/>
 <pinref part="SW4" gate="G$1" pin="P$2"/>
-<wire x1="431.8" y1="2.54" x2="431.8" y2="-12.7" width="0.1524" layer="91"/>
-<junction x="431.8" y="-12.7"/>
+<wire x1="436.88" y1="12.7" x2="436.88" y2="-12.7" width="0.1524" layer="91"/>
+<junction x="436.88" y="-12.7"/>
+<wire x1="436.88" y1="-12.7" x2="431.8" y2="-12.7" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND19" gate="1" pin="GND"/>
@@ -24298,50 +24300,50 @@ WHICH PREVENTS FLICKERING AT THE SETPOINT.</text>
 <net name="UP_BTN" class="0">
 <segment>
 <pinref part="UP" gate="S$1" pin="2"/>
-<wire x1="332.74" y1="34.29" x2="332.74" y2="38.1" width="0.1524" layer="91"/>
-<label x="332.74" y="38.1" size="1.016" layer="95" rot="R90" xref="yes"/>
+<wire x1="332.74" y1="34.29" x2="332.74" y2="35.56" width="0.1524" layer="91"/>
+<label x="332.74" y="35.56" size="1.016" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="DOWN_BTN" class="0">
 <segment>
 <pinref part="DOWN" gate="S$1" pin="2"/>
-<wire x1="350.52" y1="34.29" x2="350.52" y2="38.1" width="0.1524" layer="91"/>
-<label x="350.52" y="38.1" size="1.016" layer="95" rot="R90" xref="yes"/>
+<wire x1="350.52" y1="34.29" x2="353.06" y2="33.02" width="0.1524" layer="91"/>
+<label x="353.06" y="33.02" size="1.016" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="RIGHT_BTN" class="0">
 <segment>
 <pinref part="RIGHT" gate="S$1" pin="2"/>
-<wire x1="367.03" y1="34.29" x2="367.03" y2="38.1" width="0.1524" layer="91"/>
-<label x="367.03" y="38.1" size="1.016" layer="95" rot="R90" xref="yes"/>
+<wire x1="367.03" y1="34.29" x2="369.57" y2="33.02" width="0.1524" layer="91"/>
+<label x="369.57" y="33.02" size="1.016" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="LEFT_BTN" class="0">
 <segment>
 <pinref part="LEFT" gate="S$1" pin="2"/>
-<wire x1="383.54" y1="34.29" x2="383.54" y2="38.1" width="0.1524" layer="91"/>
-<label x="383.54" y="38.1" size="1.016" layer="95" rot="R90" xref="yes"/>
+<wire x1="383.54" y1="34.29" x2="386.08" y2="33.02" width="0.1524" layer="91"/>
+<label x="386.08" y="33.02" size="1.016" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="L1_BTN" class="0">
 <segment>
 <pinref part="SW1" gate="SW$1" pin="2"/>
-<wire x1="317.5" y1="31.75" x2="317.5" y2="38.1" width="0.1524" layer="91"/>
-<label x="317.5" y="38.1" size="1.016" layer="95" rot="R90" xref="yes"/>
+<wire x1="317.5" y1="31.75" x2="317.5" y2="35.56" width="0.1524" layer="91"/>
+<label x="317.5" y="35.56" size="1.016" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="START_BTN" class="0">
 <segment>
 <pinref part="START" gate="G$1" pin="2"/>
-<wire x1="368.3" y1="-2.54" x2="368.3" y2="0" width="0.1524" layer="91"/>
-<label x="368.3" y="0" size="1.016" layer="95" rot="R90" xref="yes"/>
+<wire x1="368.3" y1="-2.54" x2="370.84" y2="-2.54" width="0.1524" layer="91"/>
+<label x="370.84" y="-2.54" size="1.016" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="SELECT_BTN" class="0">
 <segment>
 <pinref part="SEL" gate="G$1" pin="2"/>
-<wire x1="384.81" y1="-2.54" x2="384.81" y2="0" width="0.1524" layer="91"/>
-<label x="384.81" y="0" size="1.016" layer="95" rot="R90" xref="yes"/>
+<wire x1="384.81" y1="-2.54" x2="387.35" y2="-2.54" width="0.1524" layer="91"/>
+<label x="387.35" y="-2.54" size="1.016" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="A_BTN" class="0">
@@ -24470,12 +24472,12 @@ WHICH PREVENTS FLICKERING AT THE SETPOINT.</text>
 <segment>
 <pinref part="SUPPLY9" gate="G$1" pin="3.3V"/>
 <pinref part="R13" gate="G$1" pin="2"/>
-<wire x1="401.32" y1="2.54" x2="401.32" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="401.32" y1="10.16" x2="401.32" y2="12.7" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SUPPLY35" gate="G$1" pin="3.3V"/>
 <pinref part="R25" gate="G$1" pin="2"/>
-<wire x1="406.4" y1="40.64" x2="406.4" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="403.86" y1="40.64" x2="403.86" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SUPPLY36" gate="G$1" pin="3.3V"/>
@@ -24484,7 +24486,7 @@ WHICH PREVENTS FLICKERING AT THE SETPOINT.</text>
 <segment>
 <pinref part="SUPPLY1" gate="G$1" pin="3.3V"/>
 <pinref part="R2" gate="G$1" pin="2"/>
-<wire x1="414.02" y1="7.62" x2="414.02" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="414.02" y1="12.7" x2="414.02" y2="10.16" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="VCC"/>
@@ -24552,9 +24554,9 @@ WHICH PREVENTS FLICKERING AT THE SETPOINT.</text>
 <net name="Y_BTN" class="0">
 <segment>
 <pinref part="R25" gate="G$1" pin="1"/>
-<wire x1="406.4" y1="27.94" x2="406.4" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="403.86" y1="27.94" x2="403.86" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="SW7" gate="G$1" pin="P$1"/>
-<wire x1="406.4" y1="25.4" x2="424.18" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="403.86" y1="25.4" x2="424.18" y2="25.4" width="0.1524" layer="91"/>
 <label x="416.56" y="25.4" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -24572,18 +24574,18 @@ WHICH PREVENTS FLICKERING AT THE SETPOINT.</text>
 <net name="L2_BTN" class="0">
 <segment>
 <pinref part="R2" gate="G$1" pin="1"/>
-<wire x1="414.02" y1="-5.08" x2="421.64" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="414.02" y1="0" x2="426.72" y2="0" width="0.1524" layer="91"/>
 <pinref part="SW4" gate="G$1" pin="P$1"/>
-<wire x1="421.64" y1="2.54" x2="421.64" y2="-5.08" width="0.1524" layer="91"/>
-<wire x1="421.64" y1="-5.08" x2="421.64" y2="-7.62" width="0.1524" layer="91"/>
-<junction x="421.64" y="-5.08"/>
-<label x="421.64" y="-7.62" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="426.72" y1="12.7" x2="426.72" y2="0" width="0.1524" layer="91"/>
+<wire x1="426.72" y1="0" x2="426.72" y2="-5.08" width="0.1524" layer="91"/>
+<junction x="426.72" y="0"/>
+<label x="426.72" y="-5.08" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="R2_BTN" class="0">
 <segment>
 <pinref part="R13" gate="G$1" pin="1"/>
-<wire x1="401.32" y1="-7.62" x2="401.32" y2="-12.7" width="0.1524" layer="91"/>
+<wire x1="401.32" y1="0" x2="401.32" y2="-12.7" width="0.1524" layer="91"/>
 <pinref part="SW5" gate="G$1" pin="P$1"/>
 <wire x1="401.32" y1="-12.7" x2="421.64" y2="-12.7" width="0.1524" layer="91"/>
 <junction x="421.64" y="-12.7"/>
@@ -25531,6 +25533,7 @@ WHICH PREVENTS FLICKERING AT THE SETPOINT.</text>
 <instance part="SUPPLY31" gate="G$1" x="203.2" y="152.4"/>
 <instance part="GND38" gate="1" x="205.74" y="129.54"/>
 <instance part="SUPPLY38" gate="G$1" x="68.58" y="30.48"/>
+<instance part="R24" gate="G$1" x="119.38" y="162.56"/>
 </instances>
 <busses>
 </busses>
@@ -25815,8 +25818,15 @@ WHICH PREVENTS FLICKERING AT THE SETPOINT.</text>
 <pinref part="COPRO" gate="G$1" pin="PD0(INT0/OC0B)"/>
 <wire x1="104.14" y1="139.7" x2="106.68" y2="139.7" width="0.1524" layer="91"/>
 <wire x1="106.68" y1="139.7" x2="106.68" y2="162.56" width="0.1524" layer="91"/>
-<wire x1="106.68" y1="162.56" x2="119.38" y2="162.56" width="0.1524" layer="91"/>
-<label x="119.38" y="162.56" size="1.778" layer="95" xref="yes"/>
+<wire x1="106.68" y1="162.56" x2="114.3" y2="162.56" width="0.1524" layer="91"/>
+<label x="129.54" y="162.56" size="1.778" layer="95" xref="yes"/>
+<pinref part="R24" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="N$38" class="0">
+<segment>
+<pinref part="R24" gate="G$1" pin="2"/>
+<wire x1="129.54" y1="162.56" x2="124.46" y2="162.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
