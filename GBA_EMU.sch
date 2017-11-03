@@ -23675,8 +23675,6 @@ by exp-lbrs.ulp</description>
 <part name="SW8" library="adafruit" deviceset="SWITCH_PUSHBUTTON" device="SOFTTOUCHSMD_SJ"/>
 <part name="D2" library="adafruit" deviceset="DIODE" device="SOD-523"/>
 <part name="R23" library="SparkFun-Resistors" deviceset="100KOHM-1/10W-1%(0603)" device="" value="100k"/>
-<part name="D3" library="adafruit" deviceset="DIODE" device="SOD-523"/>
-<part name="D4" library="adafruit" deviceset="DIODE" device="SOD-523"/>
 <part name="L1" library="SparkFun-Passives" deviceset="INDUCTOR" device="INDUCTOR_4.7UH" value="4.7uH"/>
 <part name="GND36" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="D5" library="custom" deviceset="DIODE_DFLS130L" device="" value=""/>
@@ -23688,6 +23686,9 @@ by exp-lbrs.ulp</description>
 <part name="SUPPLY38" library="SparkFun-Aesthetics" deviceset="1.8V" device=""/>
 <part name="R24" library="SparkFun-Resistors" deviceset="10KOHM-1/10W-1%(0603)" device="0603" value="10K"/>
 <part name="GND39" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="D3" library="adafruit" deviceset="DIODE" device="SOD-523"/>
+<part name="D4" library="adafruit" deviceset="DIODE" device="SOD-523"/>
+<part name="R27" library="SparkFun-Resistors" deviceset="10KOHM-1/10W-1%(0603)" device="0603" value="10K"/>
 </parts>
 <sheets>
 <sheet>
@@ -25535,6 +25536,9 @@ WHICH PREVENTS FLICKERING AT THE SETPOINT.</text>
 <instance part="GND38" gate="1" x="205.74" y="129.54"/>
 <instance part="SUPPLY38" gate="G$1" x="68.58" y="30.48"/>
 <instance part="R24" gate="G$1" x="119.38" y="162.56"/>
+<instance part="D3" gate="G$1" x="124.46" y="81.28" rot="R180"/>
+<instance part="D4" gate="G$1" x="129.54" y="81.28" rot="R180"/>
+<instance part="R27" gate="G$1" x="114.3" y="81.28"/>
 </instances>
 <busses>
 </busses>
@@ -25830,6 +25834,33 @@ WHICH PREVENTS FLICKERING AT THE SETPOINT.</text>
 <wire x1="109.22" y1="162.56" x2="114.3" y2="162.56" width="0.1524" layer="91"/>
 </segment>
 </net>
+<net name="N$31" class="0">
+<segment>
+<pinref part="D3" gate="G$1" pin="A"/>
+<pinref part="D4" gate="G$1" pin="C"/>
+</segment>
+</net>
+<net name="N$33" class="0">
+<segment>
+<pinref part="D3" gate="G$1" pin="C"/>
+<pinref part="R27" gate="G$1" pin="2"/>
+<wire x1="121.92" y1="81.28" x2="119.38" y2="81.28" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$38" class="0">
+<segment>
+<pinref part="R27" gate="G$1" pin="1"/>
+<pinref part="COPRO" gate="G$1" pin="PC7(ICP1/INT4/CLKO)"/>
+<wire x1="109.22" y1="81.28" x2="104.14" y2="81.28" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="PWR_DOWN" class="0">
+<segment>
+<pinref part="D4" gate="G$1" pin="A"/>
+<wire x1="132.08" y1="81.28" x2="134.62" y2="81.28" width="0.1524" layer="91"/>
+<label x="134.62" y="81.28" size="1.778" layer="95" xref="yes"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
@@ -25885,8 +25916,6 @@ WHICH PREVENTS FLICKERING AT THE SETPOINT.</text>
 <instance part="SW8" gate="G$1" x="35.56" y="134.62"/>
 <instance part="D2" gate="G$1" x="33.02" y="149.86"/>
 <instance part="R23" gate="G$1" x="33.02" y="99.06" rot="R90"/>
-<instance part="D3" gate="G$1" x="40.64" y="149.86"/>
-<instance part="D4" gate="G$1" x="48.26" y="149.86"/>
 <instance part="L1" gate="G$1" x="53.34" y="144.78" rot="R90"/>
 <instance part="GND36" gate="1" x="96.52" y="88.9"/>
 <instance part="D5" gate="D$1" x="20.32" y="139.7"/>
@@ -26012,34 +26041,24 @@ WHICH PREVENTS FLICKERING AT THE SETPOINT.</text>
 <junction x="88.9" y="111.76"/>
 </segment>
 </net>
-<net name="N$32" class="0">
+<net name="PWR_DOWN" class="0">
 <segment>
 <pinref part="U2" gate="U$1" pin="VIN"/>
 <wire x1="45.72" y1="129.54" x2="43.18" y2="129.54" width="0.1524" layer="91"/>
 <pinref part="C14" gate="G$1" pin="+"/>
 <wire x1="43.18" y1="129.54" x2="40.64" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="114.3" x2="40.64" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="114.3" x2="40.64" y2="124.46" width="0.1524" layer="91"/>
 <pinref part="L1" gate="G$1" pin="1"/>
+<wire x1="40.64" y1="124.46" x2="40.64" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="45.72" y1="144.78" x2="43.18" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="43.18" y1="144.78" x2="43.18" y2="129.54" width="0.1524" layer="91"/>
 <junction x="43.18" y="129.54"/>
 <pinref part="SW8" gate="G$1" pin="P$2"/>
 <wire x1="40.64" y1="134.62" x2="40.64" y2="129.54" width="0.1524" layer="91"/>
 <junction x="40.64" y="129.54"/>
-</segment>
-</net>
-<net name="N$31" class="0">
-<segment>
-<pinref part="D2" gate="G$1" pin="C"/>
-<pinref part="D3" gate="G$1" pin="A"/>
-<wire x1="35.56" y1="149.86" x2="38.1" y2="149.86" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$33" class="0">
-<segment>
-<pinref part="D3" gate="G$1" pin="C"/>
-<pinref part="D4" gate="G$1" pin="A"/>
-<wire x1="43.18" y1="149.86" x2="45.72" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="124.46" x2="38.1" y2="124.46" width="0.1524" layer="91"/>
+<junction x="40.64" y="124.46"/>
+<label x="38.1" y="124.46" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$34" class="0">

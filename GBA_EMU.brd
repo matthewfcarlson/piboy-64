@@ -3611,8 +3611,6 @@ Please make sure your boards conform to these design rules.</description>
 <element name="R23" library="SparkFun-Resistors" package="0603-RES" value="100k" x="102.616" y="47.244">
 <attribute name="PROD_ID" value="RES-07828" x="102.616" y="47.244" size="1.778" layer="27" display="off"/>
 </element>
-<element name="D3" library="adafruit" package="SOD-523" value="" x="57.404" y="30.988"/>
-<element name="D4" library="adafruit" package="SOD-523" value="" x="56.896" y="27.432" rot="R90"/>
 <element name="L1" library="SparkFun-Passives" package="INDUCTOR_4.7UH" value="4.7uH" x="60.96" y="44.196">
 <attribute name="PROD_ID" value="NDUC-10146" x="60.96" y="44.196" size="1.778" layer="27" display="off"/>
 </element>
@@ -3621,6 +3619,11 @@ Please make sure your boards conform to these design rules.</description>
 <element name="X1" library="Adafruit_PowerBoost" package="MICROBUILDER_USB_HOST-PTH" value="" x="131.572" y="46.736" rot="MR0"/>
 <element name="R24" library="SparkFun-Resistors" package="0603-RES" value="10K" x="49.276" y="45.212">
 <attribute name="PROD_ID" value="RES-00824" x="49.276" y="45.212" size="1.778" layer="27" display="off"/>
+</element>
+<element name="D3" library="adafruit" package="SOD-523" value="" x="15.748" y="-10.668"/>
+<element name="D4" library="adafruit" package="SOD-523" value="" x="15.748" y="-14.224"/>
+<element name="R27" library="SparkFun-Resistors" package="0603-RES" value="10K" x="17.272" y="-17.272">
+<attribute name="PROD_ID" value="RES-00824" x="17.272" y="-17.272" size="1.778" layer="27" display="off"/>
 </element>
 </elements>
 <signals>
@@ -4365,25 +4368,6 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="122.086" y1="40.64" x2="123.786" y2="46.228" width="0" layer="19" extent="1-1"/>
 <wire x1="66.566" y1="47.427" x2="122.086" y2="40.64" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="N$32">
-<contactref element="U2" pad="8"/>
-<contactref element="C14" pad="A"/>
-<contactref element="L1" pad="P$1"/>
-<contactref element="SW8" pad="P$2"/>
-<wire x1="59.46" y1="44.196" x2="62.466" y2="46.777" width="0" layer="19" extent="1-1"/>
-<wire x1="52.832" y1="39.75" x2="59.46" y2="44.196" width="0" layer="19" extent="1-1"/>
-<wire x1="41.608" y1="10.668" x2="52.832" y2="39.75" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="N$31">
-<contactref element="D2" pad="K"/>
-<contactref element="D3" pad="A"/>
-<wire x1="57.404" y1="30.188" x2="57.404" y2="35.344" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="N$33">
-<contactref element="D3" pad="K"/>
-<contactref element="D4" pad="A"/>
-<wire x1="57.696" y1="27.432" x2="57.404" y2="31.788" width="0" layer="19" extent="1-1"/>
-</signal>
 <signal name="N$34">
 <contactref element="U2" pad="5"/>
 <contactref element="L1" pad="P$2"/>
@@ -4458,6 +4442,32 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="COPRO" pad="6"/>
 <contactref element="R24" pad="1"/>
 <wire x1="39.3446" y1="49.092" x2="48.426" y2="45.212" width="0" layer="19" extent="1-16"/>
+</signal>
+<signal name="N$31">
+<contactref element="D3" pad="A"/>
+<contactref element="D4" pad="K"/>
+<wire x1="15.748" y1="-13.424" x2="15.748" y2="-11.468" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$33">
+<contactref element="D3" pad="K"/>
+<contactref element="R27" pad="2"/>
+<wire x1="18.122" y1="-17.272" x2="15.748" y2="-9.868" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$38">
+<contactref element="R27" pad="1"/>
+<contactref element="COPRO" pad="22"/>
+<wire x1="16.422" y1="-17.272" x2="30.7594" y2="51.492" width="0" layer="19" extent="1-16"/>
+</signal>
+<signal name="PWR_DOWN">
+<contactref element="D4" pad="A"/>
+<contactref element="U2" pad="8"/>
+<contactref element="C14" pad="A"/>
+<contactref element="L1" pad="P$1"/>
+<contactref element="SW8" pad="P$2"/>
+<wire x1="59.46" y1="44.196" x2="62.466" y2="46.777" width="0" layer="19" extent="1-1"/>
+<wire x1="52.832" y1="39.75" x2="59.46" y2="44.196" width="0" layer="19" extent="1-1"/>
+<wire x1="41.608" y1="10.668" x2="52.832" y2="39.75" width="0" layer="19" extent="1-1"/>
+<wire x1="15.748" y1="-15.024" x2="41.608" y2="10.668" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>
