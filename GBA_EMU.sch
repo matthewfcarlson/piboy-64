@@ -25443,7 +25443,7 @@ WHICH PREVENTS FLICKERING AT THE SETPOINT.</text>
 <label x="10.16" y="68.58" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="N$38" class="0">
+<net name="Y_BTN" class="0">
 <segment>
 <pinref part="PCB1" gate="G$1" pin="47/GPIO13"/>
 <wire x1="38.1" y1="96.52" x2="10.16" y2="96.52" width="0.1524" layer="91"/>
