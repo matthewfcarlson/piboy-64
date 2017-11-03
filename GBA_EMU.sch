@@ -23682,7 +23682,6 @@ by exp-lbrs.ulp</description>
 <part name="GND30" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY12" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 <part name="R19" library="SparkFun-Resistors" deviceset="10KOHM-1/10W-1%(0603)" device="0603" value="10K"/>
-<part name="SUPPLY19" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 <part name="SUPPLY20" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 <part name="TP1" library="testpad" deviceset="PTR1" device="TP12R"/>
 <part name="TP2" library="testpad" deviceset="PTR1" device="TP12R"/>
@@ -23763,6 +23762,10 @@ by exp-lbrs.ulp</description>
 <part name="R27" library="SparkFun-Resistors" deviceset="10KOHM-1/10W-1%(0603)" device="0603" value="10K"/>
 <part name="POT1" library="adafruit" deviceset="THUMBPOT" device=""/>
 <part name="SW8" library="adafruit" deviceset="OS102011MA1Q" device=""/>
+<part name="R28" library="SparkFun-Resistors" deviceset="10KOHM-1/10W-1%(0603)" device="0603" value="10K"/>
+<part name="D7" library="adafruit" deviceset="DIODE" device="SOD-523"/>
+<part name="D8" library="adafruit" deviceset="DIODE" device="SOD-523"/>
+<part name="SUPPLY19" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -24670,7 +24673,7 @@ WHICH PREVENTS FLICKERING AT THE SETPOINT.</text>
 <label x="421.64" y="-22.86" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="N$3" class="0">
+<net name="BATT_LOW" class="0">
 <segment>
 <pinref part="U1" gate="U$1" pin="OUT1"/>
 <wire x1="482.6" y1="175.26" x2="490.22" y2="175.26" width="0.1524" layer="91"/>
@@ -24691,6 +24694,7 @@ WHICH PREVENTS FLICKERING AT THE SETPOINT.</text>
 <wire x1="528.32" y1="179.07" x2="528.32" y2="180.34" width="0.1524" layer="91"/>
 <pinref part="D1" gate="D$1" pin="3"/>
 <junction x="523.24" y="179.07"/>
+<label x="490.22" y="177.8" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -25593,7 +25597,6 @@ WHICH PREVENTS FLICKERING AT THE SETPOINT.</text>
 <instance part="GND30" gate="1" x="104.14" y="53.34"/>
 <instance part="SUPPLY12" gate="G$1" x="106.68" y="68.58"/>
 <instance part="R19" gate="G$1" x="38.1" y="58.42" rot="R90"/>
-<instance part="SUPPLY19" gate="G$1" x="30.48" y="142.24"/>
 <instance part="SUPPLY20" gate="G$1" x="38.1" y="66.04"/>
 <instance part="TP1" gate="G$1" x="22.86" y="27.94"/>
 <instance part="TP2" gate="G$1" x="33.02" y="27.94"/>
@@ -25610,10 +25613,14 @@ WHICH PREVENTS FLICKERING AT THE SETPOINT.</text>
 <instance part="SUPPLY31" gate="G$1" x="203.2" y="152.4"/>
 <instance part="GND38" gate="1" x="205.74" y="129.54"/>
 <instance part="SUPPLY38" gate="G$1" x="68.58" y="30.48"/>
-<instance part="R24" gate="G$1" x="119.38" y="162.56"/>
+<instance part="R24" gate="G$1" x="116.84" y="162.56"/>
 <instance part="D3" gate="G$1" x="124.46" y="81.28" rot="R180"/>
 <instance part="D4" gate="G$1" x="129.54" y="81.28" rot="R180"/>
 <instance part="R27" gate="G$1" x="114.3" y="81.28"/>
+<instance part="R28" gate="G$1" x="114.3" y="91.44"/>
+<instance part="D7" gate="G$1" x="121.92" y="91.44" rot="R180"/>
+<instance part="D8" gate="G$1" x="127" y="91.44" rot="R180"/>
+<instance part="SUPPLY19" gate="G$1" x="30.48" y="142.24"/>
 </instances>
 <busses>
 </busses>
@@ -25718,8 +25725,8 @@ WHICH PREVENTS FLICKERING AT THE SETPOINT.</text>
 <pinref part="COPRO" gate="G$1" pin="PB1(SCK/PCINT1)"/>
 <wire x1="104.14" y1="111.76" x2="109.22" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="111.76" x2="109.22" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="109.22" y1="116.84" x2="116.84" y2="116.84" width="0.1524" layer="91"/>
-<label x="116.84" y="116.84" size="1.778" layer="95" xref="yes"/>
+<wire x1="109.22" y1="116.84" x2="114.3" y2="116.84" width="0.1524" layer="91"/>
+<label x="114.3" y="116.84" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="J2" gate="G$1" pin="3"/>
@@ -25779,20 +25786,6 @@ WHICH PREVENTS FLICKERING AT THE SETPOINT.</text>
 <wire x1="106.68" y1="66.04" x2="106.68" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="30.48" y1="142.24" x2="30.48" y2="139.7" width="0.1524" layer="91"/>
-<pinref part="COPRO" gate="G$1" pin="VCC"/>
-<wire x1="30.48" y1="139.7" x2="45.72" y2="139.7" width="0.1524" layer="91"/>
-<pinref part="COPRO" gate="G$1" pin="UVCC"/>
-<wire x1="45.72" y1="137.16" x2="30.48" y2="137.16" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="137.16" x2="30.48" y2="139.7" width="0.1524" layer="91"/>
-<junction x="30.48" y="139.7"/>
-<pinref part="COPRO" gate="G$1" pin="AVCC"/>
-<wire x1="45.72" y1="134.62" x2="30.48" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="134.62" x2="30.48" y2="137.16" width="0.1524" layer="91"/>
-<junction x="30.48" y="137.16"/>
-<pinref part="SUPPLY19" gate="G$1" pin="5V"/>
-</segment>
-<segment>
 <pinref part="R19" gate="G$1" pin="2"/>
 <pinref part="SUPPLY20" gate="G$1" pin="5V"/>
 <wire x1="38.1" y1="66.04" x2="38.1" y2="63.5" width="0.1524" layer="91"/>
@@ -25812,6 +25805,20 @@ WHICH PREVENTS FLICKERING AT THE SETPOINT.</text>
 <segment>
 <pinref part="TP2" gate="G$1" pin="TP"/>
 <pinref part="SUPPLY24" gate="G$1" pin="3.3V"/>
+</segment>
+<segment>
+<wire x1="30.48" y1="142.24" x2="30.48" y2="139.7" width="0.1524" layer="91"/>
+<pinref part="COPRO" gate="G$1" pin="VCC"/>
+<wire x1="30.48" y1="139.7" x2="45.72" y2="139.7" width="0.1524" layer="91"/>
+<pinref part="COPRO" gate="G$1" pin="UVCC"/>
+<wire x1="45.72" y1="137.16" x2="30.48" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="137.16" x2="30.48" y2="139.7" width="0.1524" layer="91"/>
+<junction x="30.48" y="139.7"/>
+<pinref part="COPRO" gate="G$1" pin="AVCC"/>
+<wire x1="45.72" y1="134.62" x2="30.48" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="134.62" x2="30.48" y2="137.16" width="0.1524" layer="91"/>
+<junction x="30.48" y="137.16"/>
+<pinref part="SUPPLY19" gate="G$1" pin="3.3V"/>
 </segment>
 </net>
 <net name="COPRO_D-" class="0">
@@ -25840,10 +25847,10 @@ WHICH PREVENTS FLICKERING AT THE SETPOINT.</text>
 <pinref part="COPRO" gate="G$1" pin="PB0(SS/PCINT0)"/>
 <wire x1="104.14" y1="114.3" x2="106.68" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="106.68" y1="114.3" x2="106.68" y2="119.38" width="0.1524" layer="91"/>
-<wire x1="106.68" y1="119.38" x2="119.38" y2="119.38" width="0.1524" layer="91"/>
-<wire x1="119.38" y1="119.38" x2="119.38" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="119.38" y1="121.92" x2="124.46" y2="121.92" width="0.1524" layer="91"/>
-<label x="124.46" y="121.92" size="1.778" layer="95" xref="yes"/>
+<wire x1="106.68" y1="119.38" x2="116.84" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="119.38" x2="116.84" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="121.92" x2="119.38" y2="121.92" width="0.1524" layer="91"/>
+<label x="119.38" y="121.92" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="DAC_CS" class="0">
@@ -25874,8 +25881,8 @@ WHICH PREVENTS FLICKERING AT THE SETPOINT.</text>
 <net name="COPRO_DC" class="0">
 <segment>
 <pinref part="COPRO" gate="G$1" pin="PB6(PCINT6)"/>
-<wire x1="104.14" y1="99.06" x2="137.16" y2="99.06" width="0.1524" layer="91"/>
-<label x="137.16" y="99.06" size="1.778" layer="95" xref="yes"/>
+<wire x1="104.14" y1="99.06" x2="134.62" y2="99.06" width="0.1524" layer="91"/>
+<label x="134.62" y="99.06" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="TFT_CS" class="0">
@@ -25896,8 +25903,8 @@ WHICH PREVENTS FLICKERING AT THE SETPOINT.</text>
 <net name="PWR_UP" class="0">
 <segment>
 <pinref part="R24" gate="G$1" pin="2"/>
-<wire x1="129.54" y1="162.56" x2="124.46" y2="162.56" width="0.1524" layer="91"/>
-<label x="129.54" y="162.56" size="1.778" layer="95" xref="yes"/>
+<wire x1="124.46" y1="162.56" x2="121.92" y2="162.56" width="0.1524" layer="91"/>
+<label x="124.46" y="162.56" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$44" class="0">
@@ -25906,7 +25913,7 @@ WHICH PREVENTS FLICKERING AT THE SETPOINT.</text>
 <wire x1="104.14" y1="139.7" x2="109.22" y2="139.7" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="139.7" x2="109.22" y2="162.56" width="0.1524" layer="91"/>
 <pinref part="R24" gate="G$1" pin="1"/>
-<wire x1="109.22" y1="162.56" x2="114.3" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="162.56" x2="111.76" y2="162.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$31" class="0">
@@ -25921,6 +25928,10 @@ WHICH PREVENTS FLICKERING AT THE SETPOINT.</text>
 <pinref part="R27" gate="G$1" pin="2"/>
 <wire x1="121.92" y1="81.28" x2="119.38" y2="81.28" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="D7" gate="G$1" pin="C"/>
+<pinref part="R28" gate="G$1" pin="2"/>
+</segment>
 </net>
 <net name="N$38" class="0">
 <segment>
@@ -25934,6 +25945,26 @@ WHICH PREVENTS FLICKERING AT THE SETPOINT.</text>
 <pinref part="D4" gate="G$1" pin="A"/>
 <wire x1="132.08" y1="81.28" x2="134.62" y2="81.28" width="0.1524" layer="91"/>
 <label x="134.62" y="81.28" size="1.778" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="D7" gate="G$1" pin="A"/>
+<pinref part="D8" gate="G$1" pin="C"/>
+</segment>
+</net>
+<net name="BATT_LOW" class="0">
+<segment>
+<pinref part="D8" gate="G$1" pin="A"/>
+<wire x1="129.54" y1="91.44" x2="134.62" y2="91.44" width="0.1524" layer="91"/>
+<label x="134.62" y="91.44" size="1.778" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="N$12" class="0">
+<segment>
+<pinref part="COPRO" gate="G$1" pin="PC2(AIN2/PCIN11)"/>
+<pinref part="R28" gate="G$1" pin="1"/>
+<wire x1="104.14" y1="91.44" x2="109.22" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
