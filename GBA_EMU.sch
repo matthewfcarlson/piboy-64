@@ -16006,6 +16006,64 @@ part number 2062-2P from STA</description>
 <wire x1="-7" y1="4" x2="4.7" y2="4" width="0.2032" layer="21"/>
 <text x="0.635" y="-3.175" size="0.4064" layer="25">&gt;NAME</text>
 </package>
+<package name="FTDI_DEVICE_SIDE">
+<description>Package for devices meant to mate to an FTDI connector.</description>
+<pad name="P$1" x="-6.35" y="0" drill="1.016" diameter="1.8796" shape="square"/>
+<pad name="P$2" x="-3.81" y="0" drill="1.016" diameter="1.8796"/>
+<pad name="P$3" x="-1.27" y="0" drill="1.016" diameter="1.8796"/>
+<pad name="P$4" x="1.27" y="0" drill="1.016" diameter="1.8796"/>
+<pad name="P$5" x="3.81" y="0" drill="1.016" diameter="1.8796"/>
+<pad name="P$6" x="6.35" y="0" drill="1.016" diameter="1.8796"/>
+<wire x1="-7.62" y1="1.27" x2="7.62" y2="1.27" width="0.127" layer="21"/>
+<wire x1="7.62" y1="1.27" x2="7.62" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="7.62" y1="-1.27" x2="-7.62" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-7.62" y1="-1.27" x2="-7.62" y2="1.27" width="0.127" layer="21"/>
+<text x="-7.874" y="-0.889" size="1.27" layer="21" font="vector" ratio="15" rot="R90">GRN</text>
+<text x="9.144" y="-0.889" size="1.27" layer="21" font="vector" ratio="15" rot="R90">BLK</text>
+<text x="-4.826" y="1.524" size="0.8128" layer="21" font="vector" ratio="15">TXO</text>
+<text x="-2.286" y="1.524" size="0.8128" layer="21" font="vector" ratio="15">RXI</text>
+<text x="0.254" y="1.524" size="0.8128" layer="21" font="vector" ratio="15">VCC</text>
+<text x="-7.366" y="1.524" size="0.8128" layer="21" font="vector" ratio="15">DTR</text>
+<text x="5.334" y="1.524" size="0.8128" layer="21" font="vector" ratio="15">GND</text>
+<text x="2.794" y="1.524" size="0.8128" layer="21" font="vector" ratio="15">CTS</text>
+</package>
+<package name="FTDI_DEVICE_RA_SMT">
+<description>Package for devices meant to mate to an FTDI connector.</description>
+<wire x1="7.62" y1="1.25" x2="-7.62" y2="1.25" width="0.127" layer="51"/>
+<wire x1="-7.62" y1="1.25" x2="-7.62" y2="-1.25" width="0.127" layer="51"/>
+<wire x1="-7.62" y1="-1.25" x2="-6.35" y2="-1.25" width="0.127" layer="51"/>
+<wire x1="-6.35" y1="-1.25" x2="-3.81" y2="-1.25" width="0.127" layer="51"/>
+<wire x1="-3.81" y1="-1.25" x2="-1.27" y2="-1.25" width="0.127" layer="51"/>
+<wire x1="-1.27" y1="-1.25" x2="1.27" y2="-1.25" width="0.127" layer="51"/>
+<wire x1="1.27" y1="-1.25" x2="3.81" y2="-1.25" width="0.127" layer="51"/>
+<wire x1="3.81" y1="-1.25" x2="6.35" y2="-1.25" width="0.127" layer="51"/>
+<wire x1="6.35" y1="-1.25" x2="7.62" y2="-1.25" width="0.127" layer="51"/>
+<wire x1="7.62" y1="-1.25" x2="7.62" y2="1.25" width="0.127" layer="51"/>
+<wire x1="6.35" y1="-1.25" x2="6.35" y2="-7.25" width="0.127" layer="51"/>
+<wire x1="3.81" y1="-1.25" x2="3.81" y2="-7.25" width="0.127" layer="51"/>
+<wire x1="1.27" y1="-1.25" x2="1.27" y2="-7.25" width="0.127" layer="51"/>
+<wire x1="-1.27" y1="-1.25" x2="-1.27" y2="-7.25" width="0.127" layer="51"/>
+<wire x1="-3.81" y1="-1.25" x2="-3.81" y2="-7.25" width="0.127" layer="51"/>
+<wire x1="-6.35" y1="-1.25" x2="-6.35" y2="-7.25" width="0.127" layer="51"/>
+<smd name="4" x="1.27" y="5" dx="3" dy="1" layer="1" rot="R90"/>
+<smd name="5" x="3.81" y="5" dx="3" dy="1" layer="1" rot="R90"/>
+<smd name="6" x="6.35" y="5" dx="3" dy="1" layer="1" rot="R90"/>
+<smd name="3" x="-1.27" y="5" dx="3" dy="1" layer="1" rot="R90"/>
+<smd name="2" x="-3.81" y="5" dx="3" dy="1" layer="1" rot="R90"/>
+<smd name="1" x="-6.35" y="5" dx="3" dy="1" layer="1" rot="R90"/>
+<text x="-1.905" y="1.905" size="0.8128" layer="25">&gt;NAME</text>
+<text x="-1.905" y="0.635" size="0.8128" layer="27">&gt;VALUE</text>
+<text x="-3.81" y="-1.016" size="0.8128" layer="51" font="vector" ratio="15" rot="R90" align="center-left">TXO</text>
+<text x="-1.27" y="-1.016" size="0.8128" layer="51" font="vector" ratio="15" rot="R90" align="center-left">RXI</text>
+<text x="1.27" y="-1.016" size="0.8128" layer="51" font="vector" ratio="15" rot="R90" align="center-left">VCC</text>
+<text x="-6.35" y="-1.016" size="0.8128" layer="51" font="vector" ratio="15" rot="R90" align="center-left">DTR</text>
+<text x="6.35" y="-1.016" size="0.8128" layer="51" font="vector" ratio="15" rot="R90" align="center-left">GND</text>
+<text x="3.81" y="-1.016" size="0.8128" layer="51" font="vector" ratio="15" rot="R90" align="center-left">CTS</text>
+<text x="-7.366" y="-2.54" size="0.8128" layer="51" font="vector" ratio="15" rot="R90" align="top-center">GRN</text>
+<text x="7.366" y="-2.54" size="0.8128" layer="51" font="vector" ratio="15" rot="R90" align="bottom-center">BLK</text>
+<hole x="-5.08" y="0" drill="1.4"/>
+<hole x="5.08" y="0" drill="1.4"/>
+</package>
 </packages>
 <symbols>
 <symbol name="USB-5PIN">
@@ -16056,6 +16114,20 @@ part number 2062-2P from STA</description>
 <text x="-2.54" y="5.842" size="1.778" layer="95">&gt;NAME</text>
 <pin name="1" x="7.62" y="0" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="2" x="7.62" y="2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+</symbol>
+<symbol name="FTDI_DEVICE">
+<pin name="DTR" x="-5.08" y="5.08" visible="pin" length="middle"/>
+<pin name="TXO" x="-5.08" y="2.54" visible="pin" length="middle"/>
+<pin name="RXI" x="-5.08" y="0" visible="pin" length="middle"/>
+<pin name="VCC" x="-5.08" y="-2.54" visible="pin" length="middle"/>
+<pin name="CTS" x="-5.08" y="-5.08" visible="pin" length="middle"/>
+<pin name="GND" x="-5.08" y="-7.62" visible="pin" length="middle"/>
+<wire x1="0" y1="7.62" x2="0" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="0" y1="-10.16" x2="7.62" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-10.16" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="0" y2="7.62" width="0.254" layer="94"/>
+<text x="0" y="10.16" size="1.778" layer="95">&gt;NAME</text>
+<text x="0" y="7.62" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -16412,6 +16484,42 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="CONN-13512"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FTDI_DEVICE" prefix="J">
+<description>Connector which mates to FTDI basic or FTDI cable.</description>
+<gates>
+<gate name="G$1" symbol="FTDI_DEVICE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="FTDI_DEVICE_SIDE">
+<connects>
+<connect gate="G$1" pin="CTS" pad="P$5"/>
+<connect gate="G$1" pin="DTR" pad="P$1"/>
+<connect gate="G$1" pin="GND" pad="P$6"/>
+<connect gate="G$1" pin="RXI" pad="P$3"/>
+<connect gate="G$1" pin="TXO" pad="P$2"/>
+<connect gate="G$1" pin="VCC" pad="P$4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="RA_SMT" package="FTDI_DEVICE_RA_SMT">
+<connects>
+<connect gate="G$1" pin="CTS" pad="5"/>
+<connect gate="G$1" pin="DTR" pad="1"/>
+<connect gate="G$1" pin="GND" pad="6"/>
+<connect gate="G$1" pin="RXI" pad="3"/>
+<connect gate="G$1" pin="TXO" pad="2"/>
+<connect gate="G$1" pin="VCC" pad="4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CONN-08971" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -23766,6 +23874,10 @@ by exp-lbrs.ulp</description>
 <part name="D7" library="adafruit" deviceset="DIODE" device="SOD-523"/>
 <part name="D8" library="adafruit" deviceset="DIODE" device="SOD-523"/>
 <part name="SUPPLY19" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
+<part name="J3" library="SparkFun-Connectors" deviceset="FTDI_DEVICE" device=""/>
+<part name="J4" library="SparkFun-Connectors" deviceset="FTDI_DEVICE" device=""/>
+<part name="GND40" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="GND41" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -23826,7 +23938,7 @@ WHICH PREVENTS FLICKERING AT THE SETPOINT.</text>
 <instances>
 <instance part="UP" gate="S$1" x="332.74" y="24.13" rot="R90"/>
 <instance part="START" gate="G$1" x="368.3" y="-10.16" rot="R90"/>
-<instance part="R1" gate="R$1" x="335.28" y="170.18"/>
+<instance part="R1" gate="R$1" x="302.26" y="144.78"/>
 <instance part="DOWN" gate="S$1" x="350.52" y="24.13" rot="R90"/>
 <instance part="LEFT" gate="S$1" x="383.54" y="24.13" rot="R90"/>
 <instance part="RIGHT" gate="S$1" x="367.03" y="24.13" rot="R90"/>
@@ -23930,8 +24042,8 @@ WHICH PREVENTS FLICKERING AT THE SETPOINT.</text>
 <instance part="R21" gate="G$1" x="226.06" y="38.1"/>
 <instance part="R22" gate="G$1" x="264.16" y="30.48" rot="R90"/>
 <instance part="SUPPLY27" gate="G$1" x="256.54" y="38.1"/>
-<instance part="POT1" gate="SW" x="289.56" y="162.56"/>
-<instance part="POT1" gate="POT" x="289.56" y="152.4"/>
+<instance part="POT1" gate="SW" x="337.82" y="-30.48"/>
+<instance part="POT1" gate="POT" x="335.28" y="170.18" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -23941,11 +24053,6 @@ WHICH PREVENTS FLICKERING AT THE SETPOINT.</text>
 <pinref part="C8" gate="G$1" pin="2"/>
 <pinref part="GND11" gate="1" pin="GND"/>
 <wire x1="318.77" y1="167.64" x2="318.77" y2="144.78" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="R1" gate="R$1" pin="A"/>
-<pinref part="GND7" gate="1" pin="GND"/>
-<wire x1="335.28" y1="165.1" x2="335.28" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C5" gate="G$1" pin="2"/>
@@ -24131,6 +24238,11 @@ WHICH PREVENTS FLICKERING AT THE SETPOINT.</text>
 <pinref part="GND3" gate="1" pin="GND"/>
 <wire x1="464.82" y1="160.02" x2="464.82" y2="157.48" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="POT1" gate="POT" pin="A"/>
+<pinref part="GND7" gate="1" pin="GND"/>
+<wire x1="335.28" y1="162.56" x2="335.28" y2="144.78" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="!PWREN" class="0">
 <segment>
@@ -24138,11 +24250,6 @@ WHICH PREVENTS FLICKERING AT THE SETPOINT.</text>
 </segment>
 </net>
 <net name="5V" class="0">
-<segment>
-<pinref part="SUPPLY2" gate="G$1" pin="5V"/>
-<pinref part="R1" gate="R$1" pin="E"/>
-<wire x1="335.28" y1="185.42" x2="335.28" y2="175.26" width="0.1524" layer="91"/>
-</segment>
 <segment>
 <pinref part="SUPPLY3" gate="G$1" pin="5V"/>
 <pinref part="U4" gate="U$1" pin="VDD"/>
@@ -24201,6 +24308,11 @@ WHICH PREVENTS FLICKERING AT THE SETPOINT.</text>
 <pinref part="SUPPLY22" gate="G$1" pin="5V"/>
 <wire x1="441.96" y1="177.8" x2="441.96" y2="195.58" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="POT1" gate="POT" pin="E"/>
+<pinref part="SUPPLY2" gate="G$1" pin="5V"/>
+<wire x1="335.28" y1="177.8" x2="335.28" y2="185.42" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="PI_PWM0" class="0">
 <segment>
@@ -24221,13 +24333,6 @@ WHICH PREVENTS FLICKERING AT THE SETPOINT.</text>
 <pinref part="R16" gate="G$1" pin="2"/>
 <wire x1="309.88" y1="182.88" x2="309.88" y2="180.34" width="0.1524" layer="91"/>
 <junction x="309.88" y="180.34"/>
-</segment>
-</net>
-<net name="N$8" class="0">
-<segment>
-<pinref part="U4" gate="U$1" pin="DC_VOL"/>
-<pinref part="R1" gate="R$1" pin="S"/>
-<wire x1="347.98" y1="170.18" x2="340.36" y2="170.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$9" class="0">
@@ -24822,6 +24927,13 @@ WHICH PREVENTS FLICKERING AT THE SETPOINT.</text>
 <pinref part="U$1" gate="G$1" pin="2A4"/>
 <wire x1="254" y1="15.24" x2="269.24" y2="15.24" width="0.1524" layer="91"/>
 <label x="269.24" y="15.24" size="1.778" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="N$8" class="0">
+<segment>
+<pinref part="U4" gate="U$1" pin="DC_VOL"/>
+<pinref part="POT1" gate="POT" pin="S"/>
+<wire x1="347.98" y1="170.18" x2="340.36" y2="170.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
@@ -25578,7 +25690,7 @@ WHICH PREVENTS FLICKERING AT THE SETPOINT.</text>
 <wire x1="149.86" y1="7.62" x2="7.62" y2="7.62" width="0.4064" layer="94"/>
 <wire x1="7.62" y1="7.62" x2="7.62" y2="40.64" width="0.4064" layer="94"/>
 <text x="167.64" y="170.18" size="1.778" layer="94">USB Hub</text>
-<text x="167.894" y="115.57" size="1.778" layer="94">MicroSD Card</text>
+<text x="167.894" y="115.57" size="1.778" layer="94">FTDI Connectors</text>
 <text x="8.128" y="41.656" size="1.778" layer="94">Test Points</text>
 </plain>
 <instances>
@@ -25621,6 +25733,10 @@ WHICH PREVENTS FLICKERING AT THE SETPOINT.</text>
 <instance part="D7" gate="G$1" x="121.92" y="91.44" rot="R180"/>
 <instance part="D8" gate="G$1" x="127" y="91.44" rot="R180"/>
 <instance part="SUPPLY19" gate="G$1" x="30.48" y="142.24"/>
+<instance part="J3" gate="G$1" x="231.14" y="96.52"/>
+<instance part="J4" gate="G$1" x="231.14" y="66.04"/>
+<instance part="GND40" gate="1" x="223.52" y="78.74"/>
+<instance part="GND41" gate="1" x="223.52" y="48.26"/>
 </instances>
 <busses>
 </busses>
@@ -25693,6 +25809,18 @@ WHICH PREVENTS FLICKERING AT THE SETPOINT.</text>
 <wire x1="195.58" y1="139.7" x2="205.74" y2="139.7" width="0.1524" layer="91"/>
 <wire x1="205.74" y1="139.7" x2="205.74" y2="132.08" width="0.1524" layer="91"/>
 <pinref part="GND38" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="J3" gate="G$1" pin="GND"/>
+<wire x1="226.06" y1="88.9" x2="223.52" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="88.9" x2="223.52" y2="81.28" width="0.1524" layer="91"/>
+<pinref part="GND40" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="J4" gate="G$1" pin="GND"/>
+<wire x1="226.06" y1="58.42" x2="223.52" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="58.42" x2="223.52" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="GND41" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="N$28" class="0">

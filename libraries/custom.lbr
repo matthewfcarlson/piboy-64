@@ -6203,6 +6203,32 @@ Source: http://ww1.microchip.com/downloads/en/DeviceDoc/21796H.pdf</description>
 <smd name="1" x="2.54" y="0" dx="0.9" dy="1.4" layer="1" rot="R180"/>
 <smd name="2" x="0" y="0" dx="1.4" dy="2.2" layer="1" rot="R90"/>
 </package>
+<package name="SON45P300X300X80-13N">
+<wire x1="-2.15" y1="1.8" x2="2.15" y2="1.8" width="0.05" layer="39"/>
+<wire x1="2.15" y1="1.8" x2="2.15" y2="-1.8" width="0.05" layer="39"/>
+<wire x1="2.15" y1="-1.8" x2="-2.15" y2="-1.8" width="0.05" layer="39"/>
+<wire x1="-2.15" y1="-1.8" x2="-2.15" y2="1.8" width="0.05" layer="39"/>
+<wire x1="-1.5" y1="1.5" x2="1.5" y2="1.5" width="0.05" layer="21"/>
+<wire x1="-1.5" y1="-1.5" x2="1.5" y2="-1.5" width="0.05" layer="21"/>
+<wire x1="-1.5" y1="1.5" x2="-1.5" y2="-1.5" width="0.05" layer="51"/>
+<wire x1="1.5" y1="1.5" x2="1.5" y2="-1.5" width="0.05" layer="51"/>
+<circle x="-2.3" y="1.1" radius="0.14141875" width="0" layer="21"/>
+<text x="-2.105609375" y="1.704540625" size="1.273390625" layer="25">&gt;NAME</text>
+<text x="-2.206209375" y="-2.908190625" size="1.273590625" layer="27">&gt;VALUE</text>
+<smd name="1" x="-1.5" y="1.125" dx="0.8" dy="0.25" layer="1" roundness="100"/>
+<smd name="2" x="-1.5" y="0.675" dx="0.8" dy="0.25" layer="1" roundness="100"/>
+<smd name="3" x="-1.5" y="0.225" dx="0.8" dy="0.25" layer="1" roundness="100"/>
+<smd name="4" x="-1.5" y="-0.225" dx="0.8" dy="0.25" layer="1" roundness="100"/>
+<smd name="5" x="-1.5" y="-0.675" dx="0.8" dy="0.25" layer="1" roundness="100"/>
+<smd name="6" x="-1.5" y="-1.125" dx="0.8" dy="0.25" layer="1" roundness="100"/>
+<smd name="7" x="1.5" y="-1.125" dx="0.8" dy="0.25" layer="1" roundness="100" rot="R180"/>
+<smd name="8" x="1.5" y="-0.675" dx="0.8" dy="0.25" layer="1" roundness="100" rot="R180"/>
+<smd name="9" x="1.5" y="-0.225" dx="0.8" dy="0.25" layer="1" roundness="100" rot="R180"/>
+<smd name="10" x="1.5" y="0.225" dx="0.8" dy="0.25" layer="1" roundness="100" rot="R180"/>
+<smd name="11" x="1.5" y="0.675" dx="0.8" dy="0.25" layer="1" roundness="100" rot="R180"/>
+<smd name="12" x="1.5" y="1.125" dx="0.8" dy="0.25" layer="1" roundness="100" rot="R180"/>
+<smd name="13" x="0" y="0" dx="1.75" dy="2.65" layer="1"/>
+</package>
 </packages>
 <symbols>
 <symbol name="MCP48FEB01">
@@ -7168,6 +7194,25 @@ length 90R differential pairs</text>
 <pin name="C" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
 <text x="-2.286" y="1.905" size="1.778" layer="95">&gt;NAME</text>
 <text x="-2.286" y="-3.429" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="PAM2306AYPKE">
+<wire x1="-10.16" y1="10.16" x2="10.16" y2="10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-10.16" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-10.16" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
+<text x="-10.1886" y="10.698" size="1.27358125" layer="95">&gt;NAME</text>
+<text x="-10.1995" y="-11.9844" size="1.274940625" layer="96">&gt;VALUE</text>
+<pin name="VIN1" x="-15.24" y="7.62" length="middle" direction="in"/>
+<pin name="VIN2" x="-15.24" y="-2.54" length="middle" direction="in"/>
+<pin name="LX1" x="15.24" y="7.62" length="middle" direction="out" rot="R180"/>
+<pin name="LX2" x="15.24" y="2.54" length="middle" direction="out" rot="R180"/>
+<pin name="EN1" x="-15.24" y="5.08" length="middle" direction="in"/>
+<pin name="EN2" x="-15.24" y="-5.08" length="middle" direction="in"/>
+<pin name="FB1" x="-15.24" y="2.54" length="middle" direction="in"/>
+<pin name="FB2" x="-15.24" y="-7.62" length="middle" direction="in"/>
+<pin name="GND@1" x="15.24" y="-2.54" length="middle" direction="pwr" rot="R180"/>
+<pin name="EXP" x="15.24" y="-7.62" length="middle" direction="pwr" rot="R180"/>
+<pin name="GND@2" x="15.24" y="-5.08" length="middle" direction="pwr" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -8611,6 +8656,39 @@ The USB251xB supports an extended operating temperature range of 0° to 85°C. T
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PAM2306AYPKE" prefix="U">
+<description>PAM2306 Series 5.5V 1A Dual High Efficiency PWM Step Down DC-DC Converter-WDFN12</description>
+<gates>
+<gate name="G$1" symbol="PAM2306AYPKE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SON45P300X300X80-13N">
+<connects>
+<connect gate="G$1" pin="EN1" pad="6"/>
+<connect gate="G$1" pin="EN2" pad="12"/>
+<connect gate="G$1" pin="EXP" pad="13"/>
+<connect gate="G$1" pin="FB1" pad="4"/>
+<connect gate="G$1" pin="FB2" pad="10"/>
+<connect gate="G$1" pin="GND@1" pad="3"/>
+<connect gate="G$1" pin="GND@2" pad="9"/>
+<connect gate="G$1" pin="LX1" pad="8"/>
+<connect gate="G$1" pin="LX2" pad="2"/>
+<connect gate="G$1" pin="VIN1" pad="7"/>
+<connect gate="G$1" pin="VIN2" pad="1"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="AVAILABILITY" value="Good"/>
+<attribute name="DESCRIPTION" value=" PAM2306 Series 1.8V/3.3V 1 A Dual High Efficiency PWM Step Down DC-DC Conveter "/>
+<attribute name="MF" value="Diodes Inc."/>
+<attribute name="MP" value="PAM2306AYPKE"/>
+<attribute name="PACKAGE" value="WFDFN-12 Diodes Inc."/>
+<attribute name="PRICE" value="0.38 USD"/>
+</technology>
 </technologies>
 </device>
 </devices>
