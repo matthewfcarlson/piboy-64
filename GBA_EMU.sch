@@ -21722,6 +21722,7 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="CN1" library="adafruit" deviceset="USB" device="MINIB"/>
 <part name="GND6" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="J1" library="SparkFun-Connectors" deviceset="M04" device="1.27MM"/>
+<part name="R17" library="rcl" deviceset="R-EU_" device="R0805" value="4.7k"/>
 </parts>
 <sheets>
 <sheet>
@@ -21946,6 +21947,7 @@ possible to Vout on U3.</text>
 <instance part="CN1" gate="G$1" x="533.4" y="160.02" rot="MR0"/>
 <instance part="GND6" gate="1" x="317.5" y="17.78"/>
 <instance part="J1" gate="G$1" x="322.58" y="33.02" rot="R180"/>
+<instance part="R17" gate="G$1" x="292.1" y="-10.16" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -23055,6 +23057,11 @@ possible to Vout on U3.</text>
 <wire x1="266.7" y1="-30.48" x2="264.16" y2="-30.48" width="0.1524" layer="91"/>
 <label x="264.16" y="-30.48" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<wire x1="292.1" y1="-15.24" x2="299.72" y2="-15.24" width="0.1524" layer="91"/>
+<label x="299.72" y="-15.24" size="1.778" layer="95" xref="yes"/>
+<pinref part="R17" gate="G$1" pin="1"/>
+</segment>
 </net>
 <net name="AVR_VCC" class="0">
 <segment>
@@ -23084,6 +23091,11 @@ possible to Vout on U3.</text>
 <wire x1="317.5" y1="30.48" x2="314.96" y2="30.48" width="0.1524" layer="91"/>
 <label x="314.96" y="30.48" size="1.778" layer="95" rot="R180" xref="yes"/>
 <pinref part="J1" gate="G$1" pin="3"/>
+</segment>
+<segment>
+<wire x1="292.1" y1="-5.08" x2="299.72" y2="-5.08" width="0.1524" layer="91"/>
+<label x="299.72" y="-5.08" size="1.778" layer="95" xref="yes"/>
+<pinref part="R17" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="COPRO_MOSI" class="0">
@@ -23180,18 +23192,20 @@ possible to Vout on U3.</text>
 <wire x1="520.7" y1="162.56" x2="523.24" y2="162.56" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$27" class="0">
+<net name="COPRO_TX" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="PD3(INT3/TXD1)"/>
 <wire x1="279.4" y1="33.02" x2="317.5" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="J1" gate="G$1" pin="2"/>
+<label x="299.72" y="33.02" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
-<net name="N$29" class="0">
+<net name="COPRO_RX" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="PD2(INT2/AIN1/RXD1)"/>
 <wire x1="279.4" y1="35.56" x2="317.5" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="J1" gate="G$1" pin="1"/>
+<label x="307.34" y="38.1" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 </nets>
