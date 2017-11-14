@@ -21922,7 +21922,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="B" library="GBA" deviceset="GBA_BTN_CONDUCTIVE" device=""/>
 <part name="SW1" library="GBA" deviceset="BUTTON" device="" value="LEFT"/>
 <part name="SW2" library="GBA" deviceset="BUTTON" device="" value="RIGHT"/>
-<part name="SW3" library="GBA" deviceset="PWR_SWITCH" device=""/>
+<part name="SW3" library="GBA" deviceset="PWR_SWITCH" device="" value="ORG_SW"/>
 <part name="U2" library="ftdichip" deviceset="FT230X" device=""/>
 <part name="GND1" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="R2" library="rcl" deviceset="R-EU_" device="R0805" value="27R"/>
@@ -22045,7 +22045,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="J2" library="SparkFun-Connectors" deviceset="AUDIO-JACK2" device="SMD"/>
 <part name="R1" library="SparkFun-Resistors" deviceset="47KOHM1/10W1%(0603)" device="" value="150R"/>
 <part name="GND38" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="SW6" library="custom" deviceset="GBA_PWR_SWITCH" device="JSX"/>
+<part name="SW6" library="custom" deviceset="GBA_PWR_SWITCH" device="JSX" value=""/>
 </parts>
 <sheets>
 <sheet>
@@ -22133,9 +22133,9 @@ Sleeve=GND</text>
 <instance part="B" gate="S$1" x="373.38" y="-12.7" rot="R90"/>
 <instance part="SW1" gate="SW$1" x="353.06" y="21.59" rot="R90"/>
 <instance part="SW2" gate="SW$1" x="353.06" y="-15.24" rot="R90"/>
-<instance part="SW3" gate="SW$2" x="213.36" y="182.88" smashed="yes" rot="MR0">
-<attribute name="NAME" x="217.805" y="176.53" size="1.778" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="222.25" y="172.72" size="1.778" layer="96" rot="MR0"/>
+<instance part="SW3" gate="SW$2" x="210.82" y="147.32" smashed="yes" rot="MR0">
+<attribute name="NAME" x="215.265" y="140.97" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="219.71" y="137.16" size="1.778" layer="96" rot="MR0"/>
 </instance>
 <instance part="U2" gate="U$1" x="476.25" y="161.29" rot="MR0"/>
 <instance part="GND1" gate="1" x="516.89" y="148.59"/>
@@ -22291,7 +22291,7 @@ Sleeve=GND</text>
 <attribute name="VALUE" x="389.89" y="141.478" size="1.778" layer="96"/>
 </instance>
 <instance part="GND38" gate="1" x="388.62" y="139.7"/>
-<instance part="SW6" gate="SW$2" x="213.36" y="193.04" rot="R180"/>
+<instance part="SW6" gate="SW$2" x="213.36" y="198.12" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -22972,6 +22972,15 @@ Sleeve=GND</text>
 <wire x1="232.41" y1="176.53" x2="232.41" y2="181.61" width="0.1524" layer="91"/>
 <wire x1="232.41" y1="181.61" x2="231.14" y2="182.88" width="0.1524" layer="91"/>
 <junction x="231.14" y="182.88"/>
+<pinref part="D1" gate="D$1" pin="C"/>
+<wire x1="201.93" y1="191.77" x2="204.47" y2="191.77" width="0.1524" layer="91"/>
+<wire x1="204.47" y1="191.77" x2="205.74" y2="190.5" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="190.5" x2="205.74" y2="184.15" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="184.15" x2="207.01" y2="182.88" width="0.1524" layer="91"/>
+<pinref part="D2" gate="D$1" pin="C"/>
+<wire x1="201.93" y1="182.88" x2="207.01" y2="182.88" width="0.1524" layer="91"/>
+<wire x1="207.01" y1="182.88" x2="223.52" y2="182.88" width="0.1524" layer="91"/>
+<junction x="207.01" y="182.88"/>
 </segment>
 </net>
 <net name="N$20" class="0">
@@ -23004,17 +23013,6 @@ Sleeve=GND</text>
 <pinref part="R15" gate="G$1" pin="2"/>
 <wire x1="224.79" y1="114.3" x2="224.79" y2="116.84" width="0.1524" layer="91"/>
 <label x="224.79" y="116.84" size="1.016" layer="95" rot="R90" xref="yes"/>
-</segment>
-</net>
-<net name="N$18" class="0">
-<segment>
-<pinref part="D1" gate="D$1" pin="C"/>
-<wire x1="201.93" y1="191.77" x2="204.47" y2="191.77" width="0.1524" layer="91"/>
-<wire x1="204.47" y1="191.77" x2="205.74" y2="190.5" width="0.1524" layer="91"/>
-<wire x1="205.74" y1="190.5" x2="205.74" y2="184.15" width="0.1524" layer="91"/>
-<wire x1="205.74" y1="184.15" x2="207.01" y2="182.88" width="0.1524" layer="91"/>
-<pinref part="D2" gate="D$1" pin="C"/>
-<wire x1="201.93" y1="182.88" x2="207.01" y2="182.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="TFT_RESET" class="0">
@@ -23585,10 +23583,40 @@ Sleeve=GND</text>
 <junction x="398.78" y="152.4"/>
 </segment>
 </net>
-<net name="N$13" class="0">
+<net name="PWR_SW_CM" class="0">
+<segment>
+<pinref part="SW6" gate="SW$2" pin="P"/>
+<wire x1="218.44" y1="198.12" x2="223.52" y2="198.12" width="0.1524" layer="91"/>
+<label x="218.44" y="198.12" size="1.016" layer="95"/>
+</segment>
+<segment>
+<pinref part="SW3" gate="SW$2" pin="P"/>
+<wire x1="215.9" y1="147.32" x2="218.44" y2="147.32" width="0.1524" layer="91"/>
+<label x="218.44" y="147.32" size="1.016" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="PWR_SW_NO" class="0">
+<segment>
+<pinref part="SW6" gate="SW$2" pin="S"/>
+<wire x1="210.82" y1="200.66" x2="205.74" y2="200.66" width="0.1524" layer="91"/>
+<label x="208.28" y="200.66" size="1.016" layer="95"/>
+</segment>
+<segment>
+<pinref part="SW3" gate="SW$2" pin="S"/>
+<wire x1="208.28" y1="144.78" x2="205.74" y2="144.78" width="0.1524" layer="91"/>
+<label x="205.74" y="144.78" size="1.016" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="PWR_SW_NC" class="0">
+<segment>
+<pinref part="SW6" gate="SW$2" pin="O"/>
+<wire x1="210.82" y1="195.58" x2="205.74" y2="195.58" width="0.1524" layer="91"/>
+<label x="208.28" y="195.58" size="1.016" layer="95"/>
+</segment>
 <segment>
 <pinref part="SW3" gate="SW$2" pin="O"/>
-<wire x1="210.82" y1="185.42" x2="209.55" y2="185.42" width="0.1524" layer="91"/>
+<wire x1="208.28" y1="149.86" x2="205.74" y2="149.86" width="0.1524" layer="91"/>
+<label x="205.74" y="149.86" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>
