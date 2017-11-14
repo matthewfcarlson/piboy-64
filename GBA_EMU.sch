@@ -20579,6 +20579,47 @@ Available in horizontal (Alpha RV121SF) or vertical (Xicon 311-1701)</descriptio
 <pad name="NC2" x="4.5" y="-1" drill="1.3" shape="octagon"/>
 <text x="0" y="-3.175" size="0.4064" layer="20" rot="R90">CUT OUT</text>
 </package>
+<package name="PWR_SWITCH">
+<wire x1="-7" y1="0" x2="-2" y2="0" width="0.127" layer="21"/>
+<wire x1="-2" y1="0" x2="-0.1" y2="0" width="0.127" layer="21"/>
+<wire x1="-0.1" y1="0" x2="7" y2="0" width="0.127" layer="21"/>
+<wire x1="7" y1="0" x2="7" y2="3" width="0.127" layer="21"/>
+<wire x1="7" y1="3" x2="-7" y2="3" width="0.127" layer="21"/>
+<wire x1="-7" y1="3" x2="-7" y2="0" width="0.127" layer="21"/>
+<wire x1="-2" y1="0" x2="-2" y2="-3.5" width="0.127" layer="21"/>
+<wire x1="-2" y1="-3.5" x2="-0.1" y2="-3.5" width="0.127" layer="21"/>
+<wire x1="-0.1" y1="-3.5" x2="-0.1" y2="0" width="0.127" layer="21"/>
+<wire x1="7.6" y1="1.5" x2="7.6" y2="1.4" width="0.127" layer="1"/>
+<smd name="1" x="-4" y="4" dx="2.5" dy="1.6" layer="1" rot="R90"/>
+<smd name="2" x="4" y="4" dx="2.5" dy="1.6" layer="1" rot="R90"/>
+<smd name="COM1" x="-1.5" y="4" dx="2.5" dy="1.6" layer="1" rot="R90"/>
+<smd name="COM2" x="1.5" y="4" dx="2.5" dy="1.6" layer="1" rot="R90"/>
+<smd name="NC1" x="-7.5" y="1.5" dx="4" dy="2.5" layer="1" rot="R90"/>
+<smd name="NC2" x="7.5" y="1.5" dx="4" dy="2.5" layer="1" rot="R90"/>
+<text x="-7" y="8" size="1.27" layer="25">&gt;Name</text>
+<text x="-7" y="6" size="1.27" layer="27">&gt;Value</text>
+<hole x="-3.75" y="1.5" drill="1"/>
+<hole x="3.75" y="1.5" drill="1"/>
+</package>
+<package name="JSX08001SAQNL_SWITCH">
+<smd name="P$1" x="0" y="0" dx="0.9" dy="1.2" layer="1" rot="R90"/>
+<smd name="P$2" x="8.3" y="0" dx="0.9" dy="1.2" layer="1" rot="R90"/>
+<smd name="P$3" x="2" y="2" dx="0.8" dy="1.1" layer="1"/>
+<smd name="P$4" x="6" y="2" dx="0.8" dy="1.1" layer="1"/>
+<smd name="P$5" x="4" y="2" dx="1.1" dy="1.2" layer="1" rot="R90"/>
+<wire x1="0.1" y1="0.8" x2="0.1" y2="1.3" width="0.127" layer="21"/>
+<wire x1="0.1" y1="1.3" x2="1.2" y2="1.3" width="0.127" layer="21"/>
+<wire x1="6.8" y1="1.3" x2="8.3" y2="1.3" width="0.127" layer="21"/>
+<wire x1="8.3" y1="1.3" x2="8.3" y2="0.8" width="0.127" layer="21"/>
+<wire x1="0" y1="-0.7" x2="0" y2="-1.3" width="0.127" layer="21"/>
+<wire x1="0" y1="-1.3" x2="1.3" y2="-1.3" width="0.127" layer="21"/>
+<wire x1="1.3" y1="-1.3" x2="2.5" y2="-1.3" width="0.127" layer="21"/>
+<wire x1="2.5" y1="-1.3" x2="8.3" y2="-1.3" width="0.127" layer="21"/>
+<wire x1="8.3" y1="-1.3" x2="8.3" y2="-0.7" width="0.127" layer="21"/>
+<wire x1="1.3" y1="-1.3" x2="1.3" y2="-2.95" width="0.127" layer="21"/>
+<wire x1="1.3" y1="-2.95" x2="2.5" y2="-2.95" width="0.127" layer="21"/>
+<wire x1="2.5" y1="-2.95" x2="2.5" y2="-1.3" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="MATTICO_LOGO">
@@ -20701,6 +20742,19 @@ Digital-to-Analog Converters with SPI Interface</description>
 <text x="-2.54" y="2.54" size="1.778" layer="95">&gt;NAME</text>
 <text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
+<symbol name="GBA_PWR_SWITCH">
+<circle x="0" y="2.54" radius="0.3592" width="0.2032" layer="94"/>
+<circle x="0" y="-2.54" radius="0.3592" width="0.2032" layer="94"/>
+<circle x="-2.54" y="0" radius="0.3592" width="0.2032" layer="94"/>
+<wire x1="-2.54" y1="0" x2="0" y2="1.27" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0.635" y2="-2.54" width="0.127" layer="94"/>
+<wire x1="0" y1="2.54" x2="0.635" y2="2.54" width="0.1524" layer="94"/>
+<pin name="O" x="2.54" y="2.54" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="P" x="-5.08" y="0" visible="off" length="short" direction="pas"/>
+<pin name="S" x="2.54" y="-2.54" visible="off" length="short" direction="pas" rot="R180"/>
+<text x="-4.445" y="-6.35" size="1.778" layer="95">&gt;NAME</text>
+<text x="-5.08" y="3.81" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="LOGO">
@@ -20800,6 +20854,33 @@ Digital-to-Analog Converters with SPI Interface</description>
 <connects>
 <connect gate="SW$1" pin="1" pad="1"/>
 <connect gate="SW$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="GBA_PWR_SWITCH" prefix="SW">
+<gates>
+<gate name="SW$2" symbol="GBA_PWR_SWITCH" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="PWR_SWITCH">
+<connects>
+<connect gate="SW$2" pin="O" pad="1"/>
+<connect gate="SW$2" pin="P" pad="COM1 COM2"/>
+<connect gate="SW$2" pin="S" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="JSX" package="JSX08001SAQNL_SWITCH">
+<connects>
+<connect gate="SW$2" pin="O" pad="P$3"/>
+<connect gate="SW$2" pin="P" pad="P$5"/>
+<connect gate="SW$2" pin="S" pad="P$4"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -21964,6 +22045,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="J2" library="SparkFun-Connectors" deviceset="AUDIO-JACK2" device="SMD"/>
 <part name="R1" library="SparkFun-Resistors" deviceset="47KOHM1/10W1%(0603)" device="" value="150R"/>
 <part name="GND38" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="SW6" library="custom" deviceset="GBA_PWR_SWITCH" device="JSX"/>
 </parts>
 <sheets>
 <sheet>
@@ -22209,6 +22291,7 @@ Sleeve=GND</text>
 <attribute name="VALUE" x="389.89" y="141.478" size="1.778" layer="96"/>
 </instance>
 <instance part="GND38" gate="1" x="388.62" y="139.7"/>
+<instance part="SW6" gate="SW$2" x="213.36" y="193.04" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -22889,8 +22972,6 @@ Sleeve=GND</text>
 <wire x1="232.41" y1="176.53" x2="232.41" y2="181.61" width="0.1524" layer="91"/>
 <wire x1="232.41" y1="181.61" x2="231.14" y2="182.88" width="0.1524" layer="91"/>
 <junction x="231.14" y="182.88"/>
-<pinref part="SW3" gate="SW$2" pin="P"/>
-<wire x1="218.44" y1="182.88" x2="223.52" y2="182.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$20" class="0">
@@ -22934,9 +23015,6 @@ Sleeve=GND</text>
 <wire x1="205.74" y1="184.15" x2="207.01" y2="182.88" width="0.1524" layer="91"/>
 <pinref part="D2" gate="D$1" pin="C"/>
 <wire x1="201.93" y1="182.88" x2="207.01" y2="182.88" width="0.1524" layer="91"/>
-<pinref part="SW3" gate="SW$2" pin="O"/>
-<wire x1="210.82" y1="185.42" x2="209.55" y2="185.42" width="0.1524" layer="91"/>
-<wire x1="209.55" y1="185.42" x2="207.01" y2="182.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="TFT_RESET" class="0">
@@ -23493,18 +23571,24 @@ Sleeve=GND</text>
 <net name="N$29" class="0">
 <segment>
 <pinref part="J2" gate="G$1" pin="TIP"/>
-<wire x1="411.48" y1="157.48" x2="406.4" y2="157.48" width="0.1524" layer="91"/>
-<wire x1="406.4" y1="157.48" x2="403.86" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="411.48" y1="157.48" x2="403.86" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="403.86" y1="157.48" x2="403.86" y2="152.4" width="0.1524" layer="91"/>
 <pinref part="C7" gate="G$1" pin="-"/>
 <pinref part="J2" gate="G$1" pin="RING"/>
 <wire x1="403.86" y1="152.4" x2="398.78" y2="152.4" width="0.1524" layer="91"/>
 <wire x1="398.78" y1="152.4" x2="397.51" y2="152.4" width="0.1524" layer="91"/>
-<wire x1="411.48" y1="149.86" x2="406.4" y2="149.86" width="0.1524" layer="91"/>
-<wire x1="406.4" y1="149.86" x2="403.86" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="411.48" y1="149.86" x2="403.86" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="403.86" y1="149.86" x2="403.86" y2="152.4" width="0.1524" layer="91"/>
 <junction x="403.86" y="152.4"/>
 <pinref part="R1" gate="G$1" pin="2"/>
 <wire x1="398.78" y1="144.78" x2="398.78" y2="152.4" width="0.1524" layer="91"/>
 <junction x="398.78" y="152.4"/>
+</segment>
+</net>
+<net name="N$13" class="0">
+<segment>
+<pinref part="SW3" gate="SW$2" pin="O"/>
+<wire x1="210.82" y1="185.42" x2="209.55" y2="185.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
