@@ -20626,6 +20626,33 @@ Available in horizontal (Alpha RV121SF) or vertical (Xicon 311-1701)</descriptio
 <wire x1="1.3" y1="-2.95" x2="2.5" y2="-2.95" width="0.127" layer="21"/>
 <wire x1="2.5" y1="-2.95" x2="2.5" y2="-1.3" width="0.127" layer="21"/>
 </package>
+<package name="PWR_SWITCH_CSS_1310TB">
+<description>Nidec Copal Electronics CSS-1310TB 
+Slide Switch SP3T Surface Mount, Right Angle</description>
+<text x="0.62" y="8" size="1.27" layer="25">&gt;Name</text>
+<text x="0.62" y="6" size="1.27" layer="27">&gt;Value</text>
+<hole x="0" y="0" drill="0.8"/>
+<hole x="10.2" y="0" drill="0.8"/>
+<smd name="P$1" x="1.1" y="3.75" dx="1" dy="2.5" layer="1"/>
+<smd name="P$2" x="3.1" y="3.75" dx="1" dy="2.5" layer="1"/>
+<smd name="P$3" x="7.1" y="3.75" dx="1" dy="2.5" layer="1"/>
+<smd name="P$4" x="9.1" y="3.75" dx="1" dy="2.5" layer="1"/>
+<wire x1="0.4" y1="2.7" x2="-1" y2="2.7" width="0.127" layer="21"/>
+<wire x1="-1" y1="2.7" x2="-1" y2="-0.1" width="0.127" layer="21"/>
+<wire x1="-1" y1="-0.1" x2="2.35" y2="-0.1" width="0.127" layer="21"/>
+<wire x1="2.35" y1="-0.1" x2="4.35" y2="-0.1" width="0.127" layer="21"/>
+<wire x1="4.35" y1="-0.1" x2="5.85" y2="-0.1" width="0.127" layer="21"/>
+<wire x1="5.85" y1="-0.1" x2="7.85" y2="-0.1" width="0.127" layer="21"/>
+<wire x1="7.85" y1="-0.1" x2="11.8" y2="-0.1" width="0.127" layer="21"/>
+<wire x1="11.8" y1="-0.1" x2="11.8" y2="2.7" width="0.127" layer="21"/>
+<wire x1="11.8" y1="2.7" x2="9.8" y2="2.7" width="0.127" layer="21"/>
+<wire x1="3.8" y1="2.6" x2="6.4" y2="2.6" width="0.127" layer="21"/>
+<wire x1="4.35" y1="-0.1" x2="4.35" y2="-2.1" width="0.127" layer="21"/>
+<wire x1="4.35" y1="-2.1" x2="5.85" y2="-2.1" width="0.127" layer="21"/>
+<wire x1="5.85" y1="-2.1" x2="5.85" y2="-0.1" width="0.127" layer="21"/>
+<wire x1="7.85" y1="-1.1" x2="7.85" y2="-0.1" width="0.127" layer="21"/>
+<wire x1="2.35" y1="-0.1" x2="2.35" y2="-1.1" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="MATTICO_LOGO">
@@ -20886,6 +20913,16 @@ Digital-to-Analog Converters with SPI Interface</description>
 <connects>
 <connect gate="SW$2" pin="O" pad="P$3"/>
 <connect gate="SW$2" pin="P" pad="P$5"/>
+<connect gate="SW$2" pin="S" pad="P$4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="CSS_1310TB" package="PWR_SWITCH_CSS_1310TB">
+<connects>
+<connect gate="SW$2" pin="O" pad="P$1"/>
+<connect gate="SW$2" pin="P" pad="P$3"/>
 <connect gate="SW$2" pin="S" pad="P$4"/>
 </connects>
 <technologies>
@@ -22112,7 +22149,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="J2" library="SparkFun-Connectors" deviceset="AUDIO-JACK2" device="SMD"/>
 <part name="R1" library="SparkFun-Resistors" deviceset="47KOHM1/10W1%(0603)" device="" value="150R"/>
 <part name="GND38" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="SW6" library="custom" deviceset="GBA_PWR_SWITCH" device="JSX" value=""/>
 <part name="D5" library="diode" deviceset="CGRM400*-G" device="" technology="1" value="IN4001"/>
 <part name="D6" library="diode" deviceset="CGRM400*-G" device="" technology="1" value="IN4001"/>
 <part name="R18" library="SparkFun-Resistors" deviceset="100KOHM-1/10W-1%(0603)" device="" value="100k"/>
@@ -22122,6 +22158,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="C22" library="SparkFun-Capacitors" deviceset="0.1UF-25V(+80/-20%)(0603)" device="" value="0.1uF"/>
 <part name="GND40" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="D7" library="diode" deviceset="CGRM400*-G" device="" technology="1" value="IN4001"/>
+<part name="SW3" library="custom" deviceset="GBA_PWR_SWITCH" device="CSS_1310TB" value=""/>
 </parts>
 <sheets>
 <sheet>
@@ -22364,7 +22401,6 @@ Sleeve=GND</text>
 <attribute name="VALUE" x="389.89" y="141.478" size="1.778" layer="96"/>
 </instance>
 <instance part="GND38" gate="1" x="388.62" y="139.7"/>
-<instance part="SW6" gate="SW$2" x="210.82" y="177.8" rot="MR270"/>
 <instance part="D5" gate="G$1" x="304.8" y="45.72" rot="R180"/>
 <instance part="D6" gate="G$1" x="218.44" y="175.26"/>
 <instance part="R18" gate="G$1" x="231.14" y="162.56" rot="R90"/>
@@ -22374,6 +22410,7 @@ Sleeve=GND</text>
 <instance part="C22" gate="G$1" x="279.4" y="50.8" rot="R90"/>
 <instance part="GND40" gate="1" x="269.24" y="48.26"/>
 <instance part="D7" gate="G$1" x="317.5" y="45.72" rot="R180"/>
+<instance part="SW3" gate="SW$2" x="210.82" y="177.8" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -23068,7 +23105,7 @@ Sleeve=GND</text>
 <wire x1="201.93" y1="182.88" x2="207.01" y2="182.88" width="0.1524" layer="91"/>
 <junction x="207.01" y="182.88"/>
 <wire x1="207.01" y1="182.88" x2="210.82" y2="182.88" width="0.1524" layer="91"/>
-<pinref part="SW6" gate="SW$2" pin="P"/>
+<pinref part="SW3" gate="SW$2" pin="P"/>
 <wire x1="210.82" y1="182.88" x2="223.52" y2="182.88" width="0.1524" layer="91"/>
 <junction x="210.82" y="182.88"/>
 </segment>
@@ -23727,12 +23764,12 @@ Sleeve=GND</text>
 <net name="PWR_SW" class="0">
 <segment>
 <pinref part="D6" gate="G$1" pin="A"/>
-<pinref part="SW6" gate="SW$2" pin="S"/>
 <wire x1="215.9" y1="175.26" x2="213.36" y2="175.26" width="0.1524" layer="91"/>
 <wire x1="213.36" y1="175.26" x2="213.36" y2="172.72" width="0.1524" layer="91"/>
-<junction x="213.36" y="175.26"/>
 <wire x1="213.36" y1="172.72" x2="210.82" y2="172.72" width="0.1524" layer="91"/>
 <label x="210.82" y="172.72" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="SW3" gate="SW$2" pin="O"/>
+<junction x="213.36" y="175.26"/>
 </segment>
 <segment>
 <pinref part="D7" gate="G$1" pin="A"/>
