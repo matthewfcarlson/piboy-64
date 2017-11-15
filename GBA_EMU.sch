@@ -22685,9 +22685,10 @@ Sleeve=GND</text>
 <pinref part="GND32" gate="1" pin="GND"/>
 <wire x1="220.98" y1="-12.7" x2="218.44" y2="-12.7" width="0.1524" layer="91"/>
 <wire x1="218.44" y1="-12.7" x2="218.44" y2="-25.4" width="0.1524" layer="91"/>
-<wire x1="223.52" y1="-10.16" x2="218.44" y2="-10.16" width="0.1524" layer="91"/>
 <wire x1="218.44" y1="-10.16" x2="218.44" y2="-12.7" width="0.1524" layer="91"/>
 <junction x="218.44" y="-12.7"/>
+<pinref part="IC1" gate="G$1" pin="UGND"/>
+<wire x1="220.98" y1="-10.16" x2="218.44" y2="-10.16" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C20" gate="G$1" pin="2"/>
@@ -23395,9 +23396,9 @@ Sleeve=GND</text>
 <label x="373.38" y="-2.54" size="1.016" layer="95" rot="R90" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U1" gate="U$1" pin="GPIO26"/>
-<wire x1="337.82" y1="77.47" x2="332.74" y2="77.47" width="0.1524" layer="91"/>
-<label x="332.74" y="77.47" size="1.016" layer="95" rot="R180" xref="yes"/>
+<pinref part="U1" gate="U$1" pin="GPIO13"/>
+<wire x1="337.82" y1="82.55" x2="332.74" y2="82.55" width="0.1524" layer="91"/>
+<label x="332.74" y="82.55" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="RIGHT_BUMP" class="0">
@@ -23696,7 +23697,7 @@ Sleeve=GND</text>
 <wire x1="287.02" y1="38.1" x2="279.4" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$30" class="0">
+<net name="PWR_SW_STATE" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="PD0(INT0/OC0B)"/>
 <wire x1="279.4" y1="40.64" x2="281.94" y2="40.64" width="0.1524" layer="91"/>
@@ -23706,6 +23707,14 @@ Sleeve=GND</text>
 <wire x1="281.94" y1="45.72" x2="281.94" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="284.48" y1="45.72" x2="281.94" y2="45.72" width="0.1524" layer="91"/>
 <junction x="281.94" y="45.72"/>
+<wire x1="281.94" y1="50.8" x2="284.48" y2="50.8" width="0.1524" layer="91"/>
+<junction x="281.94" y="50.8"/>
+<label x="284.48" y="50.8" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U1" gate="U$1" pin="GPIO26"/>
+<wire x1="337.82" y1="77.47" x2="332.74" y2="77.47" width="0.1524" layer="91"/>
+<label x="332.74" y="77.47" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$31" class="0">
