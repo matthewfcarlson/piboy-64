@@ -15436,6 +15436,8 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="SUPPLY38" library="SparkFun-Aesthetics" deviceset="1.8V" device=""/>
 <part name="U1" library="custom" deviceset="STM32F103CBT6" device=""/>
 <part name="3V3_STM" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
+<part name="GND1" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="GND2" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -16354,6 +16356,12 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <instance part="3V3_STM" gate="G$1" x="48.26" y="165.1" smashed="yes">
 <attribute name="VALUE" x="45.72" y="160.02" size="1.778" layer="96" rot="R90"/>
 </instance>
+<instance part="GND1" gate="1" x="119.38" y="154.94" smashed="yes">
+<attribute name="VALUE" x="116.84" y="152.4" size="1.778" layer="96"/>
+</instance>
+<instance part="GND2" gate="1" x="43.18" y="43.18" smashed="yes">
+<attribute name="VALUE" x="40.64" y="40.64" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -16364,6 +16372,29 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="55.88" y1="17.78" x2="55.88" y2="22.86" width="0.1524" layer="91"/>
 <pinref part="GND37" gate="1" pin="GND"/>
 <wire x1="55.88" y1="22.86" x2="60.96" y2="22.86" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U1" gate="A" pin="BOOT0"/>
+<pinref part="GND1" gate="1" pin="GND"/>
+<wire x1="109.22" y1="157.48" x2="119.38" y2="157.48" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U1" gate="A" pin="VSSA"/>
+<wire x1="53.34" y1="58.42" x2="43.18" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="58.42" x2="43.18" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="55.88" x2="43.18" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="53.34" x2="43.18" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="U1" gate="A" pin="VSS_2"/>
+<wire x1="53.34" y1="55.88" x2="43.18" y2="55.88" width="0.1524" layer="91"/>
+<junction x="43.18" y="55.88"/>
+<pinref part="U1" gate="A" pin="VSS_1"/>
+<wire x1="53.34" y1="53.34" x2="43.18" y2="53.34" width="0.1524" layer="91"/>
+<junction x="43.18" y="53.34"/>
+<pinref part="U1" gate="A" pin="VSS_3"/>
+<wire x1="53.34" y1="50.8" x2="43.18" y2="50.8" width="0.1524" layer="91"/>
+<junction x="43.18" y="50.8"/>
+<pinref part="GND2" gate="1" pin="GND"/>
+<wire x1="43.18" y1="50.8" x2="43.18" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="5V" class="0">

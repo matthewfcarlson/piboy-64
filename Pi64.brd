@@ -2613,15 +2613,15 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="53.2481" y="63.642" size="1.27" layer="25"/>
 <attribute name="TP_SIGNAL_NAME" value="" x="53.848" y="60.452" size="1" layer="37"/>
 </element>
-<element name="U1" library="custom" package="QFP50P900X900X160-48N" value="STM32F103CBT6" x="-10.16" y="0" smashed="yes">
-<attribute name="DESCRIPTION" value=" Mainstream Performance line, ARM Cortex-M3 MCU with 128 Kbytes Flash, 72 MHz CPU, motor control, USB and CAN " x="-10.16" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER" value="497-6288-ND" x="-10.16" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="DIGI-KEY_PURCHASE_URL" value="https://www.digikey.com/product-detail/en/stmicroelectronics/STM32F103CBT6/497-6288-ND/1754420?utm_source=snapeda&amp;utm_medium=aggregator&amp;utm_campaign=symbol" x="-10.16" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="MF" value="STMicroelectronics" x="-10.16" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="MP" value="STM32F103CBT6" x="-10.16" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-13.62073125" y="6.9978" size="2.08661875" layer="25" ratio="10" rot="SR0"/>
-<attribute name="PACKAGE" value="LQFP-48 STMicroelectronics" x="-10.16" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-13.61441875" y="-9.52505" size="2.082809375" layer="27" ratio="10" rot="SR0"/>
+<element name="U1" library="custom" package="QFP50P900X900X160-48N" value="STM32F103CBT6" x="113.792" y="12.7" smashed="yes">
+<attribute name="DESCRIPTION" value=" Mainstream Performance line, ARM Cortex-M3 MCU with 128 Kbytes Flash, 72 MHz CPU, motor control, USB and CAN " x="113.792" y="12.7" size="1.778" layer="27" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER" value="497-6288-ND" x="113.792" y="12.7" size="1.778" layer="27" display="off"/>
+<attribute name="DIGI-KEY_PURCHASE_URL" value="https://www.digikey.com/product-detail/en/stmicroelectronics/STM32F103CBT6/497-6288-ND/1754420?utm_source=snapeda&amp;utm_medium=aggregator&amp;utm_campaign=symbol" x="113.792" y="12.7" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="STMicroelectronics" x="113.792" y="12.7" size="1.778" layer="27" display="off"/>
+<attribute name="MP" value="STM32F103CBT6" x="113.792" y="12.7" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="110.33126875" y="19.6978" size="2.08661875" layer="25" ratio="10" rot="SR0"/>
+<attribute name="PACKAGE" value="LQFP-48 STMicroelectronics" x="113.792" y="12.7" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="109.82958125" y="6.22295" size="0.8128" layer="27" font="vector" rot="SR0"/>
 </element>
 </elements>
 <signals>
@@ -2693,72 +2693,24 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="R15" pad="1"/>
 <contactref element="R14" pad="1"/>
 <contactref element="TP4" pad="TP"/>
-<wire x1="66.614" y1="30.988" x2="66.868" y2="36.322" width="0" layer="19" extent="1-1"/>
-<wire x1="62.042" y1="30.734" x2="66.614" y2="30.988" width="0" layer="19" extent="1-1"/>
-<wire x1="61.936" y1="26.452" x2="62.042" y2="30.734" width="0" layer="19" extent="1-16"/>
-<wire x1="63.736" y1="26.452" x2="61.936" y2="26.452" width="0" layer="19" extent="16-16"/>
-<wire x1="65.536" y1="26.452" x2="63.736" y2="26.452" width="0" layer="19" extent="16-16"/>
-<wire x1="67.336" y1="26.452" x2="65.536" y2="26.452" width="0" layer="19" extent="16-16"/>
-<wire x1="69.136" y1="26.452" x2="67.336" y2="26.452" width="0" layer="19" extent="16-16"/>
-<wire x1="70.936" y1="26.452" x2="69.136" y2="26.452" width="0" layer="19" extent="16-16"/>
-<wire x1="56.536" y1="26.452" x2="61.936" y2="26.452" width="0" layer="19" extent="16-16"/>
-<wire x1="54.736" y1="26.452" x2="56.536" y2="26.452" width="0" layer="19" extent="16-16"/>
-<wire x1="52.936" y1="26.452" x2="54.736" y2="26.452" width="0" layer="19" extent="16-16"/>
-<wire x1="51.136" y1="26.452" x2="52.936" y2="26.452" width="0" layer="19" extent="16-16"/>
-<wire x1="49.336" y1="26.452" x2="51.136" y2="26.452" width="0" layer="19" extent="16-16"/>
-<wire x1="47.536" y1="26.452" x2="49.336" y2="26.452" width="0" layer="19" extent="16-16"/>
-<wire x1="45.736" y1="26.452" x2="47.536" y2="26.452" width="0" layer="19" extent="16-16"/>
-<wire x1="43.936" y1="26.452" x2="45.736" y2="26.452" width="0" layer="19" extent="16-16"/>
-<wire x1="42.136" y1="26.452" x2="43.936" y2="26.452" width="0" layer="19" extent="16-16"/>
-<wire x1="40.336" y1="26.452" x2="42.136" y2="26.452" width="0" layer="19" extent="16-16"/>
-<wire x1="38.536" y1="26.452" x2="40.336" y2="26.452" width="0" layer="19" extent="16-16"/>
-<wire x1="36.736" y1="26.452" x2="38.536" y2="26.452" width="0" layer="19" extent="16-16"/>
-<wire x1="34.936" y1="26.452" x2="36.736" y2="26.452" width="0" layer="19" extent="16-16"/>
-<wire x1="33.136" y1="26.452" x2="34.936" y2="26.452" width="0" layer="19" extent="16-16"/>
-<wire x1="29.536" y1="26.452" x2="33.136" y2="26.452" width="0" layer="19" extent="16-16"/>
-<wire x1="27.736" y1="26.452" x2="29.536" y2="26.452" width="0" layer="19" extent="16-16"/>
-<wire x1="25.936" y1="26.452" x2="27.736" y2="26.452" width="0" layer="19" extent="16-16"/>
-<wire x1="24.136" y1="26.452" x2="25.936" y2="26.452" width="0" layer="19" extent="16-16"/>
-<wire x1="20.536" y1="26.452" x2="24.136" y2="26.452" width="0" layer="19" extent="16-16"/>
-<wire x1="18.736" y1="26.452" x2="20.536" y2="26.452" width="0" layer="19" extent="16-16"/>
-<wire x1="15.136" y1="26.452" x2="18.736" y2="26.452" width="0" layer="19" extent="16-16"/>
-<wire x1="13.336" y1="26.452" x2="15.136" y2="26.452" width="0" layer="19" extent="16-16"/>
-<wire x1="10.936" y1="26.452" x2="13.336" y2="26.452" width="0" layer="19" extent="16-16"/>
+<contactref element="U1" pad="44"/>
+<contactref element="U1" pad="8"/>
+<contactref element="U1" pad="35"/>
+<contactref element="U1" pad="23"/>
+<contactref element="U1" pad="47"/>
+<polygon width="0.1524" layer="1">
+<vertex x="-2.032" y="67.056"/>
+<vertex x="129.54" y="67.056"/>
+<vertex x="129.54" y="-4.064"/>
+<vertex x="-2.032" y="-4.064"/>
+</polygon>
+<polygon width="0.1524" layer="16">
+<vertex x="-0.508" y="67.056"/>
+<vertex x="128.016" y="67.056"/>
+<vertex x="128.016" y="-2.032"/>
+<vertex x="-0.508" y="-2.032"/>
+</polygon>
 <wire x1="39.79" y1="30.226" x2="40.336" y2="26.452" width="0" layer="19" extent="1-16"/>
-<wire x1="25.212" y1="34.21" x2="25.936" y2="26.452" width="0" layer="19" extent="1-16"/>
-<wire x1="71.236" y1="18.252" x2="70.936" y2="26.452" width="0" layer="19" extent="16-16"/>
-<wire x1="73.036" y1="18.252" x2="71.236" y2="18.252" width="0" layer="19" extent="16-16"/>
-<wire x1="69.436" y1="18.252" x2="71.236" y2="18.252" width="0" layer="19" extent="16-16"/>
-<wire x1="67.636" y1="18.252" x2="69.436" y2="18.252" width="0" layer="19" extent="16-16"/>
-<wire x1="65.836" y1="18.252" x2="67.636" y2="18.252" width="0" layer="19" extent="16-16"/>
-<wire x1="64.036" y1="18.252" x2="65.836" y2="18.252" width="0" layer="19" extent="16-16"/>
-<wire x1="62.236" y1="18.252" x2="64.036" y2="18.252" width="0" layer="19" extent="16-16"/>
-<wire x1="56.836" y1="18.252" x2="62.236" y2="18.252" width="0" layer="19" extent="16-16"/>
-<wire x1="55.036" y1="18.252" x2="56.836" y2="18.252" width="0" layer="19" extent="16-16"/>
-<wire x1="53.236" y1="18.252" x2="55.036" y2="18.252" width="0" layer="19" extent="16-16"/>
-<wire x1="51.436" y1="18.252" x2="53.236" y2="18.252" width="0" layer="19" extent="16-16"/>
-<wire x1="49.636" y1="18.252" x2="51.436" y2="18.252" width="0" layer="19" extent="16-16"/>
-<wire x1="47.836" y1="18.252" x2="49.636" y2="18.252" width="0" layer="19" extent="16-16"/>
-<wire x1="46.036" y1="18.252" x2="47.836" y2="18.252" width="0" layer="19" extent="16-16"/>
-<wire x1="44.236" y1="18.252" x2="46.036" y2="18.252" width="0" layer="19" extent="16-16"/>
-<wire x1="42.436" y1="18.252" x2="44.236" y2="18.252" width="0" layer="19" extent="16-16"/>
-<wire x1="40.636" y1="18.252" x2="42.436" y2="18.252" width="0" layer="19" extent="16-16"/>
-<wire x1="38.836" y1="18.252" x2="40.636" y2="18.252" width="0" layer="19" extent="16-16"/>
-<wire x1="37.036" y1="18.252" x2="38.836" y2="18.252" width="0" layer="19" extent="16-16"/>
-<wire x1="35.236" y1="18.252" x2="37.036" y2="18.252" width="0" layer="19" extent="16-16"/>
-<wire x1="33.436" y1="18.252" x2="35.236" y2="18.252" width="0" layer="19" extent="16-16"/>
-<wire x1="31.636" y1="18.252" x2="33.436" y2="18.252" width="0" layer="19" extent="16-16"/>
-<wire x1="29.836" y1="18.252" x2="31.636" y2="18.252" width="0" layer="19" extent="16-16"/>
-<wire x1="28.036" y1="18.252" x2="29.836" y2="18.252" width="0" layer="19" extent="16-16"/>
-<wire x1="26.236" y1="18.252" x2="28.036" y2="18.252" width="0" layer="19" extent="16-16"/>
-<wire x1="24.436" y1="18.252" x2="26.236" y2="18.252" width="0" layer="19" extent="16-16"/>
-<wire x1="22.636" y1="18.252" x2="24.436" y2="18.252" width="0" layer="19" extent="16-16"/>
-<wire x1="20.836" y1="18.252" x2="22.636" y2="18.252" width="0" layer="19" extent="16-16"/>
-<wire x1="19.036" y1="18.252" x2="20.836" y2="18.252" width="0" layer="19" extent="16-16"/>
-<wire x1="15.436" y1="18.252" x2="19.036" y2="18.252" width="0" layer="19" extent="16-16"/>
-<wire x1="13.636" y1="18.252" x2="15.436" y2="18.252" width="0" layer="19" extent="16-16"/>
-<wire x1="11.236" y1="18.252" x2="13.636" y2="18.252" width="0" layer="19" extent="16-16"/>
-<wire x1="42.672" y1="62.992" x2="25.212" y2="34.21" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="TXD">
 <contactref element="PCB1" pad="51"/>
@@ -2958,10 +2910,10 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="U1" pad="9"/>
 <contactref element="U1" pad="1"/>
 <contactref element="U1" pad="48"/>
-<wire x1="-14.3764" y1="2.7432" x2="-14.3764" y2="-1.2446" width="0" layer="19" extent="1-1"/>
-<wire x1="-12.9032" y1="4.2164" x2="-14.3764" y2="2.7432" width="0" layer="19" extent="1-1"/>
-<wire x1="-5.9436" y1="2.7432" x2="-12.9032" y2="4.2164" width="0" layer="19" extent="1-1"/>
-<wire x1="-7.4168" y1="-4.2164" x2="-5.9436" y2="2.7432" width="0" layer="19" extent="1-1"/>
+<wire x1="111.0488" y1="16.9164" x2="118.0084" y2="15.4432" width="0" layer="19" extent="1-1"/>
+<wire x1="109.5756" y1="15.4432" x2="111.0488" y2="16.9164" width="0" layer="19" extent="1-1"/>
+<wire x1="109.5756" y1="11.4554" x2="109.5756" y2="15.4432" width="0" layer="19" extent="1-1"/>
+<wire x1="116.5352" y1="8.4836" x2="118.0084" y2="15.4432" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
